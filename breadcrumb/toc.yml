@@ -1,0 +1,67 @@
+- name: Таблицы Azure
+  tocHref: /azure/
+  topicHref: /azure/index
+  items:
+    - name: Azure для разработчиков .NET
+      tocHref: /dotnet/
+      topicHref: /dotnet/azure/index
+      items:
+        - name: Обзор
+          tocHref: /dotnet/azure/dotnet-tools
+          topicHref: /dotnet/azure/dotnet-tools
+        - name: Средства
+          tocHref: /dotnet/azure/dotnet-tools
+          topicHref: /dotnet/azure/dotnet-tools
+        - name: Библиотеки
+          tocHref: /dotnet/azure/dotnet-sdk-azure-install
+          topicHref: /dotnet/azure/dotnet-sdk-azure-install
+        - name: Аутентификация
+          tocHref: /dotnet/azure/dotnet-sdk-azure-authenticate
+          topicHref: /dotnet/azure/dotnet-sdk-azure-authenticate
+        - name: Быстрое начало работы
+          items:
+            - name: Начало работы
+              tocHref: /dotnet/azure/dotnet-sdk-azure-get-started
+              topicHref: /dotnet/azure/dotnet-sdk-azure-get-started
+            - name: Веб-приложения
+              tocHref: /azure/app-service-web/app-service-web-get-started-dotnet
+              topicHref: /azure/app-service-web/app-service-web-get-started-dotnet
+            - name: База данных SQL
+              tocHref: /azure/sql-database/sql-database-connect-query-dotnet
+              topicHref: /azure/sql-database/sql-database-connect-query-dotnet
+            - name: "Cosmos\_DB"
+              tocHref: /azure/cosmos-db/documentdb-dotnet-application
+              topicHref: /azure/cosmos-db/documentdb-dotnet-application
+        - name: Учебники
+          items:
+            - name: Хранилище Azure
+              tocHref: /azure/storage/storage-dotnet-how-to-use-blob-storage
+              topicHref: /azure/storage/storage-dotnet-how-to-use-blob-storage
+            - name: Кэш Redis
+              tocHref: /azure/redis-cache/cache-web-app-howto
+              topicHref: /azure/redis-cache/cache-web-app-howto
+        - name: Инструкции
+          items:
+            - name: Развертывание с помощью Visual Studio
+              tocHref: /dotnet/azure/dotnet-quickstart-vs
+              topicHref: /dotnet/azure/dotnet-quickstart-vs
+            - name: Развертывание с помощью средств командной строки
+              tocHref: /dotnet/azure/dotnet-quickstart-xplat
+              topicHref: /dotnet/azure/dotnet-quickstart-xplat
+        - name: Примеры
+          items:
+            - name: Указания
+              tocHref: /dotnet/azure/dotnet-sdk-azure-sample-readme
+              topicHref: /dotnet/azure/dotnet-sdk-azure-sample-readme
+            - name: Виртуальные машины
+              tocHref: /dotnet/azure/dotnet-sdk-azure-virtual-machine-samples
+              topicHref: /dotnet/azure/dotnet-sdk-azure-virtual-machine-samples
+            - name: 'веб-приложений:'
+              tocHref: /dotnet/azure/dotnet-sdk-azure-web-apps-samples
+              topicHref: /dotnet/azure/dotnet-sdk-azure-web-apps-samples
+            - name: База данных SQL
+              tocHref: /dotnet/azure/dotnet-sdk-azure-sql-database-samples
+              topicHref: /dotnet/azure/dotnet-sdk-azure-sql-database-samples
+        - name: Основные понятия
+          tocHref: /dotnet/azure/dotnet-sdk-azure-concepts
+          topicHref: /dotnet/azure/dotnet-sdk-azure-concepts
