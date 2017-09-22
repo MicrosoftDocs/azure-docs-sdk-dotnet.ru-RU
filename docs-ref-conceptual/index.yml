@@ -72,7 +72,7 @@ sections:
           - image:
               src: 'https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg'
             title: Создание приложения .NET с помощью Cosmos DB
-            href: 'https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnet-application'
+            href: 'https://docs.microsoft.com/en-us/azure/cosmos-db/create-documentdb-dotnet'
           - image:
               src: 'https://docs.microsoft.com/en-us/azure/media/index/fabric.svg'
             title: Создание приложения .NET для микрослужб с помощью Service Fabric
@@ -115,4 +115,4 @@ sections:
           - html: '<a href="https://docs.microsoft.com/azure/container-service/container-service-kubernetes-windows-walkthrough">Кластер Azure Kubernetes для Windows | Документация Майкрософт</a>'
           - html: '<a href="https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet">Использование .NET (C#) с Visual Studio для подключения и создания запросов к базе данных SQL Azure</a>'
           - html: '<a href="https://docs.microsoft.com/azure/postgresql/connect-csharp">База данных Azure для PostgreSQL: подключение и запрос данных с помощью C# (.NET)</a>'
-          - html: '<a href="https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnetcore-get-started">Azure Cosmos DB. Приступая к работе с API DocumentDB и .NET Core</a>'
+          - html: '<a href="https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnetcore-get-started">Начало работы с API DocumentDB CosmosDB в .NET Core</a>'
