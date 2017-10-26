@@ -4,18 +4,19 @@ description: "Справочник по библиотекам базы данн
 keywords: Azure, .NET, SDK, API, SQL, database
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/31/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: sql
-ms.openlocfilehash: 110b7e554666a4fa6386d6715919684e121441a3
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: 61b98b3096123b509b5c9f08bfc654aa37cf2149
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-sql-database-apis-for-net"></a>API-интерфейсы базы данных Azure SQL для .NET
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 08/28/2017
 
 Используйте клиентскую библиотеку .NET SQL, чтобы подключиться к базе данных и выполнить проверку подлинности в ней, а также выполнять нерегламентированные инструкции T-SQL и хранимые процедуры.
 
-Установите [пакет NuGet]( https://www.nuget.org/packages/System.Data.SqlClient) непосредственно из [консоли диспетчера пакетов](https://docs.microsoft.com/nuget/tools/package-manager-console) Visual Studio или с помощью [.NET Core CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package).
+Установите [пакет NuGet]( https://www.nuget.org/packages/System.Data.SqlClient) непосредственно из [консоли диспетчера пакетов](https://docs.microsoft.com/nuget/tools/package-manager-console) Visual Studio или с помощью [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).
 
 #### <a name="visual-studio-package-manager"></a>Диспетчер пакетов Visual Studio
 

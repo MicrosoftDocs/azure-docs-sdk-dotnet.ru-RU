@@ -4,19 +4,19 @@ description:
 keywords: Azure, .NET, SDK, API, patterns, concepts, fluent, logging
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 06/20/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.assetid: 
-ms.openlocfilehash: b2e6849f06c36de18471e55c468e984f4205f646
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter
+ms.openlocfilehash: 9a67edadc6e91d2ead82f41601e561809d6a811c
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="azure-management-library-for-net-fluent-concepts"></a>Библиотека управления Azure для .NET: принципы использования текучего интерфейса
 
@@ -187,6 +187,6 @@ var azure = Azure
 | ------------ | ---------------
 | HttpLoggingDelegatingHandler.Level.None | Нет выходных данных.
 | HttpLoggingDelegatingHandler.Level.Basic | Регистрация URL-адресов для базовых вызовов REST, кодов и времени ответов.
-| HttpLoggingDelegatingHandler.Level.Body | Регистрация тех же элементов, что и для уровня BASIC, а также текста запросов и ответов для вызовов REST.
-| HttpLoggingDelegatingHandler.Level.Headers | Регистрация тех же элементов, что и для уровня BASIC, а также заголовков запросов и ответов для вызовов REST.
+| HttpLoggingDelegatingHandler.Level.Body | Регистрация тех же элементов, что и для уровня Basic, а также текста запросов и ответов для вызовов REST.
+| HttpLoggingDelegatingHandler.Level.Headers | Регистрация тех же элементов, что и для уровня Basic, а также заголовков запросов и ответов для вызовов REST.
 | HttpLoggingDelegatingHandler.Level.BodyAndHeaders | Регистрация тех же элементов, что и для уровней журнала BODY и HEADERS в совокупности.

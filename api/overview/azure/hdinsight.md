@@ -4,18 +4,19 @@ description: "Справочник по библиотекам Azure HDInsight �
 keywords: Azure, .NET, SDK, API, HDInsight
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/21/2017
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: multiple
-ms.openlocfilehash: 3f0b6f48d89d582180193f52ce85c328e6bdf8e0
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: hd-insight
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: da9023ab4e6106754d48acb31cda58cdb358f5cb
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="azure-hdinsight-libraries-for-net"></a>Библиотеки Azure HDInsight для .NET
 

@@ -2,20 +2,21 @@
 title: "Библиотеки выставления счетов Azure для .NET"
 description: "Справочник по библиотекам выставления счетов для .NET"
 keywords: Azure, .NET, SDK, API, Billing
-author: spboyer
+author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/07/2017
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.openlocfilehash: 0a401bf9ccc345d3c6e99a010c74f9c7f6f5914e
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: 8df15d55a80991f29b694f4af06a20514bf20b32
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-billing-libraries-for-net"></a>Библиотеки выставления счетов Azure для .NET
 
@@ -67,4 +68,4 @@ billingClient.Invoices.List();
 * [Microsoft Azure Billing API Code Samples: Multi-Tenant Web Application](https://github.com/Azure-Samples/billing-dotnet-webapp-multitenant) (Примеры кода для API выставления счетов Microsoft Azure: мультитенантное веб-приложение)
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

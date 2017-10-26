@@ -4,19 +4,19 @@ description: "Получите пример кода для создания и 
 keywords: Azure, .NET, SDK, API, virtual machines
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 08/01/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.assetid: 
-ms.openlocfilehash: ba83dda06e7e8ee11f25a4324edc6f4cd90090c2
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter
+ms.openlocfilehash: 5b74cb5921318848bc70acad08880d73a0904d37
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="azure-virtual-machine-management-samples-for-net"></a>Примеры управления виртуальными машинами Azure для .NET
 

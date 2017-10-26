@@ -11,7 +11,7 @@
         - name: База данных SQL
           href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
         - name: "Cosmos\_DB"
-          href: 'https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnet-application'
+          href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
         - name: Service Fabric
           href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
     - name: Начало работы с .NET

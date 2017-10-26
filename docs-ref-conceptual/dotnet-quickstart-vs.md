@@ -11,13 +11,13 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.assetid: 
-ms.openlocfilehash: 1defed888972ae2f9d60d57bc34c518df9b5867c
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.openlocfilehash: eb7aa364cae9deea4ed2052eefdbd51c85379afa
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
-# <a name="get-started-with-net-for-azure-developers"></a>Руководство по началу работы .NET для разработчиков Azure
+# <a name="get-started-with-net-for-azure-developers"></a>Руководство по началу работы с .NET для разработчиков Azure
 
 Из этого руководства вы узнаете, как создать и развернуть приложение Microsoft Azure с помощью Visual Studio и .NET.  Вы создадите веб-приложение со списком дел на базе MVC ASP.NET Core, размещенное как веб-приложение Azure и использующее Azure CosmosDB для хранения данных.
 
@@ -74,7 +74,7 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 
 4. Нажмите клавишу **F5**, чтобы восстановить пакеты NuGet проекта, выполните сборку проекта и запустите его локально.
 
-Веб-приложение следует запускать локально в браузере.  Чтобы добавить новые элементы в список дел, нажмите кнопку **Создать**.  Обратите внимание, что данные, которые вы вводите в приложение, хранятся в учетной записи CosmosDB.  Вы можете [просмотреть данные на портале Azure](https://docs.microsoft.com/en-us/azure/documentdb/documentdb-view-json-document-explorer).
+Веб-приложение следует запускать локально в браузере.  Чтобы добавить новые элементы в список дел, нажмите кнопку **Создать**.  Обратите внимание, что данные, которые вы вводите в приложение, хранятся в учетной записи CosmosDB.  Вы можете [просмотреть данные на портале Azure](/azure/documentdb/documentdb-view-json-document-explorer).
 
 ## <a name="deploying-the-application-as-an-azure-web-app"></a>Развертывание приложения как веб-приложения Azure
 
@@ -92,7 +92,7 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
     * Введите уникальное **имя веб-приложения**.  Оно будет частью URL-адреса приложения.
     * Выберите **подписку** Azure, в которую вы развертываете приложение.  Используйте ту же подписку, с помощью которой вы вошли в Cloud Shell.
     * Выберите имя *DotNetAzureTutorial* для **группы ресурсов** веб-приложения.
-    * Выберите или создайте **план служб приложений**, чтобы определить цену приложения.  Дополнительные сведения см. в статье [Подробный обзор планов службы приложений Azure](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview).
+    * Выберите или создайте **план службы приложений**, чтобы определить цену приложения.  Дополнительные сведения см. в статье [Подробный обзор планов службы приложений Azure](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview).
 
 4. Нажмите кнопку **Создать**, чтобы развернуть приложение.  Когда развертывание завершится, браузер откроет развернутое приложение.
 

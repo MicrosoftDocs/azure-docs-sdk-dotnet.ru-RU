@@ -4,19 +4,19 @@ description: "Аутентификация в библиотеках Azure дл�
 keywords: Azure, .NET, SDK, API, authentication, active directory, service principal
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 06/20/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.assetid: 
-ms.openlocfilehash: 5bc1f4a576ae3bb38e9d29c890ea79bc0871cd01
-ms.sourcegitcommit: fa02d34afbf981f809661ab842b3b93242a38f68
+ms.custom: devcenter
+ms.openlocfilehash: c9755d7e9c20186c7677b4bfe69d4033f9852607
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="authenticate-with-the-azure-libraries-for-net"></a>Аутентификация с использованием библиотек Azure для .NET
 
@@ -53,7 +53,7 @@ var account = CloudStorageAccount.Parse(storageConnectionString);
 // Do things with the account here...
 ```
 
-Строки подключения службы используются в других службах Azure, например [CosmosDB](https://docs.microsoft.com/en-us/azure/documentdb/documentdb-dotnet-application#a-nametoc395637769astep-5-wiring-up-azure-cosmos-db), [кэш Redis](https://docs.microsoft.com/en-us/azure/redis-cache/cache-dotnet-how-to-use-azure-redis-cache) и [служебная шина](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues). Эти строки можно получить с помощью портала Azure, CLI или PowerShell.  Также с помощью библиотек управления Azure для .NET можно выполнять запросы к ресурсам для создания строк подключения в коде. 
+Строки подключения службы используются в других службах Azure, например [CosmosDB](/azure/documentdb/documentdb-dotnet-application#a-nametoc395637769astep-5-wiring-up-azure-cosmos-db), [кэш Redis](/azure/redis-cache/cache-dotnet-how-to-use-azure-redis-cache) и [служебная шина](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues). Эти строки можно получить с помощью портала Azure, CLI или PowerShell.  Также с помощью библиотек управления Azure для .NET можно выполнять запросы к ресурсам для создания строк подключения в коде. 
 
 В этом фрагменте кода используются библиотеки управления для создания строки подключения учетной записи хранения:
 

@@ -4,18 +4,19 @@ description: "Справочник по библиотекам Azure Service Fab
 keywords: Azure, .NET, SDK, API, Service Fabric
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 10/13/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: service-fabric
-ms.openlocfilehash: c15da57ef44663ad0463ba76ffa3b6832774240f
-ms.sourcegitcommit: a235826f194e938b094be3ed03d86f7e85bb4da6
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: f4b54933d31a4e1fc4c390baa57469cc1c02783a
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-service-fabric-libraries-for-net"></a>Библиотеки Azure Service Fabric для .NET
 
@@ -130,7 +131,7 @@ dotnet add package Microsoft.Azure.Management.ServiceFabric
 
 ## <a name="samples"></a>Примеры
 
-* [Развертывание и удаление приложений с помощью FabricClient](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-deploy-remove-applications-fabricclient)
+* [Развертывание и удаление приложений с помощью FabricClient](/azure/service-fabric/service-fabric-deploy-remove-applications-fabricclient)
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

@@ -4,19 +4,19 @@ description: "Получите пример кода для создания п�
 keywords: Azure, .NET, SDK, API, SQL, database
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/25/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.assetid: 
-ms.openlocfilehash: 2dd46b73aaee1451e429467d8103c952c827943c
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter
+ms.openlocfilehash: 7dcca216d9b5fc41f4f258534ba217234611fe41
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="sample-code-for-using-azure-databases-with-net"></a>Пример кода для использования баз данных Azure с .NET
 

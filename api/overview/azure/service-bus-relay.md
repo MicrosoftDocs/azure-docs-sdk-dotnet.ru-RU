@@ -4,18 +4,19 @@ description: "Справочник по библиотекам ретрансл�
 keywords: Azure, .NET, SDK, API, Service Bus Relay
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/14/2017
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: multiple
-ms.openlocfilehash: 13a875b837648a05401453e975c9cd70d5e203a1
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: service-bus
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: 1a869d5939e357c98ec417e6474f711b9ac8c466
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-service-bus-relay-libraries-for-net"></a>Библиотеки ретранслятора служебной шины Azure для .NET
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 08/28/2017
 
 Служба ретранслятора Azure помогает создавать гибридные приложения и позволяет безопасно предоставлять в общедоступном облаке службы, используемые в корпоративной сети предприятия. Для этого вам не нужно открывать подключения брандмауэра или вносить значительные изменения в инфраструктуру корпоративной сети. Ретранслятор поддерживает множество различных транспортных протоколов и стандартов веб-служб.
           
-См. дополнительные сведения о [ретрансляторе Azure](https://docs.microsoft.com/en-us/azure/service-bus-relay/relay-what-is-it).
+См. дополнительные сведения о [ретрансляторе Azure](/azure/service-bus-relay/relay-what-is-it).
 
 ## <a name="client-library"></a>Клиентская библиотека
 
@@ -47,4 +48,4 @@ dotnet add package Microsoft.Azure.Relay
 Ознакомьтесь с другими [примерами кода .NET](https://azure.microsoft.com/resources/samples/?platform=dotnet), которые можно использовать в приложениях.
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
