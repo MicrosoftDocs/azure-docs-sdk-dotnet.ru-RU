@@ -4,18 +4,19 @@ description: "Справочник по библиотекам Azure Key Vault �
 keywords: Azure, .NET, SDK, API, Key Vault
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/21/2017
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: multiple
-ms.openlocfilehash: 77a4e710e858bbeb98579a7b540b52b4cb9dd7b0
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: key-vault
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: 3b8bcb9135794592f493db679e60fd40116d05e6
+ms.sourcegitcommit: 4114b8821f20e02f4185fcea7549d716f29b9c90
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/24/2017
 ---
 # <a name="azure-key-vault-libraries-for-net"></a>Библиотеки Azure Key Vault для .NET
 
@@ -106,4 +107,4 @@ using (KeyVaultManagementClient client = new KeyVaultManagementClient(
 Ознакомьтесь с другими [примерами кода .NET](https://azure.microsoft.com/resources/samples/?platform=dotnet), которые можно использовать в приложениях.
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
