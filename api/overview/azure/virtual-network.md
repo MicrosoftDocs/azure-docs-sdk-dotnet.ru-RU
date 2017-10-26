@@ -4,42 +4,43 @@ description: "Справочник по библиотекам виртуаль�
 keywords: Azure, .NET, SDK, API, Virtual Network
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 08/01/2017
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: multiple
-ms.openlocfilehash: ea605dbd632ef4deb9c97c8de3474246dd4be30d
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: virtual-network
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: b67415344ef9cbf8af598a1fd43b6b47023bb071
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
-# <a name="azure-virtual-network-libraries-for-net"></a><span data-ttu-id="94ab5-104">Библиотеки виртуальной сети Azure для .NET</span><span class="sxs-lookup"><span data-stu-id="94ab5-104">Azure Virtual Network libraries for .NET</span></span>
+# <a name="azure-virtual-network-libraries-for-net"></a><span data-ttu-id="77db5-104">Библиотеки виртуальной сети Azure для .NET</span><span class="sxs-lookup"><span data-stu-id="77db5-104">Azure Virtual Network libraries for .NET</span></span>
 
-## <a name="overview"></a><span data-ttu-id="94ab5-105">Обзор</span><span class="sxs-lookup"><span data-stu-id="94ab5-105">Overview</span></span>
-<span data-ttu-id="94ab5-106">Служба [Виртуальная сеть Azure](/azure/virtual-network/virtual-networks-overview) позволяет безопасно подключать ресурсы Azure между собой с помощью виртуальных сетей.</span><span class="sxs-lookup"><span data-stu-id="94ab5-106">The [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) service enables you to securely connect Azure resources to each other with virtual networks (VNets).</span></span> <span data-ttu-id="94ab5-107">Виртуальная сеть — это представление вашей собственной сети в облаке.</span><span class="sxs-lookup"><span data-stu-id="94ab5-107">A VNet is a representation of your own network in the cloud.</span></span> <span data-ttu-id="94ab5-108">Виртуальные сети также можно подключать между собой. Таким образом ресурсы в этих виртуальных сетях смогут взаимодействовать.</span><span class="sxs-lookup"><span data-stu-id="94ab5-108">You can also connect VNets to each other, enabling resources connected to either VNet to communicate with each other.</span></span> 
+## <a name="overview"></a><span data-ttu-id="77db5-105">Обзор</span><span class="sxs-lookup"><span data-stu-id="77db5-105">Overview</span></span>
+<span data-ttu-id="77db5-106">Служба [Виртуальная сеть Azure](/azure/virtual-network/virtual-networks-overview) позволяет безопасно подключать ресурсы Azure между собой с помощью виртуальных сетей.</span><span class="sxs-lookup"><span data-stu-id="77db5-106">The [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) service enables you to securely connect Azure resources to each other with virtual networks (VNets).</span></span> <span data-ttu-id="77db5-107">Виртуальная сеть — это представление вашей собственной сети в облаке.</span><span class="sxs-lookup"><span data-stu-id="77db5-107">A VNet is a representation of your own network in the cloud.</span></span> <span data-ttu-id="77db5-108">Виртуальные сети также можно подключать между собой. Таким образом ресурсы в этих виртуальных сетях смогут взаимодействовать.</span><span class="sxs-lookup"><span data-stu-id="77db5-108">You can also connect VNets to each other, enabling resources connected to either VNet to communicate with each other.</span></span> 
 
-## <a name="management-library"></a><span data-ttu-id="94ab5-109">Библиотека управления</span><span class="sxs-lookup"><span data-stu-id="94ab5-109">Management library</span></span>
+## <a name="management-library"></a><span data-ttu-id="77db5-109">Библиотека управления</span><span class="sxs-lookup"><span data-stu-id="77db5-109">Management library</span></span>
 
-<span data-ttu-id="94ab5-110">Установите [пакет NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) непосредственно из [консоли диспетчера пакетов][PackageManager] Visual Studio или с помощью [.NET Core CLI][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="94ab5-110">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+<span data-ttu-id="77db5-110">Установите [пакет NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) непосредственно из [консоли диспетчера пакетов][PackageManager] Visual Studio или с помощью [.NET Core CLI][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="77db5-110">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="94ab5-111">Диспетчер пакетов Visual Studio</span><span class="sxs-lookup"><span data-stu-id="94ab5-111">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="77db5-111">Диспетчер пакетов Visual Studio</span><span class="sxs-lookup"><span data-stu-id="77db5-111">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.Management.Network.Fluent
 ```
 
-#### <a name="net-core-cli"></a><span data-ttu-id="94ab5-112">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="94ab5-112">.NET Core CLI</span></span>
+#### <a name="net-core-cli"></a><span data-ttu-id="77db5-112">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="77db5-112">.NET Core CLI</span></span>
 
 ```bash
 dotnet add package Microsoft.Azure.Management.Network.Fluent
 ```
 
-### <a name="code-example"></a><span data-ttu-id="94ab5-113">Пример кода</span><span class="sxs-lookup"><span data-stu-id="94ab5-113">Code Example</span></span>
-<span data-ttu-id="94ab5-114">В этом примере показано, как создать виртуальную сеть.</span><span class="sxs-lookup"><span data-stu-id="94ab5-114">This example shows how you can create a virtual network.</span></span>
+### <a name="code-example"></a><span data-ttu-id="77db5-113">Пример кода</span><span class="sxs-lookup"><span data-stu-id="77db5-113">Code Example</span></span>
+<span data-ttu-id="77db5-114">В этом примере показано, как создать виртуальную сеть.</span><span class="sxs-lookup"><span data-stu-id="77db5-114">This example shows how you can create a virtual network.</span></span>
 
 ```csharp
 /* 
@@ -85,12 +86,12 @@ using (NetworkManagementClient client = new NetworkManagementClient(credentials)
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="94ab5-115">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="94ab5-115">Explore the management APIs</span></span>](/dotnet/api/overview/azure/network/management)
+> [<span data-ttu-id="77db5-115">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="77db5-115">Explore the management APIs</span></span>](/dotnet/api/overview/azure/network/management)
 
-## <a name="samples"></a><span data-ttu-id="94ab5-116">Примеры</span><span class="sxs-lookup"><span data-stu-id="94ab5-116">Samples</span></span>
-- [<span data-ttu-id="94ab5-117">Getting Started with Network - Manage Virtual Network - in .Net</span><span class="sxs-lookup"><span data-stu-id="94ab5-117">Managing Virtual Networks with subnets</span></span>](https://github.com/Azure-Samples/network-dotnet-manage-virtual-network) (Начало работы с сетью: управление виртуальной сетью — .Net)
+## <a name="samples"></a><span data-ttu-id="77db5-116">Примеры</span><span class="sxs-lookup"><span data-stu-id="77db5-116">Samples</span></span>
+- <span data-ttu-id="77db5-117">[Getting Started with Network - Manage Virtual Network - in .Net](https://github.com/Azure-Samples/network-dotnet-manage-virtual-network) (Начало работы с сетью: управление виртуальной сетью — .Net)</span><span class="sxs-lookup"><span data-stu-id="77db5-117">[Managing Virtual Networks with subnets](https://github.com/Azure-Samples/network-dotnet-manage-virtual-network)</span></span>
 
-<span data-ttu-id="94ab5-118">Ознакомьтесь с другими [примерами кода .NET](https://azure.microsoft.com/resources/samples/?platform=dotnet), которые можно использовать в приложениях.</span><span class="sxs-lookup"><span data-stu-id="94ab5-118">Explore more [.NET sample code](https://azure.microsoft.com/resources/samples/?platform=dotnet) that you can use in your apps.</span></span>
+<span data-ttu-id="77db5-118">Ознакомьтесь с другими [примерами кода .NET](https://azure.microsoft.com/resources/samples/?platform=dotnet), которые можно использовать в приложениях.</span><span class="sxs-lookup"><span data-stu-id="77db5-118">Explore more [.NET sample code](https://azure.microsoft.com/resources/samples/?platform=dotnet) that you can use in your apps.</span></span>
 
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console 
