@@ -77,6 +77,10 @@ sections:
               src: 'https://docs.microsoft.com/en-us/azure/media/index/fabric.svg'
             title: Создание приложения .NET для микрослужб с помощью Service Fabric
             href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_vs-team-services.svg'
+            title: Создание конвейера непрерывной интеграции или непрерывного развертывания для .NET
+            href: 'https://docs.microsoft.com/vsts/build-release/apps/cd/azure/azure-devops-project-aspnetcore'
   - title: Начало работы с .NET в Azure
     items:
       - type: markdown
