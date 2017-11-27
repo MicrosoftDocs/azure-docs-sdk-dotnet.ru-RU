@@ -5,18 +5,18 @@ keywords: Azure, .NET, SDK, API, CosmosDB
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 11/17/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: cosmos-db
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 890c00caeca06bf863425c7159d7833c4db8df38
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 9f29e53e7f202e48ade12e28f08487bbacd2833c
+ms.sourcegitcommit: 9cc5f8da9e9a15ba07fd67fe8b9a2d4ee6b57c73
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="azure-cosmosdb-libraries-for-net"></a>Библиотеки Azure CosmosDB для .NET
 
@@ -24,9 +24,11 @@ ms.lasthandoff: 10/26/2017
 
 [Azure CosmosDB](https://docs.microsoft.com/azure/cosmos-db/introduction) — это распределенное и масштабируемое хранилище данных, которое поддерживает несколько типов баз данных.
 
+[Начало работы с Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet).
+
 ## <a name="client-library"></a>Клиентская библиотека
 
-Клиентская библиотека CosmosDB .NET используется для осуществления доступа к данным и их хранения в хранилище CosmosDB.
+Клиентская библиотека Cosmos DB .NET используется для осуществления доступа к данным и их хранения в существующем хранилище Cosmos DB.  Создайте учетную запись Cosmos DB автоматически с помощью портала Azure, интерфейса командной строки или PowerShell.
 
 Установите [пакет NuGet](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core) непосредственно из [консоли диспетчера пакетов][PackageManager] Visual Studio или с помощью [.NET Core CLI][DotNetCLI].
 
@@ -44,7 +46,7 @@ dotnet add package Microsoft.Azure.DocumentDB.Core
 
 ### <a name="code-example"></a>Пример кода
 
-В этом примере устанавливается подключение к существующей базе данных API DocumentDB в CosmosDB, затем документ из коллекции считывается и десериализируется как объект `Item`.
+В этом примере устанавливается подключение к существующей базе данных API DocumentDB в CosmosDB, затем документ из коллекции считывается и десериализируется как объект `Item`.   
 
 ```csharp
 /* Include this "using" directive...
@@ -53,8 +55,7 @@ using Microsoft.Azure.Documents.Client;
 
 DocumentClient client = new DocumentClient(endpointUri, authKeyString);
 Uri documentUri = UriFactory.CreateDocumentUri("MyDatabaseName", "MyCollectionName", "DocumentId");
-// "Item" is a class defined elsewhere...
-Item item = client.ReadDocumentAsync<Item>(documentUri).ToString()).Result;
+SomeClass myObject = client.ReadDocumentAsync<SomeClass>(documentUri).ToString()).Result;
 ```
 
 > [!div class="nextstepaction"]
