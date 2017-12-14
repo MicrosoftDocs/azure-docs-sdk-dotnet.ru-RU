@@ -2,20 +2,20 @@
 title: "Выбор правильного размещения в Azure"
 description: "Узнайте, какой способ переноса в Azure подходит для вашего веб-приложения ASP.NET."
 keywords: Azure .NET, ASP.NET, App Service, VM, virtual machine, Web App, migrate, migration
-author: camsoper
+author: CESARDELATORRE
 manager: wpickett
-ms.author: casoper
+ms.author: cesardl
 ms.date: 11/15/2017
 ms.topic: article
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 01c321e164901253286add632f2301260245245b
-ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
+ms.custom: devcenter, casoper
+ms.openlocfilehash: dbf54bb1a6e3d612ef8363a6b30e06b388b4490f
+ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="choose-the-right-azure-hosting-option"></a>Выбор правильного размещения в Azure
 
