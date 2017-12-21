@@ -6,20 +6,34 @@ author: camsoper
 manager: wpickett
 ms.author: casoper
 ms.date: 11/15/2017
-ms.topic: article
+layout: LandingPage
+ms.topic: landing-page
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: virtual-machines
 ms.custom: devcenter
-ms.openlocfilehash: 718d91b98180a7584f78a2383d430c4700743306
-ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
+ms.openlocfilehash: 98f24553961793623f8a6aba10dcf45b930101fe
+ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>Перенос веб-приложения ASP.NET на виртуальную машину Azure
 
 В этом документе приводятся общие сведения о том, как перенести веб-приложение ASP.NET из локальной среды на виртуальную машину Azure.
+
+## <a name="quickstart"></a>Быстрый запуск
+
+Узнайте, как создать виртуальную машину и опубликовать на ней приложение:
+
+<div class="ico48Case">
+    <div class="ico48Link">
+        <a href="https://tutorials.visualstudio.com/aspnet-vm/intro">
+            <img width="48" height="48" alt="Publish to an Azure VM" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+            <span>Публикация на виртуальной машине Azure</span>
+        </a>
+    </div>
+</div>
 
 ## <a name="get-started"></a>Начало работы
 
@@ -45,9 +59,9 @@ ms.lasthandoff: 11/15/2017
 
 ### <a name="maintenance"></a>Обслуживание, 
 
-Как и с локальными компьютерами, вы несете ответственность за обслуживание и обновление виртуальной машины<sup>&#42;</sup>.  Если приложение может выполняться в среде PaaS (платформа как услуга), например в [службе приложений Azure](https://docs.microsoft.com/azure/app-service/) или в [контейнере](https://docs.microsoft.com/azure/app-service/containers/), то необходимость в обслуживании устраняется.
+Как и в случае с локальными компьютерами, вы несете ответственность за обслуживание и обновление виртуальной машины <sup>&#42;</sup>.  Если приложение может выполняться в среде PaaS (платформа как услуга), например в [службе приложений Azure](https://docs.microsoft.com/azure/app-service/) или в [контейнере](https://docs.microsoft.com/azure/app-service/containers/), то необходимость в обслуживании устраняется.
 
-*<sup>&#42;</sup>[Автоматическое обновление ОС для масштабируемых наборов виртуальных машин](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade) сейчас доступно в виде предварительной версии.*
+*<sup>&#42;</sup>[Автоматическое обновление ОС для масштабируемых наборов виртуальных машин](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade) сейчас доступно в виде службы в предварительной версии.*
 
 ### <a name="virtual-networks"></a>Виртуальные сети
 
