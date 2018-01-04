@@ -14,6 +14,8 @@
           href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
         - name: Service Fabric
           href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
+        - name: Хранилище BLOB-объектов
+          href: 'https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet'
     - name: Начало работы с .NET
       href: dotnet-sdk-azure-get-started.md
     - name: Средства
@@ -47,11 +49,11 @@
               href: dotnet-howto-migrate-to-vm.md
             - name: Перенос базы данных SQL Server в Azure
               href: dotnet-howto-migrate-sql.md
-        - name: Аутентификация
+        - name: Authentication
           href: dotnet-sdk-azure-authenticate.md
         - name: Использование текучих API-интерфейсов
           href: dotnet-sdk-azure-concepts.md
-        - name: Развернуть
+        - name: Развертывание
           items:
             - name: Развертывание с помощью Visual Studio
               href: dotnet-quickstart-vs.md
