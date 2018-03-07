@@ -10,8 +10,8 @@
           href: 'https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio'
         - name: База данных SQL
           href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
-        - name: "Cosmos\_DB"
-          href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
+        - name: База данных Cosmos
+          href: 'https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet'
         - name: Service Fabric
           href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
         - name: Хранилище BLOB-объектов
@@ -25,7 +25,7 @@
       items:
         - name: Создание веб-приложения ASP.NET в Azure с подключением к базе данных SQL
           href: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
-        - name: Создание веб-приложения ASP.NET с использованием CosmosDB
+        - name: Создание веб-приложения ASP.NET с использованием Cosmos DB
           href: /azure/documentdb/documentdb-dotnet-application
         - name: Создание и развертывание веб-API
           href: /azure/app-service-api/app-service-api-dotnet-get-started
@@ -35,8 +35,8 @@
           href: /azure/sql-database/sql-database-connect-query-dotnet
         - name: Подключение и отправка запросов к PostgreSQL
           href: /azure/postgresql/connect-csharp
-        - name: Начало работы с API DocumentDB CosmosDB
-          href: /azure/cosmos-db/documentdb-dotnetcore-get-started
+        - name: Начало работы с API SQL Cosmos DB
+          href: /azure/cosmos-db/sql-api-get-started
     - name: Практическое руководство
       items:
         - name: Миграция
