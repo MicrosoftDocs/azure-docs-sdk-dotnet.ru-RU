@@ -79,6 +79,8 @@
           href: dotnet-tutorials-services-monitoring.md
     - name: Примеры кода для .NET
       items:
+        - name: Фотоальбом — веб-приложения и служба хранилища
+          href: 'https://azure.microsoft.com/resources/samples/storage-blobs-dotnet-webapp/'
         - name: Веб-приложения
           href: dotnet-sdk-azure-web-apps-samples.md
         - name: Базы данных

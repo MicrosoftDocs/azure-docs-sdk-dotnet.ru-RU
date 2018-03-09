@@ -11,24 +11,45 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: sql-database
 ms.custom: devcenter
-ms.openlocfilehash: 967f034fcd2c2487f6a5709d243ce25fc9b6e85e
-ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
+ms.openlocfilehash: d118d39e2168686c851f0daa6cb611f0a0c9d2fc
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="migrate-a-sql-server-database-to-azure"></a>Перенос базы данных SQL Server в Azure
+## <a name="migrate-a-sql-server-database-to-azure"></a>Перенос базы данных SQL Server в Azure
+
+В этой статье предоставлен краткий обзор двух вариантов миграции базы данных SQL Server в Azure.
 
 В Azure доступны два основных варианта переноса рабочей базы данных SQL Server:
 
-1. [SQL Server на виртуальных машинах Azure.](https://azure.microsoft.com/services/virtual-machines/sql-server/) Экземпляр SQL Server, установленный и размещенный на виртуальной машине в Azure. Также называется "инфраструктура как услуга" (IaaS).
-2. [База данных SQL Azure.](https://azure.microsoft.com/services/sql-database/) Полностью управляемая служба базы данных SQL в Azure. Также называется "платформа как услуга" (PaaS).
+1. [SQL Server на виртуальных машинах Azure.](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) Экземпляр SQL Server, установленный и размещенный на виртуальной машине в Azure. Также называется "инфраструктура как услуга" (IaaS).
+2. [База данных SQL Azure.](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) Полностью управляемая служба базы данных SQL в Azure. Также называется "платформа как услуга" (PaaS).
 
 Оба варианта имеют свои преимущества и недостатки, которые вы должны оценить перед переносом.
 
+## <a name="get-started"></a>Начало работы
+
+В зависимости от службы, которую вы используете, вам пригодятся следующие руководства по миграции:
+
+* [Миграция базы данных SQL Server в экземпляр SQL Server на виртуальной машине Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)
+* [Перенос базы данных SQL Server в базу данных SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-migrate-your-sql-server-database)
+
+Следующие статьи содержат основные принципы работы виртуальных машин:
+
+* [Высокий уровень доступности и аварийное восстановление для SQL Server на виртуальных машинах Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-high-availability-dr)
+* [Рекомендации по оптимизации производительности SQL Server на виртуальных машинах Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance)
+* [Шаблоны приложений и стратегии разработки для SQL Server на виртуальных машинах Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-app-patterns-dev-strategies)
+
+Следующие статьи содержат дополнительные сведения о Базе данных SQL Azure.
+
+* [Создание серверов базы данных SQL Azure и баз данных SQL Azure и управление ими](https://docs.microsoft.com/azure/sql-database/sql-database-servers-databases)
+* [Единицы транзакций базы данных (DTU) и единицы транзакций эластичной базы данных (eDTU)](https://docs.microsoft.com/azure/sql-database/sql-database-what-is-a-dtu)
+* [Ограничения ресурсов базы данных SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-resource-limits)
+
 ## <a name="choosing-iaas-or-paas"></a>Выбор IaaS или PaaS
 
-Сначала определите, какой из вариантов вам больше подходит: IaaS или PaaS.
+Когда вы решаете, куда перенести базу данных, вам нужно выбрать между IaaS и PaaS.
 
 **Выбирайте SQL Server на виртуальных машинах Azure при следующих условиях:**
 
@@ -44,7 +65,7 @@ ms.lasthandoff: 11/15/2017
 
 В следующей таблице описаны различия между службами на примере набора сценариев.
 
-| Сценарий | SQL Server на виртуальных машинах Azure | База данных SQL Azure |
+| Сценарий | SQL Server на виртуальных машинах Azure | Базы данных SQL Azure |
 |----------|-------------------------|--------------------|
 | Миграция | Требуются минимальные изменения в базе данных. | Могут потребоваться изменения в базе данных, если [помощник по миграции данных](https://www.microsoft.com/download/details.aspx?id=53595) определил, что вы используете недоступные в Azure SQL компоненты. Или при наличии других зависимостей, например локально установленных исполняемых файлов.|
 | Управление доступностью, восстановлением и обновлениями | Доступность и восстановление настраиваются вручную. Обновления можно автоматизировать с помощью [масштабируемых наборов виртуальных машин](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade). | Автоматическое управление. |
@@ -52,26 +73,7 @@ ms.lasthandoff: 11/15/2017
 | Управление размером базы данных | Поддерживает до 64 ТБ хранилища на экземпляр SQL Server. | Поддерживает 4 ТБ хранилища, прежде чем понадобится горизонтальное секционирование. |
 | Управление затратами | Необходимо управлять затратами на лицензию SQL Server, лицензию Windows Server и виртуальную машину (с учетом ядер, ОЗУ и объема хранилища). | Необходимо управлять затратами на обслуживание (на основе [единиц eDTU или DTU](https://docs.microsoft.com/azure/sql-database/sql-database-what-is-a-dtu), объема хранилища и количества баз данных, если используется эластичный пул).  Необходимо контролировать стоимость всех соглашений об уровне обслуживания. |
 
-Дополнительные сведения о различиях между двумя вариантами см. в статье о [выборе между базой данных SQL Azure (PaaS) или SQL Server на виртуальных машинах Azure (IaaS)](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas).
-
-## <a name="get-started"></a>Начало работы
-
-Следующим шагом является перенос базы данных.  Ниже приведены полезные руководства по переносу для каждого варианта.
-
-* [Миграция базы данных SQL Server в экземпляр SQL Server на виртуальной машине Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)
-* [Перенос базы данных SQL Server в базу данных SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-migrate-your-sql-server-database)
-
-Следующие статьи помогут лучше понять, как работают виртуальные машины.
-
-* [Высокий уровень доступности и аварийное восстановление для SQL Server на виртуальных машинах Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-high-availability-dr)
-* [Рекомендации по оптимизации производительности SQL Server на виртуальных машинах Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance)
-* [Шаблоны приложений и стратегии разработки для SQL Server на виртуальных машинах Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-app-patterns-dev-strategies)
-
-Следующие статьи содержат дополнительные сведения о Базе данных SQL Azure.
-
-* [Создание серверов базы данных SQL Azure и баз данных SQL Azure и управление ими](https://docs.microsoft.com/azure/sql-database/sql-database-servers-databases)
-* [Единицы транзакций базы данных (DTU) и единицы транзакций эластичной базы данных (eDTU)](https://docs.microsoft.com/azure/sql-database/sql-database-what-is-a-dtu)
-* [Ограничения ресурсов базы данных SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-resource-limits)
+Дополнительные сведения о различиях между двумя вариантами см. в статье о [выборе между базой данных SQL Azure или SQL Server на виртуальных машинах Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas).
 
 ## <a name="faq"></a>Часто задаваемые вопросы
 
@@ -86,8 +88,8 @@ ms.lasthandoff: 11/15/2017
 * **Можно ли оценить затраты?**
 
     Да.  [Калькулятор цен Azure](https://azure.microsoft.com/pricing/calculator/) поможет рассчитать стоимость всех служб Azure, в том числе виртуальных машин и служб баз данных.
-
-## <a name="next-steps"></a>Дальнейшие действия
+    
+## <a name="next-steps"></a>Дополнительная информация
 
 > [!div class="nextstepaction"]
 > [Выбор правильного размещения в Azure](dotnet-howto-choose-migration.md)
