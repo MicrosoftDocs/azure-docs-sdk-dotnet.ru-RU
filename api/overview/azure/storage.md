@@ -12,17 +12,17 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: storage
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: f9928736fa024258bcf19ba5ad91f0a328aa05a8
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 8f6e0414b54698d0a1dbe3d4c074456a6ad7b7be
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="azure-storage-apis-for-net"></a>API-интерфейсы хранилища Azure для .NET
 
 ## <a name="overview"></a>Обзор
 
-Выполняйте чтение и запись файлов, данных блочных BLOB-объектов, пар "ключ-значение" и сообщений в приложениях .NET с помощью [службы хранилища Azure](https://review.docs.microsoft.com/en-us/azure/storage/storage-introduction).
+Выполняйте чтение и запись файлов, данных блочных BLOB-объектов, пар "ключ-значение" и сообщений в приложениях .NET с помощью [службы хранилища Azure](https://review.docs.microsoft.com/azure/storage/storage-introduction).
 
 Чтобы начать работу со службой хранилища Azure см. статью [Приступая к работе с хранилищем BLOB-объектов Azure с помощью .NET](/azure/storage/storage-dotnet-how-to-use-blobs).
 

@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: virtual-machines
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: d3bad2e94ec8b08bad2a014fb25d400625a3590d
-ms.sourcegitcommit: 2d08f2815fa7fab55e09d294fc4d74897df7951d
+ms.openlocfilehash: cac6dde85a7b0db2c98d0888cb0ee5c60ee31836
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="azure-virtual-machine-libraries-for-net"></a>Библиотеки виртуальных машин Azure для .NET
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 11/07/2017
 
 Выполняемые по запросу масштабируемые вычислительные ресурсы под управлением Windows или Linux.
 
-Чтобы приступить к работе с виртуальными машинами Azure, см. инструкции по [созданию виртуальной машины Linux на портале Azure](https://review.docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal).
+Чтобы приступить к работе с виртуальными машинами Azure, см. инструкции по [созданию виртуальной машины Linux на портале Azure](https://review.docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal).
 
 ## <a name="management-apis"></a>API управления
 
@@ -69,14 +69,14 @@ IVirtualMachine windowsVM = azure.VirtualMachines.Define("MyVirtualMachine")
 ```
 
 > [!div class="nextstepaction"]
-> [Обзор API-интерфейсов управления](https://docs.microsoft.com/en-us/dotnet/api/overview/azure/virtualmachines/management?view=azure-dotnet)
+> [Обзор API-интерфейсов управления](https://docs.microsoft.com/dotnet/api/overview/azure/virtualmachines/management?view=azure-dotnet)
 
 ### <a name="samples"></a>Примеры
 
 * [Azure virtual machine management samples for .NET](/dotnet/azure/dotnet-sdk-azure-virtual-machine-samples) (Примеры управления виртуальными машинами Azure для .NET)
-* [Deploy an SSH Enabled VM with a Template with .NET](https://azure.microsoft.com/en-us/resources/samples/resource-manager-dotnet-template-deployment/) (Развертывание виртуальной машины с включенным протоколом SSH на основе шаблона с помощью .NET)
+* [Deploy an SSH Enabled VM with a Template with .NET](https://azure.microsoft.com/resources/samples/resource-manager-dotnet-template-deployment/) (Развертывание виртуальной машины с включенным протоколом SSH на основе шаблона с помощью .NET)
 
-Просмотрите [полный список](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=VM) примеров для виртуальных машин.
+Просмотрите [полный список](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=VM) примеров для виртуальных машин.
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

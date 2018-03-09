@@ -7,16 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 9a67edadc6e91d2ead82f41601e561809d6a811c
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: b817216e114e5ab3ff22c1c5adb0f892c7874147
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="azure-management-library-for-net-fluent-concepts"></a>Библиотека управления Azure для .NET: принципы использования текучего интерфейса
 
@@ -74,14 +73,14 @@ foreach(var vm in vmList)
 |--------|---------------|
 | Создание | `azure.VirtualMachines.Create(listOfVMCreatables)` |
 | Применить  | `virtualMachineScaleSet.Update().WithCapacity(6).Apply()` |
-| Удалить | `azure.Disks.DeleteById(id)` | 
+| Delete | `azure.Disks.DeleteById(id)` | 
 | список   | `azure.SqlServers.List()` | 
 | Получить    | `var vm  = azure.VirtualMachines.GetByResourceGroup(group, vmName)` |
 
 >[!NOTE]
 > `Define()` и `Update()` являются командами, но они не блокируют выполнение, если не сопровождаются `Create()` или `Apply()`.
  
-Определенные объекты ресурсов содержат команды, которые изменяют состояние ресурса в Azure. Например:
+Определенные объекты ресурсов содержат команды, которые изменяют состояние ресурса в Azure. Например: 
 
 ```csharp
 var vmToRestart = azure.VirtualMachines.GetById(id);

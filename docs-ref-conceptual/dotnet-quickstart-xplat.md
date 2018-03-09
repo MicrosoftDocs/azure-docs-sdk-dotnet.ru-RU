@@ -10,18 +10,17 @@ ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.assetid: 
-ms.openlocfilehash: 2ed69bfed7310c9e6b2f3f8fedb906ce33d87c3c
-ms.sourcegitcommit: c630918c9e17f5e3c6d4f28fe740c041f60b1e66
+ms.openlocfilehash: bb5d4958fb4398192d8427391695da1a7b8cc3c8
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>Развертывание приложения в Azure из командной строки с помощью .NET Core
 
 Из этого руководства вы узнаете, как создать и развернуть приложение Microsoft Azure с помощью .NET Core.  Вы создадите веб-приложение со списком дел на базе MVC ASP.NET Core, размещенное как веб-приложение Azure и использующее Azure CosmosDB для хранения данных.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительным требованиям
 
 * [Подписка Microsoft Azure](https://azure.microsoft.com/free/).
 * [.NET Core](https://www.microsoft.com/net/download/core) (необязательно).
@@ -138,7 +137,7 @@ az webapp show -n $webappname -g DotNetAzureTutorial --query defaultHostName -o 
 az group delete -n DotNetAzureTutorial
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дополнительная информация
 
 * [Вход в веб-приложение ASP.NET и выход из него с помощью Azure AD](/azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet)
 * [Создание веб-приложения ASP.NET в Azure](/azure/app-service-web/web-sites-dotnet-get-started)

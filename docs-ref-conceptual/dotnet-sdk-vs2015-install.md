@@ -7,16 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 05241c8044e5826675afbd2d6d9bb69d48d15c65
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 5046781a16b5b330b95c4ad36e8a8187126fef4e
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="azure-tools-for-visual-studio-2015"></a>Средства Azure для Visual Studio 2015
 
@@ -42,6 +41,6 @@ ms.lasthandoff: 10/23/2017
 
     ![Расширения и обновления](media\dotnet-sdk-vs2015-install\ext-tools.png)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дополнительная информация
 
 [Начало работы с API Azure для .NET](dotnet-sdk-azure-get-started.md).

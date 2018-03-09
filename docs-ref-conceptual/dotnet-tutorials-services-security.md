@@ -6,16 +6,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 0cd530ef5f70778571e2f702aebc4a8b43c40e93
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: f7f71e15dcd58473a61cfdf163a10dbc5f4f8d80
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="tutorials-for-authenticating-users-in-your-net-apps-running-on-azure"></a>Руководства по аутентификации пользователей в приложениях .NET, которые выполняются в Azure.
 

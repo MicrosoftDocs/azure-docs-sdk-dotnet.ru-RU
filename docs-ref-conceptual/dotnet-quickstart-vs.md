@@ -10,18 +10,17 @@ ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.assetid: 
-ms.openlocfilehash: 0f8e3e5ea1ef5cde239b2d8ebbc9fe75dd978cb1
-ms.sourcegitcommit: c630918c9e17f5e3c6d4f28fe740c041f60b1e66
+ms.openlocfilehash: d5c34dfc7e649e00e8ef458537f3f76410db61d4
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="deploy-to-azure-from-visual-studio"></a>Развертывание в Azure из Visual Studio
 
 Из этого руководства вы узнаете, как создать и развернуть приложение Microsoft Azure с помощью Visual Studio и .NET.  Вы создадите веб-приложение со списком дел на базе MVC ASP.NET Core, размещенное как веб-приложение Azure и использующее Azure CosmosDB для хранения данных.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительным требованиям
 
 * [Visual Studio 2017](https://www.visualstudio.com/downloads/)
 * [Подписка Microsoft Azure](https://azure.microsoft.com/free/).
@@ -106,7 +105,7 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 az group delete -n DotNetAzureTutorial
 ```
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дополнительная информация
 
 * [Вход в веб-приложение ASP.NET и выход из него с помощью Azure AD](/azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet)
 * [Создание веб-приложения ASP.NET в Azure](/azure/app-service-web/web-sites-dotnet-get-started)
