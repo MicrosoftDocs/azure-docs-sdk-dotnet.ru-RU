@@ -1,6 +1,6 @@
 ---
-title: "Руководства по .NET для AI и Cognitive Services в Azure | Документация Майкрософт"
-description: "Добавьте AI и Cognitive Services в приложения .NET с помощью служб Microsoft Azure."
+title: Руководства по .NET для AI и Cognitive Services в Azure | Документация Майкрософт
+description: Добавьте AI и Cognitive Services в приложения .NET с помощью служб Microsoft Azure.
 author: camsoper
 ms.author: casoper
 manager: wpickett

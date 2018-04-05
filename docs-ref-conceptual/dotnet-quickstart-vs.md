@@ -1,6 +1,6 @@
 ---
-title: "Развертывание в Azure из Visual Studio"
-description: "Из этого руководства вы узнаете, как создать и развернуть приложение Microsoft Azure с помощью Visual Studio и .NET."
+title: Развертывание в Azure из Visual Studio
+description: Из этого руководства вы узнаете, как создать и развернуть приложение Microsoft Azure с помощью Visual Studio и .NET.
 keywords: Azure .NET, SDK, Azure .NET API Reference, Azure .NET class library
 author: camsoper
 manager: douge

@@ -1,6 +1,6 @@
 ---
-title: "Пример кода для использования баз данных Azure с .NET"
-description: "Получите пример кода для создания приложений, использующих базы данных Azure, с помощью .NET."
+title: Пример кода для использования баз данных Azure с .NET
+description: Получите пример кода для создания приложений, использующих базы данных Azure, с помощью .NET.
 keywords: Azure, .NET, SDK, API, SQL, database
 author: camsoper
 ms.author: casoper

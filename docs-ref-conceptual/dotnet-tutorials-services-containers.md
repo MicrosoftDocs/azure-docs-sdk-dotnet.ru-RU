@@ -1,6 +1,6 @@
 ---
-title: "Руководства по .NET для развертывания контейнеров в Azure"
-description: "Развертывание приложений .NET в контейнерах Docker в Azure и их масштабирование при помощи DC/OS, Mesos или Kubernetes."
+title: Руководства по .NET для развертывания контейнеров в Azure
+description: Развертывание приложений .NET в контейнерах Docker в Azure и их масштабирование при помощи DC/OS, Mesos или Kubernetes.
 author: camsoper
 ms.author: casoper
 manager: wpickett

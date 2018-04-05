@@ -1,6 +1,6 @@
 ---
-title: "API-интерфейсы хранилища Azure для .NET"
-description: "Справочник по библиотекам службы хранилища Azure для .NET"
+title: API-интерфейсы хранилища Azure для .NET
+description: Справочник по библиотекам службы хранилища Azure для .NET
 keywords: Azure, .NET, SDK, API, storage, blob
 author: camsoper
 ms.author: casoper

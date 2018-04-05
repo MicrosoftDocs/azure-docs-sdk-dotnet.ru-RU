@@ -1,6 +1,6 @@
 ---
-title: "Примеры инструкций для библиотек управления Azure для .NET"
-description: "Получите пример кода для создания и обновления ресурсов с помощью библиотек управления Azure для .NET."
+title: Примеры инструкций для библиотек управления Azure для .NET
+description: Получите пример кода для создания и обновления ресурсов с помощью библиотек управления Azure для .NET.
 keywords: Azure, .NET, SDK, API, sample, example
 author: camsoper
 ms.author: casoper

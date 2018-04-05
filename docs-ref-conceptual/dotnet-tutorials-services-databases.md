@@ -1,6 +1,6 @@
 ---
-title: "Руководства по использованию .NET с базами данных Azure"
-description: "Руководства по подключению к базам данных Azure и их использованию в приложениях .NET."
+title: Руководства по использованию .NET с базами данных Azure
+description: Руководства по подключению к базам данных Azure и их использованию в приложениях .NET.
 author: camsoper
 ms.author: casoper
 manager: wpickett

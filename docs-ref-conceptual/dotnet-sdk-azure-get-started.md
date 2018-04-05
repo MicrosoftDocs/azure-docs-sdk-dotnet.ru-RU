@@ -1,6 +1,6 @@
 ---
-title: "Начало работы с API Azure для .NET"
-description: "Базовое использование библиотек Azure для .NET с подпиской Azure."
+title: Начало работы с API Azure для .NET
+description: Базовое использование библиотек Azure для .NET с подпиской Azure.
 keywords: Azure, .NET, SDK, API ,authenticate, get-started
 author: camsoper
 ms.author: casoper

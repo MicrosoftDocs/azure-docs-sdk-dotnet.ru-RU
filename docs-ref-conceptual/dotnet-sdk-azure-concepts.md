@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки управления Azure для .NET: принципы использования и шаблоны"
-description: 
+title: 'Библиотеки управления Azure для .NET: принципы использования и шаблоны'
+description: ''
 keywords: Azure, .NET, SDK, API, patterns, concepts, fluent, logging
 author: camsoper
 ms.author: casoper

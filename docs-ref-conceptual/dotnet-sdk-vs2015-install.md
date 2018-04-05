@@ -1,6 +1,6 @@
 ---
-title: "Средства Azure для Visual Studio 2015"
-description: "Получите средства для использования библиотек Azure для .NET в Visual Studio 2015."
+title: Средства Azure для Visual Studio 2015
+description: Получите средства для использования библиотек Azure для .NET в Visual Studio 2015.
 keywords: Azure .NET, SDK, VS2015, Visual Studio 2015
 author: camsoper
 ms.author: casoper
