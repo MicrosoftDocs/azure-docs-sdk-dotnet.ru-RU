@@ -1,6 +1,6 @@
 ---
-title: "Средства для разработчиков Azure .NET"
-description: "Получите средства для использования библиотек Azure для .NET в среде Windows, Mac или Linux."
+title: Средства для разработчиков Azure .NET
+description: Получите средства для использования библиотек Azure для .NET в среде Windows, Mac или Linux.
 keywords: Azure .NET, SDK, Azure .NET API Reference, Azure .NET class library
 author: camsoper
 ms.author: casoper

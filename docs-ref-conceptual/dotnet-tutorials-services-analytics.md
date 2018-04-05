@@ -1,6 +1,6 @@
 ---
-title: "Руководства по .NET для анализа данных в Azure | Документация Майкрософт"
-description: "Разработка приложений для анализа данных с использованием служб Microsoft Azure."
+title: Руководства по .NET для анализа данных в Azure | Документация Майкрософт
+description: Разработка приложений для анализа данных с использованием служб Microsoft Azure.
 author: camsoper
 ms.author: casoper
 manager: wpickett

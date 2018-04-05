@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки Azure CosmosDB для .NET"
-description: "Справочник по библиотекам Azure CosmosDB для .NET"
+title: Библиотеки Azure CosmosDB для .NET
+description: Справочник по библиотекам Azure CosmosDB для .NET
 keywords: Azure, .NET, SDK, API, CosmosDB
 author: camsoper
 ms.author: casoper

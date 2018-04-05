@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки вычисления Azure для .NET"
-description: "Справочник по библиотекам вычисления Azure для .NET"
+title: Библиотеки вычисления Azure для .NET
+description: Справочник по библиотекам вычисления Azure для .NET
 keywords: Azure, .NET, SDK, API, VM, virtual machines, compute
 author: camsoper
 ms.author: casoper

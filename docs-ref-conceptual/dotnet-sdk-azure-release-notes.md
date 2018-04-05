@@ -1,6 +1,6 @@
 ---
-title: "Заметки о выпуске библиотек управления Azure для .NET | Документация Майкрософт"
-description: "Узнайте о новых возможностях и критически важных изменениях в библиотеках управления Azure для .NET."
+title: Заметки о выпуске библиотек управления Azure для .NET | Документация Майкрософт
+description: Узнайте о новых возможностях и критически важных изменениях в библиотеках управления Azure для .NET.
 keywords: Azure, .NET, API, reference, notes,  updates, deprecate
 author: camsoper
 ms.author: casoper

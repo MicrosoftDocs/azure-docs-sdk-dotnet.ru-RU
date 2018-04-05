@@ -1,6 +1,6 @@
 ---
-title: "Аутентификация с использованием библиотек Azure для .NET"
-description: "Аутентификация в библиотеках Azure для .NET"
+title: Аутентификация с использованием библиотек Azure для .NET
+description: Аутентификация в библиотеках Azure для .NET
 keywords: Azure, .NET, SDK, API, authentication, active directory, service principal
 author: camsoper
 ms.author: casoper

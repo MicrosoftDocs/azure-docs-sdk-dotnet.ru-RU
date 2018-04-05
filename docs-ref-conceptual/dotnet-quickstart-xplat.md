@@ -1,6 +1,6 @@
 ---
-title: "Развертывание приложения в Azure из командной строки с помощью .NET Core"
-description: "В этой статье описывается развертывание приложения ASP.NET Core в службе приложений Azure с помощью программы командной строки."
+title: Развертывание приложения в Azure из командной строки с помощью .NET Core
+description: В этой статье описывается развертывание приложения ASP.NET Core в службе приложений Azure с помощью программы командной строки.
 keywords: Azure .NET, SDK, Azure .NET API Reference, Azure .NET class library
 author: camsoper
 manager: douge
