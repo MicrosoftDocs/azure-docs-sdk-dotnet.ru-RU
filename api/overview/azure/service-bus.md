@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки служебной шины Azure для .NET"
-description: "Справочник по библиотекам служебной Azure шины для .NET"
+title: Библиотеки служебной шины Azure для .NET
+description: Справочник по библиотекам служебной Azure шины для .NET
 keywords: Azure, .NET, SDK, API, Service Bus
 author: camsoper
 ms.author: casoper
@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: service-bus
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: c2019fd39f42f9bc4a39dd4e642db9f90b7a917c
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: f2795a123a7b92237b0aea672298ce9339fd0830
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="azure-service-bus-libraries-for-net"></a>Библиотеки служебной шины Azure для .NET
 
@@ -26,12 +26,12 @@ ms.lasthandoff: 10/23/2017
 
 ## <a name="client-library"></a>Клиентская библиотека
 
-Установите [пакет NuGet](https://www.nuget.org/packages/WindowsAzure.ServiceBus) непосредственно из [консоли диспетчера пакетов][PackageManager].
+Установите [пакет NuGet](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus) непосредственно из [консоли диспетчера пакетов][PackageManager].
 
 #### <a name="visual-studio-package-manager"></a>Диспетчер пакетов Visual Studio
 
 ```powershell
-Install-Package WindowsAzure.ServiceBus
+Install-Package Microsoft.Azure.ServiceBus
 ```
 
 ### <a name="code-example"></a>Пример кода
@@ -39,11 +39,13 @@ Install-Package WindowsAzure.ServiceBus
 В этом примере в очередь служебной шины отправляется сообщение.
 
 ```csharp
-// using Microsoft.ServiceBus.Messaging;
+// using Microsoft.Azure.ServiceBus;
+// Microsoft.Azure.ServiceBus 2.0.0 (stable)
 
-QueueClient client = QueueClient.CreateFromConnectionString(connectionString, queueName);
-BrokeredMessage message = new BrokeredMessage("This is a test message!");
-client.Send(message);
+byte[] messageBody = System.Text.Encoding.Unicode.GetBytes("Hello, world!");
+ServiceBusConnectionStringBuilder builder = new ServiceBusConnectionStringBuilder(connectionString);
+QueueClient client = new QueueClient(builder, ReceiveMode.PeekLock);
+client.SendAsync(new Message(messageBody));
 ```
 
 > [!div class="nextstepaction"]

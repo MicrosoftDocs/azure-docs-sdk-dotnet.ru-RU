@@ -11,11 +11,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 19008714ee38ae00195b08c05fee5bf943da759f
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 48ff29507268f6b38acb24217801cf7b0227e444
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="release-notes"></a>Заметки о выпуске 
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 03/05/2018
     <td>Другие службы</td>
     <td>Диспетчер ресурсов<br>хранилище ключей;<br>Redis<br>CDN<br>пакетная служба;</td>
     <td valign="top">Служба приложений — веб-приложения<br>Functions<br>Служебная шина</td>
-    <td valign="top">Мониторинг<br>RBAC графа<br>DocumentDB<br>Планировщик</td>
+    <td valign="top">Мониторинг<br>RBAC графа<br>Azure Cosmos DB<br>Планировщик</td>
   </tr>
   <tr>
     <td>Основы</td>

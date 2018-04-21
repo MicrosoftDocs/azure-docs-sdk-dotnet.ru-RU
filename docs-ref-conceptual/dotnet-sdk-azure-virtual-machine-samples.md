@@ -1,35 +1,8 @@
 ---
-title: Пример кода, который иллюстрирует управление виртуальными машинами Azure с использованием .NET.
-description: Получите пример кода для создания и обновления виртуальных машин Azure с использованием .NET.
-keywords: Azure, .NET, SDK, API, virtual machines
-author: camsoper
-ms.author: casoper
-manager: wpickett
-ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: abfb17626520c71e9da13403ffb149613f144419
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+redirect_url: /dotnet/azure/dotnet-samples
+ms.openlocfilehash: 4e44e92c6e04b0de20d5e78b519b833085c1c78b
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/14/2018
 ---
-# <a name="azure-virtual-machine-management-samples-for-net"></a>Примеры управления виртуальными машинами Azure для .NET
-
-В этой статье представлены ссылки на источник, который можно использовать для создания и настройки виртуальных машин Azure.
-
-## <a name="manage-virtual-machines"></a>Управление виртуальными машинами
-
-Создание, изменение, запуск, остановка и удаление виртуальных машин.
-
-* [Getting Started with Managed - Create Virtual Machine Using Custom Image From V H D - in .Net](https://github.com/Azure-Samples/managed-disk-dotnet-create-virtual-machine-using-custom-image-from-VHD) (Начало работы с управляемыми виртуальными машинами: создание виртуальной машины с использованием пользовательского образа на основе VHD — .Net)
-* [Getting Started with Managed - Create Virtual Machine Using Specialized Disk From Snapshot - in .Net](https://github.com/Azure-Samples/managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot) (Начало работы с управляемыми виртуальными машинами: создание виртуальной машины с использованием специализированного VHD на основе моментального снимка — .Net)
-* [Getting Started with Compute - Manage Virtual Machines In Parallel With Network - in .Net](https://github.com/Azure-Samples/compute-dotnet-manage-virtual-machines-with-network-in-parallel) (Начало работы с вычислительными ресурсами: управление виртуальными машинами при помощи сети в параллельном режиме — .Net)
-* [Getting Started with Compute - Create Virtual Machines In Parallel - in .Net](https://github.com/Azure-Samples/compute-dotnet-create-virtual-machines-across-regions-in-parallel) (Начало работы с вычислительными ресурсами: создание виртуальных машин в параллельном режиме — .Net)
-* [Getting Started with Network - Manage Virtual Network - in .Net](https://github.com/Azure-Samples/network-dotnet-manage-virtual-network) (Начало работы с сетью: управление виртуальной сетью — .Net)
-* [Getting Started with Compute - Manage Virtual Machine Scale Set - in .Net](https://github.com/Azure-Samples/compute-dotnet-manage-virtual-machine-scale-sets) (Начало работы с вычислительными ресурсами: управление набором масштабирования виртуальной машины — .Net)
-
-[!include[More samples](includes/more-samples.md)]
