@@ -10,24 +10,24 @@ ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.openlocfilehash: d5c34dfc7e649e00e8ef458537f3f76410db61d4
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 87f65d8b8b1b1a5184b9d71770c08be472c7e498
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="deploy-to-azure-from-visual-studio"></a>Развертывание в Azure из Visual Studio
 
-Из этого руководства вы узнаете, как создать и развернуть приложение Microsoft Azure с помощью Visual Studio и .NET.  Вы создадите веб-приложение со списком дел на базе MVC ASP.NET Core, размещенное как веб-приложение Azure и использующее Azure CosmosDB для хранения данных.
+Из этого руководства вы узнаете, как создать и развернуть приложение Microsoft Azure с помощью Visual Studio и .NET.  Вы создадите веб-приложение со списком дел на базе MVC ASP.NET Core, размещенное как веб-приложение Azure и использующее Azure Cosmos DB для хранения данных.
 
 ## <a name="prerequisites"></a>предварительным требованиям
 
 * [Visual Studio 2017](https://www.visualstudio.com/downloads/)
 * [Подписка Microsoft Azure](https://azure.microsoft.com/free/).
 
-## <a name="create-a-cosmosdb-account"></a>Создание учетной записи CosmosDB
+## <a name="create-an-azure-cosmos-db-account"></a>создание учетной записи Azure Cosmos DB;
 
-CosmosDB используется для хранения данных приложения, которое вы создадите в этом руководстве, поэтому необходимо создать учетную запись.  Запустите этот скрипт локально или в Cloud Shell, чтобы создать учетную запись API Azure CosmosDB DocumentDB.  Нажмите кнопку **Попробовать** на блоке кода ниже, чтобы запустить [Azure Cloud Shell](/azure/cloud-shell/). Затем скопируйте и вставьте блок скрипта в оболочку.
+Azure Cosmos DB используется для хранения данных приложения, которое вы создадите в этом руководстве, поэтому вам необходимо создать учетную запись.  Запустите этот скрипт локально или в Cloud Shell, чтобы создать учетную запись API SQL для Azure Cosmos DB.  Нажмите кнопку **Попробовать** на блоке кода ниже, чтобы запустить [Azure Cloud Shell](/azure/cloud-shell/). Затем скопируйте и вставьте блок скрипта в оболочку.
 
 ```azurecli-interactive
 # Create the DotNetAzureTutorial resource group
@@ -37,7 +37,7 @@ az group create --name DotNetAzureTutorial --location EastUS
 let randomNum=$RANDOM*$RANDOM
 cosmosdbname=dotnettutorial$randomNum
 
-# Create the CosmosDB account
+# Create the Azure Cosmos DB account
 az cosmosdb create --name $cosmosdbname --resource-group DotNetAzureTutorial
 
 # Retrieve the endpoint and key (you'll need these later)
@@ -53,7 +53,7 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 
 ## <a name="downloading-and-running-the-application"></a>Загрузка и запуск приложения
 
-Вам нужно получить пример кода для этого пошагового руководства и подключить его к учетной записи CosmosDB.
+Для этого руководства вам нужно получить пример кода и подключить его к учетной записи Azure Cosmos DB.
 
 1. Скачайте пример кода.  Вы можете [получить его в GitHub](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/) или, если у вас есть [клиент командной строки git](https://git-scm.com/), клонировать на локальный компьютер с помощью следующей команды:
 
@@ -73,11 +73,11 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 
 4. Нажмите клавишу **F5**, чтобы восстановить пакеты NuGet проекта, выполните сборку проекта и запустите его локально.
 
-Веб-приложение следует запускать локально в браузере.  Чтобы добавить новые элементы в список дел, нажмите кнопку **Создать**.  Обратите внимание, что данные, которые вы вводите в приложение, хранятся в учетной записи CosmosDB.  Вы можете [просмотреть данные на портале Azure](/azure/documentdb/documentdb-view-json-document-explorer).
+Веб-приложение следует запускать локально в браузере.  Чтобы добавить новые элементы в список дел, нажмите кнопку **Создать**.  Обратите внимание, что данные, которые вы вводите в приложение, хранятся в учетной записи Azure Cosmos DB.  Просмотреть свои данные можно на [портале Azure](https://portal.azure.com). Для этого на портале в меню слева выберите Azure Cosmos DB, щелкните свою учетную запись и выберите пункт **Обозреватель данных**.
 
 ## <a name="deploying-the-application-as-an-azure-web-app"></a>Развертывание приложения как веб-приложения Azure
 
-Вы создали приложение, которое использует такие службы Azure, как DocumentDB.  Теперь вы развернете веб-приложение в облаке.
+Вы успешно создали приложение, которое использует такие службы Azure, как Azure Cosmos DB.  Теперь вы развернете веб-приложение в облаке.
 
 > [!IMPORTANT]
 > Войдите в Visual Studio, используя учетную запись, с которой связана ваша подписка Azure.
@@ -99,7 +99,7 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 
 ## <a name="clean-up"></a>Очистка
 
-Когда вы завершите тестировать приложение, а также проверять код и ресурсы, можно удалить веб-приложение и учетную запись CosmosDB. Для этого удалите соответствующую группу ресурсов в Cloud Shell.
+Когда вы завершите тестировать приложение, а также проверять код и ресурсы, веб-приложение и учетную запись Azure Cosmos DB можно будет удалить. Для этого в Cloud Shell нужно удалить соответствующую группу ресурсов.
 
 ```azurecli-interactive
 az group delete -n DotNetAzureTutorial
