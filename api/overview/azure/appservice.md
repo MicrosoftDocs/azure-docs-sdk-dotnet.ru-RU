@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки службы приложений Azure для .NET"
-description: "Справочник по библиотекам службы приложений Azure для .NET"
+title: Библиотеки службы приложений Azure для .NET
+description: Справочник по библиотекам службы приложений Azure для .NET
 keywords: Azure, .NET, SDK, API, web apps, app service, mobile, asp.net
 author: camsoper
 ms.author: casoper

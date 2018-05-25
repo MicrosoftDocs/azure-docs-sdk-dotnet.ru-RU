@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки Azure Data Lake Analytics для .NET"
-description: "Справочник по библиотекам Azure Data Lake Analytics для .NET"
+title: Библиотеки Azure Data Lake Analytics для .NET
+description: Справочник по библиотекам Azure Data Lake Analytics для .NET
 keywords: Azure, .NET, SDK, API, Data Lake Analytics
 author: camsoper
 ms.author: casoper

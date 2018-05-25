@@ -78,14 +78,4 @@
         - name: Мониторинг и управление
           href: dotnet-tutorials-services-monitoring.md
     - name: Примеры кода для .NET
-      items:
-        - name: Фотоальбом — веб-приложения и служба хранилища
-          href: 'https://azure.microsoft.com/resources/samples/storage-blobs-dotnet-webapp/'
-        - name: Веб-приложения
-          href: dotnet-sdk-azure-web-apps-samples.md
-        - name: Базы данных
-          href: dotnet-sdk-azure-sql-database-samples.md
-        - name: Виртуальные машины
-          href: dotnet-sdk-azure-virtual-machine-samples.md
-        - name: Все примеры для .NET
-          href: 'https://azure.microsoft.com/resources/samples/?platform=dotnet'
+      href: dotnet-samples.md

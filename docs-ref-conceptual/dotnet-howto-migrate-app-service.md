@@ -1,6 +1,6 @@
 ---
-title: "Перенос веб-приложения ASP.NET в службу приложений Azure"
-description: "Узнайте, как перенести веб-приложение ASP.NET из локальной среды в службу приложений Azure."
+title: Перенос веб-приложения ASP.NET в службу приложений Azure
+description: Узнайте, как перенести веб-приложение ASP.NET из локальной среды в службу приложений Azure.
 keywords: Azure .NET, ASP.NET, App Service, Web App, migrate, migration
 author: camsoper
 manager: wpickett

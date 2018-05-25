@@ -1,6 +1,6 @@
 ---
 title: API Azure .NET
-description: "Общие сведения об API Azure для .NET"
+description: Общие сведения об API Azure для .NET
 keywords: Azure, .NET, SDK, API, NuGet, libraries, packages
 author: camsoper
 ms.author: casoper
