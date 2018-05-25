@@ -1,6 +1,6 @@
 ---
-title: Примеры кода Azure для .NET
-description: Примеры кода для .NET и Azure.
+title: Примеры кода C# для .NET
+description: Примеры кода C# для .NET и Azure.
 layout: LandingPage
 ms.topic: reference
 author: camsoper
@@ -11,14 +11,15 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 85d792859a345cd4e4101aa88a2dcce68bc791b0
-ms.sourcegitcommit: 7b6128836d7657af2be53dcf40c1841cd8fda957
+ms.openlocfilehash: 2952f2999ae53100d35d90f44bfcc6c9df696b00
+ms.sourcegitcommit: 7d88aef45df03d9a2be5b9ac5c9f1f146462427b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
-# <a name="azure-code-samples-for-net"></a>Примеры кода Azure для .NET
-Ниже приведены примеры кода и руководства, с которых мы рекомендуем начать изучение использования .NET в Azure.
+# <a name="azure-c-code-samples-for-net"></a>Примеры кода C# для .NET
+
+Ниже приведены примеры кода и руководства, с которых мы рекомендуем начать изучение использования C# и .NET в Azure.
 
 <div id="main" class="v2">
     <div class="container">
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/26/2018
                                 </div>
                                 <div class="cardText">
                                     <h3>Простой веб-сайт</h3>
-                                    <p>Узнайте, как создать простой веб-сайт, который может хранить сведения в серверной части SQL.</p>
+                                    <p>Узнайте, как создать простой веб-сайт ASP.NET Core, который хранит сведения в серверной части SQL.</p>
                                 </div>
                             </div>
                         </a>
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
             <li>
                 <div class="cardSize">
                     <div class="cardPadding">
-                        <a href="https://docs.microsoft.com/azure/azure-functions/functions-create-github-webhook-triggered-function">
+                        <a href="https://github.com/JeremyLikness/ShortLink">
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage bgdAccent1">
@@ -53,8 +54,8 @@ ms.lasthandoff: 04/26/2018
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Активация событий из GitHub</h3>
-                                    <p>Узнайте, как активировать события с помощью действий GitHub, используя Функции Azure и веб-перехватчики.</p>
+                                    <h3>Средство сокращения URL-адресов</h3>
+                                    <p>Узнайте, как активировать действия с помощью бессерверной службы "Функции Azure".</p>
                                 </div>
                             </div>
                         </a>
@@ -73,7 +74,7 @@ ms.lasthandoff: 04/26/2018
                                 </div>
                                 <div class="cardText">
                                     <h3>Фотоальбом</h3>
-                                    <p>Узнайте, как создать веб-страницу, на которой пользователи смогут передавать изображения в облако, с использованием веб-приложений Azure и хранилища BLOB-объектов Azure.</p>
+                                    <p>Узнайте, как отправлять, скачивать и получать доступ к файлам изображений из облака с использованием хранилища BLOB-объектов Azure.</p>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +84,7 @@ ms.lasthandoff: 04/26/2018
             <li>
                 <div class="cardSize">
                     <div class="cardPadding">
-                        <a href="https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-app">
+                        <a href="https://github.com/Azure-Samples/service-fabric-dotnet-quickstart">
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage bgdAccent1">
@@ -92,7 +93,7 @@ ms.lasthandoff: 04/26/2018
                                 </div>
                                 <div class="cardText">
                                     <h3>Приложение для голосования</h3>
-                                    <p>Узнайте, как создать простое приложение для голосования с использованием Kubernetes и контейнеров Docker.</p>
+                                    <p>Узнайте, как создавать надежные микрослужбы в распределенном приложении с помощью Azure Service Fabric.</p>
                                 </div>
                             </div>
                         </a>
@@ -129,8 +130,8 @@ ms.lasthandoff: 04/26/2018
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Знакомство с Cosmos DB</h3>
-                                    <p>Изучите основные возможности Cosmos DB на примере работы с .NET Core и Mongo.</p>
+                                    <h3>Облачная база данных</h3>
+                                    <p>Узнайте, как выполнять обычный поиск, а также создавать и редактировать записи в современных облачных базах данных, используя Cosmos DB.</p>
                                 </div>
                             </div>
                         </a>
