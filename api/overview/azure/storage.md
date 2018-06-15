@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29728355"
 ---
 # <a name="azure-storage-apis-for-net"></a>API-интерфейсы хранилища Azure для .NET
 
