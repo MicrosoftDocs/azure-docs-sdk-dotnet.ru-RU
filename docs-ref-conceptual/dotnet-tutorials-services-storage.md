@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752736"
 ---
 # <a name="tutorials-for-working-with-storage-in-your-net-apps-on-azure"></a><span data-ttu-id="3d7d2-103">Руководства по работе с хранилищем в приложениях .NET в Azure.</span><span class="sxs-lookup"><span data-stu-id="3d7d2-103">Tutorials for working with storage in your .NET apps on Azure.</span></span>
 

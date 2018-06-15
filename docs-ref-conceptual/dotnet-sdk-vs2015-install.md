@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752816"
 ---
 # <a name="azure-tools-for-visual-studio-2015"></a><span data-ttu-id="e8cab-104">Средства Azure для Visual Studio 2015</span><span class="sxs-lookup"><span data-stu-id="e8cab-104">Azure tools for Visual Studio 2015</span></span>
 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752866"
 ---
 # <a name="azure-management-library-for-net-fluent-concepts"></a><span data-ttu-id="802e5-103">Библиотека управления Azure для .NET: принципы использования текучего интерфейса</span><span class="sxs-lookup"><span data-stu-id="802e5-103">Azure management library for .NET fluent concepts</span></span>
 
