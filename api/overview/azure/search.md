@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки службы \"Поиск Azure\" для .NET"
-description: "Справочник по библиотекам службы \"Поиск Azure\" для .NET"
+title: Библиотеки службы "Поиск Azure" для .NET
+description: Справочник по библиотекам службы "Поиск Azure" для .NET
 keywords: Azure, .NET, SDK, API, Search
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566305"
 ---
 # <a name="azure-search-libraries-for-net"></a><span data-ttu-id="fcded-104">Библиотеки службы "Поиск Azure" для .NET</span><span class="sxs-lookup"><span data-stu-id="fcded-104">Azure Search libraries for .NET</span></span>
 

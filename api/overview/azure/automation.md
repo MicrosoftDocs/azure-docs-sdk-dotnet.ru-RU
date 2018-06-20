@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки службы автоматизации Azure для .NET"
-description: "Справочник по библиотекам службы автоматизации Azure для .NET"
+title: Библиотеки службы автоматизации Azure для .NET
+description: Справочник по библиотекам службы автоматизации Azure для .NET
 keywords: Azure, .NET, SDK, API, Automation
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23486697"
 ---
 # <a name="azure-automation-libraries-for-net"></a><span data-ttu-id="78659-104">Библиотеки службы автоматизации Azure для .NET</span><span class="sxs-lookup"><span data-stu-id="78659-104">Azure Automation libraries for .NET</span></span>
 

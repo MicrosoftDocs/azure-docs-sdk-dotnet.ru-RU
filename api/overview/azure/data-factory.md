@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки фабрики данных Azure для .NET"
-description: "Справочник по библиотекам фабрики данных Azure для .NET"
+title: Библиотеки фабрики данных Azure для .NET
+description: Справочник по библиотекам фабрики данных Azure для .NET
 keywords: Azure, .NET, SDK, API, Data Factory
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487147"
 ---
 # <a name="azure-data-factory-libraries-for-net"></a><span data-ttu-id="4702a-104">Библиотеки фабрики данных Azure для .NET</span><span class="sxs-lookup"><span data-stu-id="4702a-104">Azure Data Factory libraries for .NET</span></span>
 

@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки Azure CDN для .NET"
-description: "Справочник по библиотекам Azure CDN для .NET"
+title: Библиотеки Azure CDN для .NET
+description: Справочник по библиотекам Azure CDN для .NET
 keywords: Azure, .NET, SDK, API, CDN
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566335"
 ---
 # <a name="azure-cdn-libraries-for-net"></a><span data-ttu-id="77ca2-104">Библиотеки Azure CDN для .NET</span><span class="sxs-lookup"><span data-stu-id="77ca2-104">Azure CDN libraries for .NET</span></span>
 

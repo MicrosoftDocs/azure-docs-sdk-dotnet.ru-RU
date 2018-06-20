@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки служб резервного копирования и восстановления Azure для .NET"
-description: "Справочник по библиотекам служб резервного копирования и восстановления Azure для .NET"
+title: Библиотеки служб резервного копирования и восстановления Azure для .NET
+description: Справочник по библиотекам служб резервного копирования и восстановления Azure для .NET
 keywords: Azure, .NET, SDK, API, Recovery Services, Backup
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566115"
 ---
 # <a name="azure-recovery-services-and-backup-libraries-for-net"></a><span data-ttu-id="90bb4-104">Библиотеки служб резервного копирования и восстановления Azure для .NET</span><span class="sxs-lookup"><span data-stu-id="90bb4-104">Azure Recovery Services and Backup libraries for .NET</span></span>
 

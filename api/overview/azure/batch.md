@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки пакетной службы Azure для .NET"
-description: "Справочник по библиотекам пакетной службы для .NET"
+title: Библиотеки пакетной службы Azure для .NET
+description: Справочник по библиотекам пакетной службы для .NET
 keywords: Azure, .NET, SDK, API, Batch
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487267"
 ---
 # <a name="azure-batch-libraries-for-net"></a><span data-ttu-id="0c655-104">Библиотеки пакетной службы Azure для .NET</span><span class="sxs-lookup"><span data-stu-id="0c655-104">Azure Batch libraries for .NET</span></span>
 

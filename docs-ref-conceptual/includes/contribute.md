@@ -1,3 +1,3 @@
-## <a name="get-help-and-give-feedback"></a>Справка и отзывы
+## <a name="get-help-and-give-feedback"></a><span data-ttu-id="23f7e-101">Справка и отзывы</span><span class="sxs-lookup"><span data-stu-id="23f7e-101">Get help and give feedback</span></span>
 
-Задавайте вопросы сообществу на сайте [Stack Overflow](http://stackoverflow.com/questions/tagged/azure-sdk-.net) и описывайте проблемы с использованием пакета SDK на сайте [проекта GitHub](https://github.com/Azure/azure-sdk-for-net).
+<span data-ttu-id="23f7e-102">Задавайте вопросы сообществу на сайте [Stack Overflow](http://stackoverflow.com/questions/tagged/azure-sdk-.net) и описывайте проблемы с использованием пакета SDK на сайте [проекта GitHub](https://github.com/Azure/azure-sdk-for-net).</span><span class="sxs-lookup"><span data-stu-id="23f7e-102">Post questions to the community on [Stack Overflow](http://stackoverflow.com/questions/tagged/azure-sdk-.net) and open issues against the SDK on the [project GitHub](https://github.com/Azure/azure-sdk-for-net).</span></span>

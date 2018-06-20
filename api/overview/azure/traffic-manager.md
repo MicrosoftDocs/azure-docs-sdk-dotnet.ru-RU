@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки диспетчера трафика Azure для .NET"
-description: "Справочник по библиотекам диспетчера трафика Azure для .NET"
+title: Библиотеки диспетчера трафика Azure для .NET
+description: Справочник по библиотекам диспетчера трафика Azure для .NET
 keywords: Azure, .NET, SDK, API, Traffic Manager
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566106"
 ---
 # <a name="azure-traffic-manager-libraries-for-net"></a><span data-ttu-id="fbb73-104">Библиотеки диспетчера трафика Azure для .NET</span><span class="sxs-lookup"><span data-stu-id="fbb73-104">Azure Traffic Manager libraries for .NET</span></span>
 

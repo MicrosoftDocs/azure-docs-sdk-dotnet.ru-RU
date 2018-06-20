@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки базы данных Azure для MySQL для .NET"
-description: "Справочная документация по клиентским библиотекам .NET для базы данных Azure для MySQL"
+title: Библиотеки базы данных Azure для MySQL для .NET
+description: Справочная документация по клиентским библиотекам .NET для базы данных Azure для MySQL
 keywords: Azure, .NET, SDK, API, SQL, database, MySQL
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566055"
 ---
 # <a name="azure-database-for-mysql-libraries-for-net"></a><span data-ttu-id="fc00b-104">Библиотеки базы данных Azure для MySQL для .NET</span><span class="sxs-lookup"><span data-stu-id="fc00b-104">Azure Database for MySQL libraries for .NET</span></span>
 

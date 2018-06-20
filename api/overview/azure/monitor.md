@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки Azure Monitor для .NET"
-description: "Справочник по библиотекам Azure Monitor для .NET"
+title: Библиотеки Azure Monitor для .NET
+description: Справочник по библиотекам Azure Monitor для .NET
 keywords: Azure, .NET, SDK, API, Monitor
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 64c9e16e42894e8db8ed088487e55c5e0edd6861
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/31/2017
+ms.locfileid: "23639642"
 ---
 # <a name="azure-monitor-libraries-for-net"></a><span data-ttu-id="bb522-104">Библиотеки Azure Monitor для .NET</span><span class="sxs-lookup"><span data-stu-id="bb522-104">Azure Monitor libraries for .NET</span></span>
 

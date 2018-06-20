@@ -17,6 +17,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005941"
 ---
 # <a name="azure-service-bus-libraries-for-net"></a><span data-ttu-id="36f83-104">Библиотеки служебной шины Azure для .NET</span><span class="sxs-lookup"><span data-stu-id="36f83-104">Azure Service Bus libraries for .NET</span></span>
 

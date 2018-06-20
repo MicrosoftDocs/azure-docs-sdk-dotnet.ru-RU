@@ -1,6 +1,6 @@
 ---
-title: "API-интерфейсы базы данных Azure SQL для .NET"
-description: "Справочник по библиотекам базы данных SQL Azure для .NET"
+title: API-интерфейсы базы данных Azure SQL для .NET
+description: Справочник по библиотекам базы данных SQL Azure для .NET
 keywords: Azure, .NET, SDK, API, SQL, SQL Database
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/15/2017
+ms.locfileid: "24533109"
 ---
 # <a name="azure-sql-database-apis-for-net"></a><span data-ttu-id="d3b90-104">API-интерфейсы базы данных Azure SQL для .NET</span><span class="sxs-lookup"><span data-stu-id="d3b90-104">Azure SQL Database APIs for .NET</span></span>
 

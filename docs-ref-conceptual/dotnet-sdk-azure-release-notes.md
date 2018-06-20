@@ -16,6 +16,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005911"
 ---
 # <a name="release-notes"></a><span data-ttu-id="f4e81-104">Заметки о выпуске</span><span class="sxs-lookup"><span data-stu-id="f4e81-104">Release Notes</span></span> 
 
