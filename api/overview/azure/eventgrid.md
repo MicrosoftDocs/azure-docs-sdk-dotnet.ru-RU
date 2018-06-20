@@ -16,6 +16,7 @@ ms.sourcegitcommit: 9f54e3334fc35c1066d0c591ff85b16d46416aa8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33802751"
 ---
 # <a name="azure-event-grid-libraries-for-net"></a>Библиотеки службы "Сетка событий Azure" для .NET
 

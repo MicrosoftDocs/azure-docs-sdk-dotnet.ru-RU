@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки выставления счетов Azure для .NET"
-description: "Справочник по библиотекам выставления счетов для .NET"
+title: Библиотеки выставления счетов Azure для .NET
+description: Справочник по библиотекам выставления счетов для .NET
 keywords: Azure, .NET, SDK, API, Billing
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566085"
 ---
 # <a name="azure-billing-libraries-for-net"></a>Библиотеки выставления счетов Azure для .NET
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 4c42de7e066b6aa0a5b5df02cce4d1d245aa558d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31447641"
 ---
 # <a name="azure-notification-hubs-libraries-for-net"></a>Библиотеки Центров уведомлений Azure для .NET
 

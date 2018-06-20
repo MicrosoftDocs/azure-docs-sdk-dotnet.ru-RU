@@ -1,6 +1,6 @@
 ---
-title: "Перенос веб-приложения ASP.NET на виртуальную машину Azure"
-description: "Узнайте, как перенести веб-приложение ASP.NET из локальной среды на виртуальную машину Azure."
+title: Перенос веб-приложения ASP.NET на виртуальную машину Azure
+description: Узнайте, как перенести веб-приложение ASP.NET из локальной среды на виртуальную машину Azure.
 keywords: Azure .NET, ASP.NET, VM, virtual machine, migrate, migration
 author: camsoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/09/2017
+ms.locfileid: "26588487"
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>Перенос веб-приложения ASP.NET на виртуальную машину Azure
 
