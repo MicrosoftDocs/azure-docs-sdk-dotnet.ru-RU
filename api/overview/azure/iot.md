@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: iot-hub
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 0fa4121becd0d5bd646077a9644a651903c43348
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: af823e910acedd4f204034b12a31ba61fd53e090
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487487"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065274"
 ---
 # <a name="azure-iot-libraries-for-net"></a>Библиотеки Azure IoT для .NET
 
@@ -36,7 +34,7 @@ ms.locfileid: "23487487"
 
 ## <a name="client-library"></a>Клиентская библиотека
 
-Используйте клиент для устройств IoT для .NET, чтобы подключаться к Центру Интернета вещей и отправлять сообщения в него.
+Используйте клиент для устройств Интернета вещей для .NET, чтобы подключаться к Центру Интернета вещей и отправлять сообщения в него.
 
 Установите [пакет NuGet]( https://www.nuget.org/packages/Microsoft.Azure.Devices.Client) непосредственно из [консоли диспетчера пакетов][PackageManager] Visual Studio или с помощью [.NET Core CLI][DotNetCLI].
 
@@ -94,7 +92,7 @@ while (true)
 
 Просмотрите [полный список](https://azure.microsoft.com/resources/samples/?platform=dotnet&service=iot-hub) примеров реализации кода для Azure IoT.
 
-Дополнительные рекомендации см. в [руководстве разработчика по Центру Интернета вещей](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide).
+Дополнительные рекомендации см. в [руководстве разработчика для Центра Интернета вещей](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide).
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

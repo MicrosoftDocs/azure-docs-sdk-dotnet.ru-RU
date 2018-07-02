@@ -6,17 +6,15 @@ ms.author: routlaw
 manager: angerobe
 ms.date: 04/16/2018
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: event-grid
 ms.custom: devcenter
-ms.openlocfilehash: aa25f76f041e890de512c67d9380903f81216f62
-ms.sourcegitcommit: 9f54e3334fc35c1066d0c591ff85b16d46416aa8
+ms.openlocfilehash: 922e1a49a2b864d8cd408a8383d7cda27c7f89c2
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33802751"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065304"
 ---
 # <a name="azure-event-grid-libraries-for-net"></a>Библиотеки службы "Сетка событий Azure" для .NET
 

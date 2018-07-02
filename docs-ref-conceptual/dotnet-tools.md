@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
 ms.openlocfilehash: 5890df018eea61bcc0f8bce1cd4bc02fa84b37cf
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.sourcegitcommit: 9dd801d659803f5efb16d65454cd09258e1cc7d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "29752682"
 ---
 # <a name="tools-for-net-azure-developers"></a>Средства для разработчиков Azure .NET
@@ -30,7 +30,7 @@ ms.locfileid: "29752682"
         <img src="https://docs.microsoft.com/en-us/media/logos/logo_vs-ide.svg" width="50" height="50"></img>
     </td>
     <td>
-В Visual Studio 2017 есть встроенная поддержка средств разработки для Azure.
+        В Visual Studio 2017 есть встроенная поддержка средств разработки для Azure.
     </td>
   </tr>
 </table>
@@ -63,7 +63,7 @@ ms.locfileid: "29752682"
         <img src="https://docs.microsoft.com/en-us/media/logos/logo_vs-mac.svg" width="50" height="50"></img>
     </td>
     <td>
-В Visual Studio для Mac есть все необходимое для разработки в Azure.
+        В Visual Studio для Mac есть все необходимое для разработки в Azure.
     </td>
   </tr>
 </table>

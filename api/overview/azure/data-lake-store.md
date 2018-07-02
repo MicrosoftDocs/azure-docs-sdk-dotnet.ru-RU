@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: data-lake-store
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: e8380c4a9ebf86f03fe87fc800dffda10e48e60a
-ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
+ms.openlocfilehash: f1b014c4835784ed8ecfa1e3b4bfd62a6ebf9562
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2017
-ms.locfileid: "26588477"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065634"
 ---
 # <a name="azure-data-lake-store-libraries-for-net"></a>Библиотеки Azure Data Lake Store для .NET
 
@@ -42,7 +40,7 @@ Install-Package Microsoft.Azure.DataLake.Store
 ```bash
 dotnet add package Microsoft.Azure.DataLake.Store
 ```
-### <a name="authentication"></a>Аутентификация
+### <a name="authentication"></a>Authentication
 
 * Дополнительные сведения о проверке подлинности пользователей в приложении см. в статье [End-user authentication with Data Lake Store using .NET SDK](/azure/data-lake-store/data-lake-store-end-user-authenticate-net-sdk) (Аутентификация пользователей в Data Lake Store с использованием пакета SDK для .NET).
 * Дополнительные сведения о проверке подлинности между службами в приложении см. в статье [Service-to-service authentication with Data Lake Store using .NET SDK](/azure/data-lake-store/data-lake-store-service-to-service-authenticate-net-sdk) (Аутентификация между службами в Data Lake Store с использованием пакета SDK для .NET).
