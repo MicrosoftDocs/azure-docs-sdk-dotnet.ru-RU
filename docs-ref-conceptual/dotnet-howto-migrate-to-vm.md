@@ -6,35 +6,25 @@ author: camsoper
 manager: wpickett
 ms.author: casoper
 ms.date: 11/15/2017
-layout: LandingPage
-ms.topic: landing-page
+ms.topic: article
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: virtual-machines
 ms.custom: devcenter
-ms.openlocfilehash: 98f24553961793623f8a6aba10dcf45b930101fe
-ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
+ms.openlocfilehash: 53e899ba3cd2ff265a2068e1b7eee5baa4520879
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2017
-ms.locfileid: "26588487"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065344"
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>Перенос веб-приложения ASP.NET на виртуальную машину Azure
 
 В этом документе приводятся общие сведения о том, как перенести веб-приложение ASP.NET из локальной среды на виртуальную машину Azure.
 
-## <a name="quickstart"></a>Быстрый запуск
+## <a name="quickstart"></a>Краткое руководство
 
-Узнайте, как создать виртуальную машину и опубликовать на ней приложение:
-
-<div class="ico48Case">
-    <div class="ico48Link">
-        <a href="https://tutorials.visualstudio.com/aspnet-vm/intro">
-            <img width="48" height="48" alt="Publish to an Azure VM" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
-            <span>Публикация на виртуальной машине Azure</span>
-        </a>
-    </div>
-</div>
+[Узнайте, как создать виртуальную машину и опубликовать в ней приложение](https://tutorials.visualstudio.com/aspnet-vm/intro).
 
 ## <a name="get-started"></a>Начало работы
 
@@ -60,9 +50,9 @@ ms.locfileid: "26588487"
 
 ### <a name="maintenance"></a>Обслуживание, 
 
-Как и в случае с локальными компьютерами, вы несете ответственность за обслуживание и обновление виртуальной машины <sup>&#42;</sup>.  Если приложение может выполняться в среде PaaS (платформа как услуга), например в [службе приложений Azure](https://docs.microsoft.com/azure/app-service/) или в [контейнере](https://docs.microsoft.com/azure/app-service/containers/), то необходимость в обслуживании устраняется.
+Как и с локальными компьютерами, вы несете ответственность за обслуживание и обновление виртуальной машины<sup>& #42;</sup>.  Если приложение может выполняться в среде PaaS (платформа как услуга), например в [службе приложений Azure](https://docs.microsoft.com/azure/app-service/) или в [контейнере](https://docs.microsoft.com/azure/app-service/containers/), то необходимость в обслуживании устраняется.
 
-*<sup>&#42;</sup>[Автоматическое обновление ОС для масштабируемых наборов виртуальных машин](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade) сейчас доступно в виде службы в предварительной версии.*
+*<sup>& #42;</sup>[Автоматическое обновление ОС для масштабируемых наборов виртуальных машин](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade) сейчас доступно в виде предварительной версии.*
 
 ### <a name="virtual-networks"></a>Виртуальные сети
 
@@ -88,7 +78,7 @@ ms.locfileid: "26588487"
 
 ### <a name="high-availability-and-scalability"></a>Высокий уровень доступности и масштабируемости
 
-#### <a name="virtual-machine-scale-sets"></a>Наборы для масштабирования виртуальных машин
+#### <a name="virtual-machine-scale-sets"></a>Масштабируемые наборы виртуальных машин Microsoft Azure
 Если вам нужно обеспечить высокий уровень доступности и возможность масштабирования для приложения, перенесите образ виртуальной машины в масштабируемый набор виртуальных машин Azure, чтобы повысить уровень доступности и улучшить возможность масштабирования приложения.  Масштабируемые наборы виртуальных машин позволяют использовать уже настроенную виртуальную машину или настроить конвейер сборки, чтобы создать образ с вашим приложением.  
 
 Чтобы приступить к работе, изучите статью [Развертывание приложения в масштабируемых наборах виртуальных машин](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app).
@@ -96,7 +86,7 @@ ms.locfileid: "26588487"
 #### <a name="centralized-logging"></a>Централизованное ведение журналов
 Если приложение выполняется на нескольких экземплярах, рассмотрите возможность хранения журналов в централизованном расположении, например в [хранилище Azure](https://docs.microsoft.com/azure/storage/).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дополнительная информация
 
 > [!div class="nextstepaction"]
 > [Перенос базы данных SQL Server в Azure](dotnet-howto-migrate-sql.md)

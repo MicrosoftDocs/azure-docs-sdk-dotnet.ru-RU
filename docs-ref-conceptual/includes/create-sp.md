@@ -17,11 +17,15 @@ SubscriptionName      : my-subscription
 CurrentStorageAccount : 
 ```
 
-[Создайте субъект-службу с использованием PowerShell](/powershell/azure/create-azure-service-principal-azureps), как показано ниже:
+[Создайте в PowerShell субъект-службу](/powershell/azure/create-azure-service-principal-azureps), как показано ниже. 
+
+> [!NOTE]
+> Если командлет `New-AzureRmADServicePrincipal` возвращает сообщение "Объект с таким же значением свойства identifierUris уже существует", в вашем клиенте уже есть субъект-служба с таким именем. Задайте для параметра **DisplayName** другое значение. 
 
 ```powershell
 # Create the service principal (use a strong password)
-$sp = New-AzureRmADServicePrincipal -DisplayName "AzureDotNetTest" -Password "password"
+$cred = Get-Credential
+$sp = New-AzureRmADServicePrincipal -DisplayName "AzureDotNetTest" -Password $cred.Password
 
 # Give it the permissions it needs...
 New-AzureRmRoleAssignment -ServicePrincipalName $sp.ApplicationId -RoleDefinitionName Contributor
