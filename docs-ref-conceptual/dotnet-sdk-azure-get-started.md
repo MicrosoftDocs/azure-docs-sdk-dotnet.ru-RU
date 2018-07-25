@@ -1,28 +1,28 @@
 ---
-title: Начало работы с API Azure для .NET
-description: Базовое использование библиотек Azure для .NET с подпиской Azure.
-keywords: Azure, .NET, SDK, API ,authenticate, get-started
+title: Начало работы с API-интерфейсами Azure для .NET и .NET Core
+description: Сведения о начале работы с библиотеками Azure для .NET и .NET Core в подписке Azure.
+keywords: Azure, .NET, .NET Core, ASP.NET, ASP.NET Core SDK, API, authenticate, get-started
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 07/17/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: a3733898f948dbb2ec07da20aa61724e07f23e73
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: a8775993e71566b7659a8ae8ceb2c376ece14e45
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29752876"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135782"
 ---
-# <a name="get-started-with-the-azure-net-apis"></a>Начало работы с API Azure для .NET
+# <a name="get-started-with-the-azure-net-and-net-core-apis"></a>Начало работы с API-интерфейсами Azure для .NET и .NET Core
 
 В этом руководстве объясняется, как использовать [API Azure для .NET](/dotnet/api/overview/azure/).  Вы настроите проверку подлинности, создадите и будете использовать учетную запись хранения Azure и базу данных SQL Azure, а также развернете несколько виртуальных машин и веб-приложение службы приложений Azure из GitHub.
 
-## <a name="prerequisites"></a>предварительным требованиям
+## <a name="prerequisites"></a>Предварительные требования
 
 - Учетная запись Azure. Если у вас ее нет, [получите бесплатную пробную версию](https://azure.microsoft.com/free/).
 - [Azure PowerShell](/powershell/azure/install-azurerm-ps)
@@ -201,11 +201,11 @@ static void Main(string[] args)
 
     Console.WriteLine("Creating database...");
     var sqlDb = sqlServer.Databases.Define(sqlDbName).Create();
-    
+
     // Display information for connecting later...
     Console.WriteLine("Created database {0} in server {1}.", sqlDbName, sqlServer.FullyQualifiedDomainName);
     Console.WriteLine("Your user name is {0}.", adminUser + "@" + sqlServer.Name);
-    
+
     // Build the connection string
     var builder = new SqlConnectionStringBuilder();
     builder.DataSource = sqlServer.FullyQualifiedDomainName;
@@ -241,11 +241,12 @@ static void Main(string[] args)
     Console.ReadLine();
 }
 ```
+
 Запустите код, нажав клавишу **F5**.  Выходные данные в консоли должны подтверждать, что сервер создан и работает правильно. Вы можете подключиться к серверу непосредственно с помощью такого средства, как SQL Server Management Studio.
 
 ## <a name="write-a-blob-into-a-new-storage-account"></a>Запись большого двоичного объекта в новую учетную запись хранения
 
-Этот пример создает учетную запись хранения и отправляет большой двоичный объект.  
+Этот пример создает учетную запись хранения и передает большой двоичный объект.  
 
 Замените метод `Main` следующим кодом.
 
@@ -280,7 +281,7 @@ static void Main(string[] args)
 
     var account = CloudStorageAccount.Parse(storageConnectionString);
     var serviceClient = account.CreateCloudBlobClient();
-    
+
     // Create container. Name must be lower case.
     Console.WriteLine("Creating container...");
     var container = serviceClient.GetContainerReference("helloazure");
@@ -290,7 +291,7 @@ static void Main(string[] args)
     var containerPermissions = new BlobContainerPermissions()
         { PublicAccess = BlobContainerPublicAccessType.Container };
     container.SetPermissionsAsync(containerPermissions).Wait();
-    
+
     // write a blob to the container
     Console.WriteLine("Uploading blob...");
     var blob = container.GetBlockBlobReference("helloazure.txt");
@@ -299,7 +300,7 @@ static void Main(string[] args)
 
     // Wait for the user
     Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();        
+    Console.ReadLine();
 }
 ```
 
@@ -317,6 +318,7 @@ static void Main(string[] args)
 ```powershell
 Remove-AzureRmResourceGroup -ResourceGroupName sampleResourceGroup
 ```
+
 ## <a name="explore-more-samples"></a>Другие примеры
 
 Чтобы узнать, как использовать библиотеки Azure для .NET для управления ресурсами и автоматизации задач, см. примеры кода для [виртуальных машин](dotnet-sdk-azure-virtual-machine-samples.md), [веб-приложений](dotnet-sdk-azure-web-apps-samples.md) и [базы данных SQL](dotnet-sdk-azure-sql-database-samples.md).

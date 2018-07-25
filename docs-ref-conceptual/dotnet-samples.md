@@ -1,26 +1,26 @@
 ---
-title: Примеры кода C# для .NET
-description: Примеры кода C# для .NET и Azure.
+title: Примеры кода C# с .NET и .NET Core для Azure
+description: Примеры кода C# для Azure, в которых используется .NET, .NET Core, ASP.NET или ASP.NET Core.
 layout: LandingPage
 ms.topic: reference
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 04/12/2018
+ms.date: 07/17/2018
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 2952f2999ae53100d35d90f44bfcc6c9df696b00
-ms.sourcegitcommit: 7d88aef45df03d9a2be5b9ac5c9f1f146462427b
+ms.openlocfilehash: b4a67a2b3c942ea5282878a61ccabb7c1d3aa95c
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34051964"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135682"
 ---
-# <a name="azure-c-code-samples-for-net"></a>Примеры кода C# для .NET
+# <a name="azure-c-code-samples-for-net-and-net-core"></a>Примеры кода C# с .NET и .NET Core для Azure
 
-Ниже приведены примеры кода и руководства, с которых мы рекомендуем начать изучение использования C# и .NET в Azure.
+Ниже приведены образцы, руководства и примеры, с которых мы рекомендуем начать изучение использования C#, .NET и .NET Core в Azure.
 
 <div id="main" class="v2">
     <div class="container">
@@ -36,8 +36,8 @@ ms.locfileid: "34051964"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Простой веб-сайт</h3>
-                                    <p>Узнайте, как создать простой веб-сайт ASP.NET Core, который хранит сведения в серверной части SQL.</p>
+                                    <h3>Простое веб-приложение</h3>
+                                    <p>Узнайте, как создать простое веб-приложение ASP.NET Core в Службе приложений Azure, которое хранит данные на сервере SQL Azure.</p>
                                 </div>
                             </div>
                         </a>
@@ -113,7 +113,7 @@ ms.locfileid: "34051964"
                                 </div>
                                 <div class="cardText">
                                     <h3>Анализ изображений с помощью ИИ</h3>
-                                    <p>Узнайте, как определять визуальные признаки в изображениях с помощью Cognitive Services.</p>
+                                    <p>Узнайте, как определять визуальные признаки на изображениях с помощью Azure Cognitive Services.</p>
                                 </div>
                             </div>
                         </a>
@@ -132,13 +132,13 @@ ms.locfileid: "34051964"
                                 </div>
                                 <div class="cardText">
                                     <h3>Облачная база данных</h3>
-                                    <p>Узнайте, как выполнять обычный поиск, а также создавать и редактировать записи в современных облачных базах данных, используя Cosmos DB.</p>
+                                    <p>Узнайте, как отправлять простые поисковые запросы, а также создавать и редактировать записи в современных облачных базах данных, используя Azure Cosmos DB.</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-            </li>             
+            </li>
         </ul>
     </div>
 </div>

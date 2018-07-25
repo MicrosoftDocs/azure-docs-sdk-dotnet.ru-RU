@@ -1,26 +1,26 @@
 ---
-title: Средства для разработчиков Azure .NET
-description: Получите средства для использования библиотек Azure для .NET в среде Windows, Mac или Linux.
+title: Средства Azure для разработчиков .NET и .NET Core
+description: Получите средства для работы с библиотеками Azure для .NET в среде Windows, Mac и Linux.
 keywords: Azure .NET, SDK, Azure .NET API Reference, Azure .NET class library
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 07/17/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 5890df018eea61bcc0f8bce1cd4bc02fa84b37cf
-ms.sourcegitcommit: 9dd801d659803f5efb16d65454cd09258e1cc7d6
+ms.openlocfilehash: 9c9d25e8f065408f81ed8b1fdb25817196f7e053
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "29752682"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135702"
 ---
-# <a name="tools-for-net-azure-developers"></a>Средства для разработчиков Azure .NET
+# <a name="tools-for-net-and-net-core-azure-developers"></a>Средства Azure для разработчиков .NET и .NET Core
 
-Мы предоставляем большой набор средств для разработки с помощью .NET в Azure, поддерживаемых на любой операционной системе.
+Для любой операционной системы мы предлагаем отличный набор средств, который поможет вам разрабатывать в Azure с использованием .NET, .NET Core, ASP.NET и ASP.NET Core.
 
 ## <a name="windowstabwindows"></a>[Windows](#tab/windows)
 
@@ -44,7 +44,6 @@ ms.locfileid: "29752682"
 > [!div class="nextstepaction"]
 > [Скачать Visual Studio 2017](https://www.visualstudio.com/downloads/)
 
-
 ### <a name="step-2-install-the-two-azure-workloads"></a>Шаг 2. Установка двух рабочих нагрузок Azure
 
 Запустив установщик Visual Studio 2017, выберите рабочие нагрузки разработки для Azure и веб-разработки ASP.NET.
@@ -53,8 +52,7 @@ ms.locfileid: "29752682"
 
 ### <a name="step-3-develop-with-net-on-azure"></a>Шаг 3. Разработка с помощью .NET в Azure
 
-Приступите к работе, [развернув первое приложение .NET в Azure](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet).
-
+Начните с [развертывания первого веб-приложения ASP.NET Core в Службе приложений Azure](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet).
 
 ## <a name="macostabmacos"></a>[macOS](#tab/macos)
 <table>
@@ -67,7 +65,6 @@ ms.locfileid: "29752682"
     </td>
   </tr>
 </table>
-
 
 ### <a name="step-1-download-visual-studio-for-mac"></a>Шаг 1. Скачивание Visual Studio для Mac
 
@@ -82,16 +79,16 @@ ms.locfileid: "29752682"
 
 <img src="https://docs.microsoft.com/en-us/visualstudio/products/images/vs-code.svg" width="50" height="50"></img>
 
-### <a name="step-1-download-net-core-sdk"></a>Шаг 1. Скачивание пакета SDK для .NET Core
+### <a name="step-1-download-the-net-core-sdk"></a>Шаг 1. Скачивание пакета SDK для .NET Core
 
-Базовый пакет SDK и программы командной строки для приложений .NET.
+Пакет SDK и средства командной строки для приложений .NET Core.
 
 > [!div class="nextstepaction"]
 > [Скачать пакет SDK для .NET Core](https://www.microsoft.com/net/core)
 
 ### <a name="step-2-visual-studio-code"></a>Шаг 2. Visual Studio Code
 
-Измените и отладьте приложения .NET в любой ОС.
+Изменение и отладка приложений .NET Core в любой операционной системе: Windows, Mac и Linux.
 
 > [!div class="nextstepaction"]
 > [Скачать Visual Studio Code](https://code.visualstudio.com)
