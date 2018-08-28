@@ -5,18 +5,18 @@ keywords: Azure, .NET, .NET Core, ASP.NET, ASP.NET Core SDK, API, authenticate, 
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 07/17/2018
+ms.date: 08/22/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: a8775993e71566b7659a8ae8ceb2c376ece14e45
-ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
+ms.openlocfilehash: ad894e47704fcccc83f7d02acb8e418b167993f9
+ms.sourcegitcommit: b2a53a3aea9de6720bd975fb7fe4e722e9d182a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39135782"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42703057"
 ---
 # <a name="get-started-with-the-azure-net-and-net-core-apis"></a>Начало работы с API-интерфейсами Azure для .NET и .NET Core
 
@@ -25,7 +25,6 @@ ms.locfileid: "39135782"
 ## <a name="prerequisites"></a>Предварительные требования
 
 - Учетная запись Azure. Если у вас ее нет, [получите бесплатную пробную версию](https://azure.microsoft.com/free/).
-- [Azure PowerShell](/powershell/azure/install-azurerm-ps)
 
 ## <a name="set-up-authentication"></a>Настройка проверки подлинности
 
@@ -83,7 +82,7 @@ static void Main(string[] args)
     string password = "MY_PASSWORD";
     string rgName = "sampleResourceGroup";
     string windowsVmName = "sampleWindowsVM";
-    string publicIpDnsLabel = "samplePublicIP";
+    string publicIpDnsLabel = "samplePublicIP" + (new Random().Next(0,100000)).ToString();
 
     // Authenticate
     var credentials = SdkContext.AzureCredentialsFactory
@@ -117,10 +116,10 @@ static void Main(string[] args)
 
 Нажмите клавишу **F5**, чтобы запустить пример.
 
-Через несколько минут программа завершит задание и появится запрос на нажатие клавиши ВВОД. Нажмите клавишу ВВОД и проверьте виртуальную машину в подписке с помощью PowerShell:
+Через несколько минут программа завершит задание и появится запрос на нажатие клавиши ВВОД. Нажмите клавишу ВВОД и проверьте виртуальную машину в подписке с помощью Cloud Shell:
 
-```powershell
-Get-AzureRmVm -ResourceGroupName sampleResourceGroup
+```azurecli-interactive
+az vm list
 ```
 
 ## <a name="deploy-a-web-app-from-a-github-repo"></a>Развертывание веб-приложения из репозитория GitHub
@@ -313,10 +312,10 @@ static void Main(string[] args)
 > [!IMPORTANT]
 > Если вы не очистите ресурсы, которые использовали для этого руководства, с вас будет взиматься плата за их использование.  Не забывайте об этом.
 
-Чтобы удалить все созданные ресурсы, введите следующую команду в PowerShell:
+Чтобы удалить все созданные ресурсы, введите следующую команду в Cloud Shell:
 
-```powershell
-Remove-AzureRmResourceGroup -ResourceGroupName sampleResourceGroup
+```azurecli-interactive
+az group delete --name sampleResourceGroup
 ```
 
 ## <a name="explore-more-samples"></a>Другие примеры
