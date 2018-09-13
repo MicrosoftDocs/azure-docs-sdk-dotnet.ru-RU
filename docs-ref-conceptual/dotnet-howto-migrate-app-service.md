@@ -11,12 +11,12 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter
-ms.openlocfilehash: 643d758af8f90f22791d3b7deb18ae6233067ef0
-ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
+ms.openlocfilehash: af17a7dee8dd93aa50807b0b6b7eebadb673151b
+ms.sourcegitcommit: 6a1974bc7c7511aacac5b69daa296a59ab3f8000
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39135722"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700956"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>Перенос веб-приложения или службы .NET в Службу приложений Azure 
 
@@ -30,10 +30,10 @@ ms.locfileid: "39135722"
 
 Проверьте доступ к локальным ресурсам, так как их, возможно, потребуется перенести или изменить. Вот несколько вариантов действий для упрощения доступа к локальным ресурсам:
 
-* С помощью службы [Виртуальная сеть Azure](https://docs.microsoft.com/en-us/azure/app-service/web-sites-integrate-with-vnet) создайте сеть VPN для подключения Службы приложений к локальным ресурсам.
-* С помощью [Azure Relay](https://docs.microsoft.com/en-us/azure/service-bus-relay/relay-what-is-it) предоставьте облаку защищенный доступ к локальным службам, не внося изменения в брандмауэр.
+* С помощью службы [Виртуальная сеть Azure](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet) создайте сеть VPN для подключения Службы приложений к локальным ресурсам.
+* С помощью [Azure Relay](https://docs.microsoft.com/azure/service-bus-relay/relay-what-is-it) предоставьте облаку защищенный доступ к локальным службам, не внося изменения в брандмауэр.
 * Перенесите зависимости в Azure (например, [базу данных SQL](https://go.microsoft.com/fwlink/?linkid=863217)).
-* Для уменьшения количества зависимостей используйте облачные решения типа "платформа как услуга". Например, вместо подключения к локальному почтовому серверу используйте [SendGrid](https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email). 
+* Для уменьшения количества зависимостей используйте облачные решения типа "платформа как услуга". Например, вместо подключения к локальному почтовому серверу используйте [SendGrid](https://docs.microsoft.com/azure/sendgrid-dotnet-how-to-send-email). 
 
 ### <a name="port-bindings"></a>Привязки портов
 
@@ -52,7 +52,7 @@ BasicHttpContextBinding |
 WebHttpBinding |
 WSHttpContextBinding |
 
-### <a name="authentication"></a>Аутентификация
+### <a name="authentication"></a>Authentication
 
 Служба приложений Azure поддерживает анонимную аутентификацию по умолчанию. При необходимости можно настроить аутентификацию с помощью форм. Аутентификация Windows может использоваться только при интеграции с Azure Active Directory и ADFS. [Подробнее об интеграции локальных каталогов с Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
 
@@ -64,7 +64,7 @@ WSHttpContextBinding |
 Теперь все параметры приложения, которые традиционно настраиваются с помощью файла applicationHost.config, можно настроить на портале Azure. Это касается разрядности пула приложений, включения и отключения протокола WebSocket, версии управляемого конвейера, версии платформы .NET Framework (2.0 или 4.0) и других параметров. Чтобы изменить [параметры приложения](https://docs.microsoft.com/azure/app-service/web-sites-configure), перейдите на [портал Azure](https://portal.azure.com), откройте колонку нужного веб-приложения и выберите вкладку **Параметры приложения**.
 
 #### <a name="iis5-compatibility-mode"></a>Режим совместимости с IIS5
-Режим совместимости с IIS5 не поддерживается. В Службе приложений Azure каждое веб-приложение и все располагающиеся под ним приложения выполняются в одном и том же рабочем процессе с определенным набором [пула приложений](http://technet.microsoft.com/en-us/library/cc735247(v=WS.10).aspx).
+Режим совместимости с IIS5 не поддерживается. В Службе приложений Azure каждое веб-приложение и все располагающиеся под ним приложения выполняются в одном и том же рабочем процессе с определенным набором [пула приложений](http://technet.microsoft.com/library/cc735247(v=WS.10).aspx).
 
 #### <a name="iis7-schema-compliance"></a>Соответствие схеме IIS7+  
 Некоторые элементы и атрибуты не определены в схеме IIS Службы приложений Azure. При возникновении проблем рекомендуется использовать [преобразования XDT](http://azure.microsoft.com/documentation/articles/web-sites-transform-extend/).
