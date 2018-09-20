@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: f80b08f77cfb88b2e2148534553cc4c96cac6d76
-ms.sourcegitcommit: 0e64271404ddbb8f84f7e95691b29690de9e41bf
+ms.openlocfilehash: 0f2928212fca7c86defa37068e18e9ff96adb50a
+ms.sourcegitcommit: 319a55d604140fcc0b03a07b634ab9a3b22e657d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39616386"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44703795"
 documentType: LandingData
 title: Azure для разработчиков .NET и .NET Core
 metadata:
@@ -72,21 +72,21 @@ sections:
       title: Создание независимой от сервера функции .NET
       href: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
     - image:
-        src: https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg
-      title: Подключение приложения .NET к базе данных Azure SQL
-      href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet
-    - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg
       title: Создание веб-приложения .NET, использующего Azure Cosmos DB
       href: https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet
     - image:
-        src: https://docs.microsoft.com/en-us/azure/media/index/fabric.svg
-      title: Создание приложения .NET для микрослужб с помощью Service Fabric
-      href: https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet
+        src: https://docs.microsoft.com/en-us/azure/media/index/applicationinsights.svg
+      title: Отслеживание работы приложения ASP.NET с помощью Application Insights
+      href: https://docs.microsoft.com/azure/application-insights/quick-monitor-portal
     - image:
-        src: https://docs.microsoft.com/azure/media/index/api_textanalytics.svg
-      title: Анализ языка с помощью API анализа текста на C#
-      href: https://docs.microsoft.com/azure/cognitive-services/text-analytics/quickstarts/csharp
+        src: https://docs.microsoft.com/en-us/azure/media/index/storage.svg
+      title: Хранение и извлечение объектов с использованием Службы хранилища Azure
+      href: https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet
+    - image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg
+      title: Подключение приложения .NET к базе данных Azure SQL
+      href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet
 - title: Начало работы с .NET в Azure
   items:
   - type: markdown
@@ -118,9 +118,10 @@ sections:
     style: unordered
     items:
     - html: <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase">Создание веб-приложения ASP.NET в Службе приложений Azure с подключением к базе данных SQL Azure</a>
-    - html: <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-dotnet-application">Создание веб-приложения ASP.NET в Службе приложений Azure с подключением к Azure Cosmos DB</a>
+    - html: <a href="https://docs.microsoft.com/azure/cosmos-db/sql-api-dotnet-application">Создание веб-приложения ASP.NET в Службе приложений Azure с подключением к Azure Cosmos DB</a>
     - html: <a href="https://docs.microsoft.com/azure/app-service-api/app-service-api-dotnet-get-started">Создание и развертывание веб-API в Службе приложений Azure</a>
     - html: <a href="https://docs.microsoft.com/azure/container-service/container-service-kubernetes-windows-walkthrough">Кластер Azure Kubernetes для Windows | Документация Майкрософт</a>
     - html: <a href="https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet">Использование .NET (C#) с Visual Studio для подключения и создания запросов к базе данных SQL Azure</a>
     - html: '<a href="https://docs.microsoft.com/azure/postgresql/connect-csharp">База данных Azure для PostgreSQL: подключение и запрос данных с помощью C# (.NET)</a>'
     - html: <a href="https://docs.microsoft.com/azure/cosmos-db/sql-api-get-started">Azure Cosmos DB. Руководство по началу работы с API SQL</a>
+    - html: <a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet">Создание приложения .NET для микрослужб с помощью Service Fabric</a>
