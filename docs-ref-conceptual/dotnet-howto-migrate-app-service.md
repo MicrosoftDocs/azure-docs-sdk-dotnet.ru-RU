@@ -5,18 +5,18 @@ keywords: Azure .NET, ASP.NET, WCF, App Service, Web App, migrate, migration
 author: camsoper
 manager: wpickett
 ms.author: casoper
-ms.date: 07/16/2018
+ms.date: 08/11/2018
 ms.topic: article
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter
-ms.openlocfilehash: af17a7dee8dd93aa50807b0b6b7eebadb673151b
-ms.sourcegitcommit: 6a1974bc7c7511aacac5b69daa296a59ab3f8000
+ms.openlocfilehash: 172ceb6956004dd560175d6662debdb4c898743d
+ms.sourcegitcommit: ed841c513dd332b14ca76a0c8a1893be13ec9f2c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44700956"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45567326"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>Перенос веб-приложения или службы .NET в Службу приложений Azure 
 
@@ -96,7 +96,7 @@ HTTPS-привязки перенесены не будут, так же как 
 ### <a name="azure-active-directory-aad-integration"></a>Интеграция с Azure Active Directory (AAD)  
 AAD не работает с бесплатными приложениями. Для использования AAD необходимо перевести приложение на платный SKU. См. [цены на Службу приложений](https://azure.microsoft.com/pricing/details/app-service/windows/).
 
-### <a name="monitoring-and-diagnostics"></a>Мониторинг и диагностика
+### <a name="monitoring-and-diagnostics"></a>Мониторинг и диагностика.
 Решения для мониторинга и диагностики, которые вы используете сейчас в локальной среде, вряд ли будут работать в облаке. Но Azure предоставляет средства для ведения журнала, мониторинга и диагностики, позволяющие определять и устранять проблемы, связанные с веб-приложениями. Диагностику веб-приложения можно без труда включить в его конфигурации, а записи журналов доступны для просмотра в Azure Application Insights. [Подробнее о включении ведения журнала диагностики для веб-приложений](https://docs.microsoft.com/azure/app-service/web-sites-enable-diagnostic-log).
 
 ### <a name="connection-strings-and-application-settings"></a>Строки подключения и параметры приложения
@@ -117,4 +117,4 @@ AAD не работает с бесплатными приложениями. Д
 ## <a name="next-steps"></a>Дополнительная информация
 
 > [!div class="nextstepaction"]
-> [Перенос веб-приложения ASP.NET в службу приложений Azure](https://aka.ms/azure-webapp-migrate)
+> [Развертывание приложения из Visual Studio](https://docs.microsoft.com/visualstudio/deployment/quickstart-deploy-to-azure?view=vs-2017)
