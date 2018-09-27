@@ -1,43 +1,35 @@
 ---
 title: Руководства по созданию приложений .NET и .NET Core в Azure
 description: Руководства по созданию мобильных и веб-приложений и добавлению в них функций с помощью Azure, .NET, .NET Core, ASP.NET и ASP.NET Core.
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 07/17/2018
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 2255824a778a9a1ca9e3a3d26d7e730e345393db
-ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
+ms.openlocfilehash: 86e3d3499bd459a0c2f85554a00e5e05223a8eaf
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39135742"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47189547"
 ---
-# <a name="tutorials-for-building-net-and-net-core-apps-in-azure"></a><span data-ttu-id="5a223-103">Руководства по созданию приложений .NET и .NET Core в Azure</span><span class="sxs-lookup"><span data-stu-id="5a223-103">Tutorials for building .NET and .NET Core apps in Azure</span></span>
+# <a name="tutorials-for-building-net-and-net-core-apps-in-azure"></a><span data-ttu-id="fe6c8-103">Руководства по созданию приложений .NET и .NET Core в Azure</span><span class="sxs-lookup"><span data-stu-id="fe6c8-103">Tutorials for building .NET and .NET Core apps in Azure</span></span>
 
-<span data-ttu-id="5a223-104">В таблице ниже представлены ссылки на подробные руководства по созданию приложений .NET, выполняющихся в Azure.</span><span class="sxs-lookup"><span data-stu-id="5a223-104">The following table links to in-depth tutorials for building .NET apps running on Azure.</span></span>
+<span data-ttu-id="fe6c8-104">В таблице ниже представлены ссылки на подробные руководства по созданию приложений .NET, выполняющихся в Azure.</span><span class="sxs-lookup"><span data-stu-id="fe6c8-104">The following table links to in-depth tutorials for building .NET apps running on Azure.</span></span>
 
-<span data-ttu-id="5a223-105">Пример исходного кода см. в списке [примеров кода для служб Azure](https://azure.microsoft.com/resources/samples/?platform=dotnet).</span><span class="sxs-lookup"><span data-stu-id="5a223-105">For sample source code, see the list of [Azure service samples](https://azure.microsoft.com/resources/samples/?platform=dotnet).</span></span>
+<span data-ttu-id="fe6c8-105">Пример исходного кода см. в списке [примеров кода для служб Azure](https://azure.microsoft.com/resources/samples/?platform=dotnet).</span><span class="sxs-lookup"><span data-stu-id="fe6c8-105">For sample source code, see the list of [Azure service samples](https://azure.microsoft.com/resources/samples/?platform=dotnet).</span></span>
 
 | | |
 |---|---|
-| <span data-ttu-id="5a223-106">**Веб-приложения**</span><span class="sxs-lookup"><span data-stu-id="5a223-106">**Web Apps**</span></span>||
-| <span data-ttu-id="5a223-107">[Создание веб-приложения ASP.NET в Azure с подключением к базе данных SQL][1]</span><span class="sxs-lookup"><span data-stu-id="5a223-107">[Create an ASP.NET web app with Azure SQL Database][1]</span></span> | <span data-ttu-id="5a223-108">Создание простого веб-приложения, данные которого хранятся в базе данных SQL Azure.</span><span class="sxs-lookup"><span data-stu-id="5a223-108">Create a simple web application that stores data in Azure SQL Database.</span></span> |
-| <span data-ttu-id="5a223-109">**Приложения API**</span><span class="sxs-lookup"><span data-stu-id="5a223-109">**API Apps**</span></span>||
-| <span data-ttu-id="5a223-110">[Создание и развертывание веб-API][3]</span><span class="sxs-lookup"><span data-stu-id="5a223-110">[Create and deploy a Web API][3]</span></span> | <span data-ttu-id="5a223-111">Создание и развертывание веб-API .NET с помощью Swagger.</span><span class="sxs-lookup"><span data-stu-id="5a223-111">Create and deploy a .NET Web API with Swagger.</span></span> | 
-| <span data-ttu-id="5a223-112">**Служба контейнеров**</span><span class="sxs-lookup"><span data-stu-id="5a223-112">**Azure Container Service**</span></span> ||
-| <span data-ttu-id="5a223-113">[Начало работы с контейнерами Windows и Kubernetes][4]</span><span class="sxs-lookup"><span data-stu-id="5a223-113">[Get started with Kubernetes and Windows containers][4]</span></span> | <span data-ttu-id="5a223-114">Создание кластера Kubernetes в Службе контейнеров Azure с помощью контейнера IIS.</span><span class="sxs-lookup"><span data-stu-id="5a223-114">Create a Kubernetes cluster in Azure Container Service using an IIS container.</span></span>
-| <span data-ttu-id="5a223-115">**База данных SQL**</span><span class="sxs-lookup"><span data-stu-id="5a223-115">**SQL Database**</span></span> ||
-| <span data-ttu-id="5a223-116">[Использование .NET для подключения и создания запросов данных][5]</span><span class="sxs-lookup"><span data-stu-id="5a223-116">[Use .NET to connect and query data][5]</span></span> | <span data-ttu-id="5a223-117">Использование ADO.NET для подключения к базе данных Azure SQL и использование инструкций Transact-SQL для создания запросов, вставки, обновления и удаления данных в базе данных.</span><span class="sxs-lookup"><span data-stu-id="5a223-117">Use ADO.NET to connect to an Azure SQL database, and then use Transact-SQL statements to query, insert, update, and delete data in the database</span></span> | 
-| <span data-ttu-id="5a223-118">**База данных Azure для PostgreSQL**</span><span class="sxs-lookup"><span data-stu-id="5a223-118">**Azure Database for PostgreSQL**</span></span> ||
-| <span data-ttu-id="5a223-119">[Использование .NET для подключения и создания запросов данных][6]</span><span class="sxs-lookup"><span data-stu-id="5a223-119">[Use .NET to connect and query data][6]</span></span> | <span data-ttu-id="5a223-120">Использование инструкций SQL для создания запросов, вставки, обновления и удаления данных в базе данных.</span><span class="sxs-lookup"><span data-stu-id="5a223-120">Use SQL statements to query, insert, update, and delete data in the database.</span></span> |
-| <span data-ttu-id="5a223-121">**Azure Cosmos DB**</span><span class="sxs-lookup"><span data-stu-id="5a223-121">**Azure Cosmos DB**</span></span> ||
-| <span data-ttu-id="5a223-122">[Azure Cosmos DB. Руководство по началу работы с API SQL][7]</span><span class="sxs-lookup"><span data-stu-id="5a223-122">[Getting started with the Azure Cosmos DB SQL API][7]</span></span> | <span data-ttu-id="5a223-123">Создание простого консольного приложения с помощью API SQL для Azure Cosmos DB.</span><span class="sxs-lookup"><span data-stu-id="5a223-123">Create a simple console application with the Azure Cosmos DB SQL API.</span></span> |
-| <span data-ttu-id="5a223-124">[Руководство по ASP.NET MVC. Разработка веб-приложений в Azure Cosmos DB][8]</span><span class="sxs-lookup"><span data-stu-id="5a223-124">[Create an ASP.NET web app with the Azure Cosmos DB SQL API][8]</span></span> | <span data-ttu-id="5a223-125">Создание веб-приложения с помощью API SQL для Azure Cosmos DB.</span><span class="sxs-lookup"><span data-stu-id="5a223-125">Create a web application with the Azure Cosmos DB SQL API.</span></span> |
+| <span data-ttu-id="fe6c8-106">**Веб-приложения**</span><span class="sxs-lookup"><span data-stu-id="fe6c8-106">**Web Apps**</span></span>||
+| <span data-ttu-id="fe6c8-107">[Создание веб-приложения ASP.NET в Azure с подключением к базе данных SQL][1]</span><span class="sxs-lookup"><span data-stu-id="fe6c8-107">[Create an ASP.NET web app with Azure SQL Database][1]</span></span> | <span data-ttu-id="fe6c8-108">Создание простого веб-приложения, данные которого хранятся в базе данных SQL Azure.</span><span class="sxs-lookup"><span data-stu-id="fe6c8-108">Create a simple web application that stores data in Azure SQL Database.</span></span> |
+| <span data-ttu-id="fe6c8-109">**Приложения API**</span><span class="sxs-lookup"><span data-stu-id="fe6c8-109">**API Apps**</span></span>||
+| <span data-ttu-id="fe6c8-110">[Создание и развертывание веб-API][3]</span><span class="sxs-lookup"><span data-stu-id="fe6c8-110">[Create and deploy a Web API][3]</span></span> | <span data-ttu-id="fe6c8-111">Создание и развертывание веб-API .NET с помощью Swagger.</span><span class="sxs-lookup"><span data-stu-id="fe6c8-111">Create and deploy a .NET Web API with Swagger.</span></span> | 
+| <span data-ttu-id="fe6c8-112">**Служба контейнеров**</span><span class="sxs-lookup"><span data-stu-id="fe6c8-112">**Azure Container Service**</span></span> ||
+| <span data-ttu-id="fe6c8-113">[Начало работы с контейнерами Windows и Kubernetes][4]</span><span class="sxs-lookup"><span data-stu-id="fe6c8-113">[Get started with Kubernetes and Windows containers][4]</span></span> | <span data-ttu-id="fe6c8-114">Создание кластера Kubernetes в Службе контейнеров Azure с помощью контейнера IIS.</span><span class="sxs-lookup"><span data-stu-id="fe6c8-114">Create a Kubernetes cluster in Azure Container Service using an IIS container.</span></span>
+| <span data-ttu-id="fe6c8-115">**База данных SQL**</span><span class="sxs-lookup"><span data-stu-id="fe6c8-115">**SQL Database**</span></span> ||
+| <span data-ttu-id="fe6c8-116">[Использование .NET для подключения и создания запросов данных][5]</span><span class="sxs-lookup"><span data-stu-id="fe6c8-116">[Use .NET to connect and query data][5]</span></span> | <span data-ttu-id="fe6c8-117">Использование ADO.NET для подключения к базе данных Azure SQL и использование инструкций Transact-SQL для создания запросов, вставки, обновления и удаления данных в базе данных.</span><span class="sxs-lookup"><span data-stu-id="fe6c8-117">Use ADO.NET to connect to an Azure SQL database, and then use Transact-SQL statements to query, insert, update, and delete data in the database</span></span> | 
+| <span data-ttu-id="fe6c8-118">**База данных Azure для PostgreSQL**</span><span class="sxs-lookup"><span data-stu-id="fe6c8-118">**Azure Database for PostgreSQL**</span></span> ||
+| <span data-ttu-id="fe6c8-119">[Использование .NET для подключения и создания запросов данных][6]</span><span class="sxs-lookup"><span data-stu-id="fe6c8-119">[Use .NET to connect and query data][6]</span></span> | <span data-ttu-id="fe6c8-120">Использование инструкций SQL для создания запросов, вставки, обновления и удаления данных в базе данных.</span><span class="sxs-lookup"><span data-stu-id="fe6c8-120">Use SQL statements to query, insert, update, and delete data in the database.</span></span> |
+| <span data-ttu-id="fe6c8-121">**Azure Cosmos DB**</span><span class="sxs-lookup"><span data-stu-id="fe6c8-121">**Azure Cosmos DB**</span></span> ||
+| <span data-ttu-id="fe6c8-122">[Azure Cosmos DB. Руководство по началу работы с API SQL][7]</span><span class="sxs-lookup"><span data-stu-id="fe6c8-122">[Getting started with the Azure Cosmos DB SQL API][7]</span></span> | <span data-ttu-id="fe6c8-123">Создание простого консольного приложения с помощью API SQL для Azure Cosmos DB.</span><span class="sxs-lookup"><span data-stu-id="fe6c8-123">Create a simple console application with the Azure Cosmos DB SQL API.</span></span> |
+| <span data-ttu-id="fe6c8-124">[Руководство по ASP.NET MVC. Разработка веб-приложений в Azure Cosmos DB][8]</span><span class="sxs-lookup"><span data-stu-id="fe6c8-124">[Create an ASP.NET web app with the Azure Cosmos DB SQL API][8]</span></span> | <span data-ttu-id="fe6c8-125">Создание веб-приложения с помощью API SQL для Azure Cosmos DB.</span><span class="sxs-lookup"><span data-stu-id="fe6c8-125">Create a web application with the Azure Cosmos DB SQL API.</span></span> |
 
 [1]: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
 [2]: /azure/cosmos-db/sql-api-dotnet-application
