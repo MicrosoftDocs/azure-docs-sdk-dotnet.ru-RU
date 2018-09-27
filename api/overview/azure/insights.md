@@ -1,21 +1,15 @@
 ---
 title: Библиотеки Azure Application Insights для .NET
 description: Справочник по библиотекам Azure Application Insights для .NET
-keywords: Azure, .NET, SDK, API, Application AppInsights
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: application-insights
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 3cbd4a874edfa6de26d3edf4d151d2c4006ab9c3
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 10b65f536c6461959b0be9b8f9bd3ec56a307bea
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065844"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190843"
 ---
 # <a name="azure-application-insights-libraries-for-net"></a>Библиотеки Azure Application Insights для .NET
 

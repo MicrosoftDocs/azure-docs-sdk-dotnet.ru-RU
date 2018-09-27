@@ -1,27 +1,19 @@
 ---
 title: Развертывание приложения в Azure из командной строки с помощью .NET Core
 description: В этой статье описывается развертывание приложения ASP.NET Core в службе приложений Azure с помощью программы командной строки.
-keywords: Azure .NET, SDK, Azure .NET API Reference, Azure .NET class library
-author: camsoper
-manager: douge
-ms.author: casoper
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
-ms.openlocfilehash: 8371c304681ff88cba6f1cc3ba0d1caef836d609
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: a29f5474dcfedc6f8d044f09ad4d54c5be6a371f
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005881"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190497"
 ---
 # <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>Развертывание приложения в Azure из командной строки с помощью .NET Core
 
 Из этого руководства вы узнаете, как создать и развернуть приложение Microsoft Azure с помощью .NET Core.  Вы создадите веб-приложение со списком дел на базе MVC ASP.NET Core, размещенное как веб-приложение Azure и использующее Azure Cosmos DB для хранения данных.
 
-## <a name="prerequisites"></a>предварительным требованиям
+## <a name="prerequisites"></a>Предварительные требования
 
 * [Подписка Microsoft Azure](https://azure.microsoft.com/free/).
 * [.NET Core](https://www.microsoft.com/net/download/core) (необязательно).

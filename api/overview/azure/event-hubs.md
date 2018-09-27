@@ -1,33 +1,27 @@
 ---
-title: Библиотеки концентраторов событий Azure для .NET
-description: Справочник по библиотекам концентраторов событий Azure для .NET
-keywords: Azure, .NET, SDK, API, Event Hubs
-author: camsoper
-ms.author: casoper
-manager: wpickett
+title: Библиотеки Центров событий Azure для .NET
+description: Справочник по библиотекам Центров событий Azure для .NET
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: event-hubs
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 5502ae24574c7883c34522ae18ca81bb516a33d2
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 74c533bef598b90369009d68a759d35d122a368d
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065314"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190277"
 ---
-# <a name="azure-event-hubs-libraries-for-net"></a>Библиотеки концентраторов событий Azure для .NET
+# <a name="azure-event-hubs-libraries-for-net"></a>Библиотеки Центров событий Azure для .NET
 
 ## <a name="overview"></a>Обзор
 
-Концентраторы событий Azure представляют собой платформу потоковой передачи с высокой степенью масштабируемости и службу приема событий.
+Центры событий Azure представляют собой платформу потоковой передачи с высокой степенью масштабируемости и службу приема событий.
 
-Дополнительные сведения о концентраторах событий Azure см. в статье [Что такое концентраторы событий?](/azure/event-hubs/event-hubs-what-is-event-hubs).  Чтобы приступить к работе, ознакомьтесь со статьей [Руководство по программированию концентраторов событий](/azure/event-hubs/event-hubs-programming-guide).
+Дополнительные сведения о Центрах событий Azure см. в статье [Что такое Центры событий?](/azure/event-hubs/event-hubs-what-is-event-hubs).  Чтобы приступить к работе, ознакомьтесь со статьей [Руководство по программированию Центров событий](/azure/event-hubs/event-hubs-programming-guide).
 
 ## <a name="client-library"></a>Клиентская библиотека
 
-Используйте клиент концентраторов событий, чтобы отправлять сообщения в концентратор событий и получать их из него.
+Используйте клиент Центров событий, чтобы отправлять сообщения в Центры событий и получать их из Центров событий.
 
 Установите [пакет NuGet](https://www.nuget.org/packages/Microsoft.Azure.EventHubs) непосредственно из [консоли диспетчера пакетов][PackageManager] Visual Studio или с помощью [.NET Core CLI][DotNetCLI].
 
@@ -43,7 +37,7 @@ dotnet add package Microsoft.Azure.EventHubs
 
 ### <a name="code-example"></a>Пример кода
 
-В коде ниже создается клиент концентраторов событий и в концентратор событий отправляется сообщение.
+В коде ниже создается клиент Центров событий и в концентратор событий отправляется сообщение.
 
 ```csharp
 EventHubsConnectionStringBuilder connectionStringBuilder = new EventHubsConnectionStringBuilder(eventHubConnectionString)
@@ -62,7 +56,7 @@ await eventHubClient.SendAsync(new EventData(Encoding.UTF8.GetBytes(message)));
 
 ## <a name="management-library"></a>Библиотека управления
 
-При помощи библиотеки управления концентраторов событий можно создавать, обновлять и удалять концентраторы и группы объектов-получателей.
+При помощи библиотеки управления Центров событий можно создавать, обновлять и удалять концентраторы и группы объектов-получателей.
 
 Установите [пакет NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.EventHub) непосредственно из [консоли диспетчера пакетов][PackageManager] Visual Studio или с помощью [.NET Core CLI][DotNetCLI].
 
@@ -102,13 +96,13 @@ Console.WriteLine("Created Event Hub successfully.");
 
 ## <a name="tutorials"></a>Учебники
 
-* [Отправка событий в концентраторы событий Azure с помощью платформы .NET Framework](/azure/event-hubs/event-hubs-dotnet-framework-getstarted-send)
+* [Отправка событий в Центры событий Azure с помощью платформы .NET Framework](/azure/event-hubs/event-hubs-dotnet-framework-getstarted-send)
 
-* [Получение событий от концентраторов событий Azure с помощью платформы .NET Framework](/azure/event-hubs/event-hubs-dotnet-framework-getstarted-receive-eph)
+* [Получение событий от Центров событий Azure с помощью платформы .NET Framework](/azure/event-hubs/event-hubs-dotnet-framework-getstarted-receive-eph)
 
 ## <a name="samples"></a>Примеры
 
-* [Примеры концентраторов событий Azure](https://github.com/Azure/azure-event-hubs/tree/master/samples)
+* [Примеры Центров событий Azure](https://github.com/Azure/azure-event-hubs/tree/master/samples)
 
 Ознакомьтесь с другими [примерами кода .NET](https://azure.microsoft.com/resources/samples/?platform=dotnet), которые можно использовать в приложениях.
 

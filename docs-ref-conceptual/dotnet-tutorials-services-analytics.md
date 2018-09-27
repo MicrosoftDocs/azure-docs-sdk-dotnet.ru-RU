@@ -1,21 +1,13 @@
 ---
 title: Руководства по .NET для анализа данных в Azure | Документация Майкрософт
 description: Разработка приложений для анализа данных с использованием служб Microsoft Azure.
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: d843e605bf64fb475efe8fc1bba6a112ddca4d96
-ms.sourcegitcommit: 9dd801d659803f5efb16d65454cd09258e1cc7d6
+ms.openlocfilehash: f1f4b4bcd0aac04150b510eb98308800dbdfe93c
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "29752906"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190207"
 ---
 # <a name="data-analytics-tutorials-with-net-on-azure"></a>Руководства по анализу данных с использованием .NET в Azure
 
@@ -27,7 +19,7 @@ ms.locfileid: "29752906"
 |---|---|
 | **HDInsight** | |
 | [Обработка событий из службы концентраторов событий Azure с помощью Storm в HDInsight (C#)][1] | Определение топологии, которая реализует пример приложения, сборка и запуск проекта. | 
-| [Разработка топологий для Apache Storm на C# с помощью средств Data Lake для Visual Studio][2] | Обработка данных из веб-сайтов, приложений и устройств при помощи элемента spout концентратора событий с использованием Apache Storm в HDInsight.
+| [Обработка событий из Центров событий Azure с помощью Storm в HDInsight][2] | Обработка данных из веб-сайтов, приложений и устройств при помощи элемента spout концентратора событий с использованием Apache Storm в HDInsight.
 | [Использование языка C# для потоковой передачи MapReduce в Hadoop в HDInsight][3] | Создание простого приложения MapReduce для подсчета слов и его развертывание в кластере HDInsight Hadoop под управлением Linux. |
 | **Аналитика озера данных** | |
 | [Начало работы с Azure Data Lake Analytics при помощи Azure CLI 2.0][4] | Узнайте, как использовать пакет SDK Azure для .NET для отправки заданий на языке U-SQL в Data Lake Analytics.|

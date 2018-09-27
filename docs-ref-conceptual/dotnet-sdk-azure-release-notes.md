@@ -1,22 +1,13 @@
 ---
 title: Заметки о выпуске библиотек управления Azure для .NET | Документация Майкрософт
 description: Узнайте о новых возможностях и критически важных изменениях в библиотеках управления Azure для .NET.
-keywords: Azure, .NET, API, reference, notes,  updates, deprecate
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 48ff29507268f6b38acb24217801cf7b0227e444
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: dac9dee9c25fc349dedd50d6007f25c7d15b0928
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005911"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190677"
 ---
 # <a name="release-notes"></a>Заметки о выпуске 
 
@@ -31,7 +22,7 @@ ms.locfileid: "31005911"
     <th align="left">Скоро</th>
   </tr>
   <tr>
-    <td>Среда выполнения приложений</td>
+    <td>Службы вычислений</td>
     <td>Виртуальные машины и их расширения<br>наборы для масштабирования виртуальных машин<br>Управляемые диски</td>
     <td></td>
     <td valign="top">Службы контейнеров Azure<br>Реестр контейнеров Azure</td>
@@ -56,8 +47,8 @@ ms.locfileid: "31005911"
   </tr>
   <tr>
     <td>Другие службы</td>
-    <td>Диспетчер ресурсов<br>хранилище ключей;<br>Redis<br>CDN<br>пакетная служба;</td>
-    <td valign="top">Служба приложений — веб-приложения<br>Functions<br>Служебная шина</td>
+    <td>Диспетчер ресурсов<br>Key Vault<br>Redis<br>CDN<br>Пакетная служба Azure</td>
+    <td valign="top">Служба приложений — веб-приложения<br>Функции Azure<br>Служебная шина</td>
     <td valign="top">Мониторинг<br>RBAC графа<br>Azure Cosmos DB<br>Планировщик</td>
   </tr>
   <tr>

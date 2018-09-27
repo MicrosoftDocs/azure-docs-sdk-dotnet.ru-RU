@@ -1,21 +1,13 @@
 ---
 title: Руководства по использованию службы сообщений и IoT с .NET в Azure | Документация Майкрософт
 description: Отправка сообщений между облачными приложениями и между устройствами и облаком с использованием .NET и служб Azure.
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: a6c50af1678c785c6a3fcd3f4f3689171069b2ee
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 92cb78b34706a453630dbf36913d53400962ff25
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29752846"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190777"
 ---
 # <a name="net-tutorials-for-enterprise-messaging-and-internet-of-things-iot"></a>Руководства по .NET для корпоративной службы сообщений и Интернета вещей (IoT)
 
@@ -35,7 +27,7 @@ ms.locfileid: "29752846"
 | [Обработка сообщений Центра Интернета вещей, отправляемых с устройства в облако, с использованием маршрутов (.NET)][5] | Отправка сообщений из виртуального устройства и их обработка в облаке. |
 |**Концентратор событий**|
 | [Приступая к отправке событий в концентраторы событий Azure на платформе .NET Standard][6] | Отправка событий из консольного приложения в концентратор событий.
-| [Основные сведения о получении сообщений с помощью узла EventProcessorHost в .NET Standard][7] | Получение и параллельная обработка сообщений.
+| [Получение событий из Центров событий][7] | Получение и параллельная обработка сообщений.
 
 
 [1]: /azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues

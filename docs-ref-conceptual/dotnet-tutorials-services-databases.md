@@ -1,21 +1,13 @@
 ---
 title: Руководства по использованию .NET с базами данных Azure
 description: Руководства по подключению к базам данных Azure и их использованию в приложениях .NET.
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: f03f1cc7e2d973aa270f99f7ca29c9cb4d6fd720
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: 38dcf7e288e4ec46705b31b9d00efc5477f92a85
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005751"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190627"
 ---
 # <a name="tutorials-for-using-net-with-azure-databases"></a>Руководства по использованию .NET с базами данных Azure
 
@@ -29,7 +21,7 @@ ms.locfileid: "31005751"
 | [Использование .NET для подключения и создания запросов данных][1] | Использование ADO.NET для подключения к базе данных Azure SQL и использование инструкций Transact-SQL для создания запросов, вставки, обновления и удаления данных в базе данных. | 
 | **База данных Azure для PostgreSQL** ||
 | [Использование .NET для подключения и создания запросов данных][2] | Использование инструкций SQL для создания запросов, вставки, обновления и удаления данных в базе данных. | 
-| **База данных Azure Cosmos** ||
+| **Azure Cosmos DB** ||
 | [Azure Cosmos DB. Руководство по началу работы с API SQL][4] | Создание простого консольного приложения с помощью API SQL. | 
 | [Руководство по ASP.NET MVC. Разработка веб-приложений в Azure Cosmos DB][3] | Создание веб-приложения с помощью API SQL для Azure Cosmos DB. | 
 | **Кэш Redis** | |

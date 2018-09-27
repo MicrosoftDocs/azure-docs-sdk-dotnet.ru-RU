@@ -1,22 +1,14 @@
 ---
 title: Перенос базы данных SQL Server в Azure
 description: Узнайте, как перенести базу данных SQL Server из локальной среды в Azure.
-keywords: Azure .NET, ASP.NET, SQL, SQL Server, SQL Database, migrate, migration
-author: camsoper
-manager: wpickett
-ms.author: casoper
 ms.date: 11/15/2017
-ms.topic: article
-ms.technology: azure
-ms.devlang: dotnet
 ms.service: sql-database
-ms.custom: devcenter
-ms.openlocfilehash: d118d39e2168686c851f0daa6cb611f0a0c9d2fc
-ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
+ms.openlocfilehash: 49b03632b8ebe31439b3c39629fdaf751412fd5a
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2018
-ms.locfileid: "29728495"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190517"
 ---
 ## <a name="migrate-a-sql-server-database-to-azure"></a>Перенос базы данных SQL Server в Azure
 

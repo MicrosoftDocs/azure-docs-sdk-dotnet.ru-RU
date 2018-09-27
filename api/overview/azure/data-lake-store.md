@@ -1,21 +1,15 @@
 ---
 title: Библиотеки Azure Data Lake Store для .NET
 description: Справочник по библиотекам Azure Data Lake Store для .NET
-keywords: Azure, .NET, SDK, API, Data Lake Store
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: data-lake-store
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 7bbc8c6c5a71d16372d7ab756a5188d90503f52a
-ms.sourcegitcommit: 512e031ead61a578ac96835c8ea01829842740bf
+ms.openlocfilehash: 8e55a21d84eae2ef4104c8253adec2cbc4b008e5
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39116690"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190567"
 ---
 # <a name="azure-data-lake-store-libraries-for-net"></a>Библиотеки Azure Data Lake Store для .NET
 

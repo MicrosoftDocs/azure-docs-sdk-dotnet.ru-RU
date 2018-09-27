@@ -1,23 +1,19 @@
 ---
 title: Пакет SDK .NET для Azure HDInsight
 description: Справочник по пакету SDK .NET для HDInsight
-keywords: Azure, .NET, SDK, API, HDInsight
-author: tylerfox
-ms.author: tyfox
-manager: arindamc
 ms.date: 9/19/2018
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: hd-insight
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 1f85a9333d3008977137f271df9acb72bb7c17d7
-ms.sourcegitcommit: a2c56781d52abbc09a5d56ca3103ed54545076a6
+ms.openlocfilehash: d25bdb1c9086cd93190b97f519654f2c193b9dc3
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46484589"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190687"
 ---
-# <a name="azure-hdinsight-libraries-for-net-2x"></a>Библиотеки Azure HDInsight для .NET 2.X
+# <a name="azure-hdinsight-net-sdk"></a>Пакет SDK .NET для Azure HDInsight
+
+## <a name="azure-hdinsight-libraries-for-net-2x"></a>Библиотеки Azure HDInsight для .NET 2.X
 
 ## <a name="overview"></a>Обзор
 
@@ -122,16 +118,19 @@ managementClient.Clusters.Create("<ExistingResourceGroupName>", "<NewClusterName
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
 
-# <a name="hdinsight-net-management-sdk-3x-preview"></a>Пакет Azure Management SDK .NET для HDInsight 3.X (предварительная версия)
+## <a name="hdinsight-net-management-sdk-3x-preview"></a>Пакет Azure Management SDK .NET для HDInsight 3.X (предварительная версия)
 
 ## <a name="overview"></a>Обзор
+
 Пакет SDK .NET для HDInsight предоставляет классы и методы для управления кластерами HDInsight. Пакет также поддерживает операции создания, удаления, обновления, получения списков, масштабирования, выполнения скриптов, мониторинга, получения свойства кластеров HDInsight и др.
 
 ## <a name="prerequisites"></a>Предварительные требования
+
 * Учетная запись Azure. Если у вас ее нет, [получите бесплатную пробную версию](https://azure.microsoft.com/free/).
 * [Visual Studio](https://visualstudio.microsoft.com/downloads/)
 
 ## <a name="sdk-installation"></a>Установка пакета SDK
+
 В проекте Visual Studio откройте консоль диспетчера пакетов, выбрав **Средства**, **Диспетчер пакетов NuGet**, **Консоль диспетчера пакетов**.
 
 В консоли диспетчера пакетов выполните такие команды:
@@ -143,12 +142,14 @@ managementClient.Clusters.Create("<ExistingResourceGroupName>", "<NewClusterName
 ```
 
 ## <a name="authentication"></a>Authentication
+
 Для использования пакета SDK нужно выполнить аутентификацию с помощью подписки Azure.  Ниже описано, как создать субъект-службу и использовать его для аутентификации. После этого вы получите экземпляр `HDInsightManagementClient`, в котором доступны различные методы (описанные далее) для операций управления.
 
 > [!NOTE]
 > Кроме описанного выше, есть и другие методы аутентификации, которые могут оказаться удобнее для вас. Дополнительные сведения см. в статье [Аутентификация с использованием библиотек Azure для .NET](https://docs.microsoft.com/en-us/dotnet/azure/dotnet-sdk-azure-authenticate?view=azure-dotnet)
 
 ### <a name="authentication-example-using-a-service-principal"></a>Пример аутентификации с помощью субъекта-службы
+
 Сначала войдите в [Azure Cloud Shell](https://shell.azure.com/bash). Убедитесь, что вы используете подписку, в которой будет создан субъект-служба. 
 
 ```azurecli-interactive
@@ -244,24 +245,29 @@ namespace HDI_SDK_Test
 
 
 ## <a name="cluster-management"></a>Управление кластерами
+
 > [!NOTE]
 > В этом разделе предполагается, что вы уже выполнили аутентификацию, создали экземпляр `HDInsightManagementClient` и сохранили его в переменной с именем `client`. Инструкции по выполнению аутентификации и получению `HDInsightManagementClient` см. в предыдущем разделе.
 
 ### <a name="create-a-cluster"></a>Создание кластера
+
 Кластер можно создать, вызвав `client.Clusters.Create()`. 
 
 #### <a name="example"></a>Пример
+
 В этом примере показано, как создать кластер Spark с двумя головными узлами и одним рабочим.
 
 > [!NOTE]
 > Сначала необходимо создать группу ресурсов и учетную запись хранения, как описано далее. Если они уже созданы, следующие шаги можно пропустить.
 
 ##### <a name="creating-a-resource-group"></a>Создание группы ресурсов
+
 Группу ресурсов можно создать с помощью [Azure Cloud Shell](https://shell.azure.com/bash), выполнив такую команду:
 ```azurecli-interactive
 az group create -l <Region Name (i.e. eastus)> --n <Resource Group Name>
 ```
 ##### <a name="creating-a-storage-account"></a>Создание учетной записи хранения
+
 Учетную запись хранения можно создать с помощью [Azure Cloud Shell](https://shell.azure.com/bash), выполнив такую команду:
 ```azurecli-interactive
 az storage account create -n <Storage Account Name> -g <Existing Resource Group Name> -l <Region Name (i.e. eastus)> --sku <SKU i.e. Standard_LRS>
@@ -375,13 +381,15 @@ client.Clusters.Create(
 ```
 
 ### <a name="get-cluster-details"></a>Получение сведений о кластере
+
 Чтобы получить сведения о свойствах кластера, выполните такую команду:
 
 ```csharp
 client.Clusters.Get("<Resource Group Name>", "<Cluster Name>");
 ```
-https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.management.hdinsight.models.cluster?view=azure-dotnet-preview
+
 #### <a name="example"></a>Пример
+
 Чтобы убедиться в том, что вы создали кластер, можно использовать `get`.
 
 ```csharp
@@ -403,10 +411,12 @@ Debug.WriteLine(myCluster.Id) //Prints the resource Id of the cluster
 ### <a name="list-clusters"></a>Получение списка кластеров
 
 #### <a name="list-clusters-under-the-subscription"></a>Получение списка кластеров в пределах подписки
+
 ```csharp
 client.Clusters.List();
 ```
 #### <a name="list-clusters-by-resource-group"></a>Получение списка кластеров в пределах в группы ресурсов
+
 ```csharp
 client.Clusters.ListByResourceGroup("<Resource Group Name>");
 ```
@@ -433,6 +443,7 @@ while (true)
 ```
 
 ### <a name="delete-a-cluster"></a>Удаление кластера
+
 Чтобы удалить кластер, выполните такую команду:
 
 ```csharp
@@ -440,6 +451,7 @@ client.Clusters.Delete("<Resource Group Name>", "<Cluster Name>");
 ```
 
 ### <a name="update-cluster-tags"></a>Обновление тегов кластера
+
 Вы можете обновить теги кластера так:
 
 ```csharp
@@ -452,6 +464,7 @@ client.Clusters.Update("<Resource Group Name>", "<Cluster Name>", new ClusterPat
 ```
 
 ### <a name="scale-cluster"></a>Масштабирование кластера
+
 Вы можете масштабировать кластер, изменяя количество его рабочих узлов так:
 
 ```csharp
@@ -459,6 +472,7 @@ client.Clusters.Resize("<Resource Group Name>", "<Cluster Name>", <Num of Worker
 ```
 
 ## <a name="cluster-monitoring"></a>Мониторинг кластера
+
 Пакет Azure Management SDK для HDInsight также позволяет управлять мониторингом кластеров с помощью Operations Management Suite (OMS).
 
 ### <a name="enable-oms-monitoring"></a>Включение мониторинга OMS
@@ -473,6 +487,7 @@ client.Extension.EnableMonitoring("<Resource Group Name", "Cluster Name", new Cl
 ```
 
 ### <a name="view-status-of-oms-monitoring"></a>Просмотр состояния мониторинга OMS
+
 Чтобы узнать состояние мониторинга OMS в кластере, выполните такую команду:
 
 ```csharp
@@ -480,6 +495,7 @@ client.Extension.GetMonitoringStatus("<Resource Group Name", "Cluster Name");
 ```
 
 ### <a name="disable-oms-monitoring"></a>Отключение мониторинга OMS
+
 Чтобы отключить мониторинг OMS в кластере, выполните такую команду:
 
 ```csharp
@@ -487,11 +503,13 @@ client.Extension.DisableMonitoring("<Resource Group Name>", "<Cluster Name>");
 ```
 
 ## <a name="script-actions"></a>Элемент "Действия скрипта"
+
 В кластерах HDInsight поддерживается метод конфигурации с использованием, действий скриптов, который вызывает пользовательские скрипты для настройки кластера.
 > [!NOTE]
 > Дополнительные сведения о действиях скриптов см. в статье [Настройка кластеров HDInsight под управлением Linux с помощью действий сценариев](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux).
 
 ### <a name="execute-script-actions"></a>Выполнение действий скриптов
+
 Вы можете выполнить действия скриптов в кластере так:
 
 ```csharp
@@ -501,6 +519,7 @@ client.Clusters.ExecuteScriptActions("<Resource Group Name>", "<Cluster Name>", 
 ```
 
 ### <a name="delete-script-action"></a>Удаление действий скриптов
+
 Чтобы удалить сохраненные действия скриптов в кластере, выполните такую команду:
 
 ```csharp
@@ -536,6 +555,7 @@ while (true)
 ```
 
 ### <a name="list-all-scripts-execution-history"></a>Просмотр журнала выполнения всех скриптов
+
 Чтобы получить журнал выполнения всех скриптов в кластере, выполните такую команду:
 
 ```csharp
@@ -543,6 +563,7 @@ client.script_execution_history.list("<Resource Group Name>", "<Cluster Name>");
 ```
 
 #### <a name="example"></a>Пример
+
 В этом примере выводятся сведения обо всех выполнявшихся скриптах.
 
 ```csharp

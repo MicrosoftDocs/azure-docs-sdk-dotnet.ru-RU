@@ -1,22 +1,13 @@
 ---
 title: Средства Azure для Visual Studio 2015
 description: Получите средства для использования библиотек Azure для .NET в Visual Studio 2015.
-keywords: Azure .NET, SDK, VS2015, Visual Studio 2015
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 5046781a16b5b330b95c4ad36e8a8187126fef4e
-ms.sourcegitcommit: 1c2e1fd031ad012d6888fcde3cd325f7e8e49e0f
+ms.openlocfilehash: b574841d17ba60e8ab52a4c06831f0b1cc8cc8aa
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "29752816"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190407"
 ---
 # <a name="azure-tools-for-visual-studio-2015"></a>Средства Azure для Visual Studio 2015
 
@@ -40,7 +31,7 @@ ms.locfileid: "29752816"
 
 2. Отображаемый список будет содержать несколько средств Azure, например **средства службы приложений Microsoft Azure**, **подключенную службу хранилища Microsoft Azure** и **средства Service Fabric**.
 
-    ![Расширения и обновления](media\dotnet-sdk-vs2015-install\ext-tools.png)
+    ![Расширения и обновления](media/dotnet-sdk-vs2015-install/ext-tools.png)
 
 ## <a name="next-steps"></a>Дополнительная информация
 

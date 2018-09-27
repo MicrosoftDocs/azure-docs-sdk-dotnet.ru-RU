@@ -1,22 +1,14 @@
 ---
 title: Средства Azure для разработчиков .NET и .NET Core
 description: Получите средства для работы с библиотеками Azure для .NET в среде Windows, Mac и Linux.
-keywords: Azure .NET, SDK, Azure .NET API Reference, Azure .NET class library
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 08/11/2018
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter, vs-azure
-ms.openlocfilehash: e67cd101842b8b9e36bbe1867818dcb5467c35ea
-ms.sourcegitcommit: ed841c513dd332b14ca76a0c8a1893be13ec9f2c
+ms.custom: azure-dotnet-devcenter, azure-dotnet-devcenter-authored, azure-dotnet-devcenter-conceptual, vs-azure
+ms.openlocfilehash: b39d40aa47319abc063fc5c5608700b579a22396
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45567336"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190337"
 ---
 # <a name="tools-for-net-and-net-core-azure-developers"></a>Средства Azure для разработчиков .NET и .NET Core
 
@@ -27,7 +19,7 @@ ms.locfileid: "45567336"
 <table>
   <tr>
     <td width="50">
-        <img src="https://docs.microsoft.com/en-us/media/logos/logo_vs-ide.svg" width="50" height="50"></img>
+        <img src="https://docs.microsoft.com/media/logos/logo_vs-ide.svg" width="50" height="50"></img>
     </td>
     <td>
         В Visual Studio 2017 есть встроенная поддержка средств разработки для Azure.
@@ -58,7 +50,7 @@ ms.locfileid: "45567336"
 <table>
   <tr>
     <td width="50">
-        <img src="https://docs.microsoft.com/en-us/media/logos/logo_vs-mac.svg" width="50" height="50"></img>
+        <img src="https://docs.microsoft.com/media/logos/logo_vs-mac.svg" width="50" height="50"></img>
     </td>
     <td>
         В Visual Studio для Mac есть все необходимое для разработки в Azure.
@@ -80,7 +72,7 @@ ms.locfileid: "45567336"
 <table>
   <tr>
     <td width="50">
-        <img src="https://docs.microsoft.com/en-us/visualstudio/products/images/vs-code.svg" width="50" height="50"></img>
+        <img src="https://docs.microsoft.com/media/logos/logo_vs-code.svg" width="50" height="50"></img>
     </td>
     <td>
         В Visual Studio Code есть все необходимое для разработки в Azure в среде Linux.
