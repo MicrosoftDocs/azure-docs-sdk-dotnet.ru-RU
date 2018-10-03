@@ -1,329 +1,78 @@
 ---
-title: Начало работы с API-интерфейсами Azure для .NET и .NET Core
-description: Сведения о начале работы с библиотеками Azure для .NET и .NET Core в подписке Azure.
-keywords: Azure, .NET, .NET Core, ASP.NET, ASP.NET Core SDK, API, authenticate, get-started
-author: camsoper
-ms.author: casoper
-manager: wpickett
-ms.date: 08/22/2018
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: ad894e47704fcccc83f7d02acb8e418b167993f9
-ms.sourcegitcommit: b2a53a3aea9de6720bd975fb7fe4e722e9d182a3
+title: Начало работы с Azure и .NET
+description: Необходимые основные сведения об Azure и .NET.
+ms.date: 09/19/2018
+ms.openlocfilehash: 89fdae6afa5c040127975de43c79d837550a9fbc
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42703057"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190597"
 ---
-# <a name="get-started-with-the-azure-net-and-net-core-apis"></a>Начало работы с API-интерфейсами Azure для .NET и .NET Core
+# <a name="get-started-with-azure-and-net"></a>Начало работы с Azure и .NET
 
-В этом руководстве объясняется, как использовать [API Azure для .NET](/dotnet/api/overview/azure/).  Вы настроите проверку подлинности, создадите и будете использовать учетную запись хранения Azure и базу данных SQL Azure, а также развернете несколько виртуальных машин и веб-приложение службы приложений Azure из GitHub.
+В этом документе представлен обзор основных понятий и служб .NET, с которыми необходимо ознакомиться разработчику, прежде чем приступать к разработке приложений с помощью служб Azure.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="key-concepts"></a>Основные понятия
 
-- Учетная запись Azure. Если у вас ее нет, [получите бесплатную пробную версию](https://azure.microsoft.com/free/).
+**Учетная запись Azure** — это учетные данные, используемые для входа в службы Azure, такие как [портал Azure](https://portal.azure.com) или [Cloud Shell](https://shell.azure.com). Если у вас нет учетной записи Azure, можете [создать ее бесплатно](https://azure.microsoft.com/free/dotnet/).
 
-## <a name="set-up-authentication"></a>Настройка проверки подлинности
+**Подписка Azure** — это план выставления счетов, в соответствии с которым создаются ресурсы Azure. Подписки могут быть как индивидуальными, так и корпоративными (которыми управляет организация). Учетная запись Azure может быть связана с несколькими подписками. Если подписок несколько, при создании ресурсов необходимо обращать внимание на то, выбрана ли требуемая подписка. Дополнительные сведения см. в разделе [Сведения об учетных записях, подписках и выставлении счетов](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing).
 
-[!include[Create service principal](includes/create-sp.md)]
+> [!TIP]
+> Если у вас есть подписка Visual Studio, вы можете ежемесячно получать деньги на счет в Azure, [активировав такую возможность](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/).
 
-[!include[File-based authentication](includes/file-based-auth.md)]
+**Группа ресурсов**. Упорядочивание ресурсов Azure путем объединения их в группы упрощает задачу управления ресурсами. Ресурсы, созданные в Azure, хранятся в группе ресурсов аналогично тому, как файлы хранятся в папках на компьютере.
 
-## <a name="create-a-new-project"></a>Создание нового проекта 
+**Размещение**. Чтобы выполнить код в Azure, его нужно разместить в службе, поддерживающей выполнение кода, предоставленного пользователем.
 
-Создайте новый проект консольного приложения.  Для этого в Visual Studio щелкните элементы **Файл**, **Создать** и выберите **Проект...**.  В списке шаблонов Visual C#, выберите **Console App (.NET Core)**, назовите свой проект и нажмите кнопку **ОК**.
+**Управляемые службы**. Некоторые службы Azure предназначены для работы с данными и информацией, предоставляемыми пользователем. Например, пользователь помещает свои файлы в хранилище BLOB-объектов Azure, а Azure обеспечивает возможность чтения, записи и хранения этих файлов.
 
-![Диалоговое окно "Новый проект"](media/dotnet-sdk-azure-get-started/new-project.png)
+## <a name="choosing-a-hosting-option"></a>Выбор варианта размещения
 
-Создав консольное приложение, откройте консоль диспетчера пакетов. Для этого выберите **Средства**, **Диспетчер пакетов NuGet**, а затем щелкните **Консоль диспетчера пакетов**.  В консоли извлеките нужные вам пакеты, выполнив следующие три команды:
+В Azure предусмотрено три варианта размещения.
 
-```powershell
-# Azure Management Libraries for .NET (Fluent)
-Install-Package Microsoft.Azure.Management.Fluent
+* **Инфраструктура как услуга (IaaS)**. При этом варианте пользователь подготавливает необходимые ему виртуальные машины, компоненты сети и хранилища. Затем он развертывает необходимые приложения и программное обеспечение на этих виртуальных машинах. Эта модель больше всего похожа на традиционную локальную среду, но с тем отличием, что инфраструктурой управляет корпорация Майкрософт. Пользователь при этом может управлять виртуальными машинами, их операционными системами, пользовательским ПО и обновлениями системы безопасности.
 
-# Azure Store client libraries
-Install-Package WindowsAzure.Storage
+* **Платформа как услуга (PaaS)**. При этом варианте пользователю предоставляется управляемая среда размещения, в которой можно сразу развернуть приложение, не отвлекаясь на управление виртуальными машинами и сетевыми ресурсами. Вместо того, чтобы создавать отдельные виртуальные машины, вам достаточно указать число экземпляров, а все процессы подготовки, настройки и управления для этих ресурсов служба выполнит автоматически. Служба приложений Azure является примером службы PaaS.
+  
+* **Функция как услуга (FaaS)**. Эта модель, известная также как бессерверные вычисления, предполагает еще меньшую, по сравнению с PaaS, степень участия пользователя в вопросах организации и работы среды размещения. Вам не нужно создавать вычислительные экземпляры, а затем развертывать в них код. Вы сразу развертываете код в службе, которая автоматически его выполняет. Об управлении вычислительными ресурсами можно не беспокоиться. Платформа легко масштабирует код до необходимого уровня, чтобы справиться с трафиком, а пользователь платит только за то время, когда код выполняется. Служба "Функции Azure" реализована по модели FaaS.
 
-# SQL Database client libraries
-Install-Package System.Data.SqlClient
-```
+Как правило, чем лучше приложение подходит для работы по модели FaaS и PaaS, тем ощутимей будут преимущества от его запуска в облаке. Ниже представлена сводка по трем основным вариантам размещения в Azure и предпосылки для их использования.
 
-## <a name="directives"></a>Директивы
-
-Измените файл `Program.cs` приложения.  Замените директивы `using` сверху следующими значениями:
-
-```csharp
-using System;
-using System.Linq;
-using Microsoft.Azure.Management.Compute.Fluent;
-using Microsoft.Azure.Management.Compute.Fluent.Models;
-using Microsoft.Azure.Management.Fluent;
-using Microsoft.Azure.Management.ResourceManager.Fluent;
-using Microsoft.Azure.Management.ResourceManager.Fluent.Core;
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Blob;
-using System.Data.SqlClient;
-```
+* [Служба приложений Azure](https://docs.microsoft.com/azure/app-service/app-service-value-prop-what-is). Если вам требуется разместить веб-приложение или службу, сначала стоит рассмотреть возможности Службы приложений Azure. Сведения о начале работы с этой службой и размещении приложений ASP.NET, WCF и ASP.NET Core см. в статье [Создание веб-приложения ASP.NET Core в Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet).
 
-## <a name="create-a-virtual-machine"></a>Создание виртуальной машины
+* [Функции Azure](https://docs.microsoft.com/azure/azure-functions/functions-overview). Эта служба подходит для рабочих процессов на основе событий. В числе таких процессов — ответы на вызовы веб-перехватчиков и таймеров, обработка элементов в очереди или хранилище BLOB-объектов. Сведения о начале работы со службой "Функции Azure" см. в статье [Создание первой функции с помощью Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio).
 
-Этот пример развертывает виртуальную машину. 
+* [Виртуальные машины Azure](https://docs.microsoft.com/azure/virtual-machines/). Если Служба приложений Azure не соответствует требованиям к размещению существующего приложения из-за определенных зависимостей, начните с размещения на Виртуальных машинах Azure. Сведения о том, как приступить к работе и разместить приложения ASP.NET и WCF на Виртуальных машинах Azure, см. в [соответствующем разделе](https://tutorials.visualstudio.com/aspnet-vm/intro).
 
-Замените метод `Main` следующим кодом.  Не забудьте указать фактические значения `username` и `password` для виртуальной машины.
+> [!TIP]
+> Полный список служб Azure см. в разделе [Варианты вычислительных служб в Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview#azure-compute-options). Дополнительные сведения о выборе службы см. в статье [Дерево принятия решений для вычислительных служб Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree).
 
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string username = "MY_USERNAME";
-    string password = "MY_PASSWORD";
-    string rgName = "sampleResourceGroup";
-    string windowsVmName = "sampleWindowsVM";
-    string publicIpDnsLabel = "samplePublicIP" + (new Random().Next(0,100000)).ToString();
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the VM
-    Console.WriteLine("Creating VM...");
-    var windowsVM = azure.VirtualMachines.Define(windowsVmName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithNewPrimaryNetwork("10.0.0.0/28")
-        .WithPrimaryPrivateIPAddressDynamic()
-        .WithNewPrimaryPublicIPAddress(publicIpDnsLabel)
-        .WithPopularWindowsImage(KnownWindowsVirtualMachineImage.WindowsServer2012R2Datacenter)
-        .WithAdminUsername(username)
-        .WithAdminPassword(password)
-        .WithSize(VirtualMachineSizeTypes.StandardD2V2)
-        .Create();
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-Нажмите клавишу **F5**, чтобы запустить пример.
-
-Через несколько минут программа завершит задание и появится запрос на нажатие клавиши ВВОД. Нажмите клавишу ВВОД и проверьте виртуальную машину в подписке с помощью Cloud Shell:
-
-```azurecli-interactive
-az vm list
-```
-
-## <a name="deploy-a-web-app-from-a-github-repo"></a>Развертывание веб-приложения из репозитория GitHub
-
-Теперь вы измените код, чтобы развернуть новое веб-приложение из существующего репозитория GitHub. Замените метод `Main` следующим кодом:
-
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string appName = SdkContext.RandomResourceName("WebApp", 20);
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the web app
-    Console.WriteLine("Creating Web App...");
-    var app = azure.WebApps.Define(appName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithNewFreeAppServicePlan()
-        .DefineSourceControl()
-        .WithPublicGitRepository("https://github.com/Azure-Samples/app-service-web-dotnet-get-started")
-        .WithBranch("master")
-        .Attach()
-        .Create();
-    Console.WriteLine("Your web app is live at: https://{0}", app.HostNames.First());
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-Запустите код, нажав клавишу **F5**.  Проверьте развертывание: откройте браузер и перейдите по URL-адресу, который отображается в консоли.
-
-## <a name="connect-to-a-sql-database"></a>Подключение к базе данных SQL
-
-Этот пример создает базу данных SQL Azure и выполняет ряд операций SQL.
-
-Замените метод `Main` следующим кодом и укажите надежный пароль для значения `dbPassword`:
-
-```csharp
- static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string adminUser = SdkContext.RandomResourceName("db", 8);
-    string sqlServerName = SdkContext.RandomResourceName("sql", 10);
-    string sqlDbName = SdkContext.RandomResourceName("dbname", 8);
-    string dbPassword = "YOUR_PASSWORD_HERE";
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the SQL server and database
-    Console.WriteLine("Creating server...");
-    var sqlServer = azure.SqlServers.Define(sqlServerName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithAdministratorLogin(adminUser)
-        .WithAdministratorPassword(dbPassword)
-        .WithNewFirewallRule("0.0.0.0", "255.255.255.255")
-        .Create();
-
-    Console.WriteLine("Creating database...");
-    var sqlDb = sqlServer.Databases.Define(sqlDbName).Create();
-
-    // Display information for connecting later...
-    Console.WriteLine("Created database {0} in server {1}.", sqlDbName, sqlServer.FullyQualifiedDomainName);
-    Console.WriteLine("Your user name is {0}.", adminUser + "@" + sqlServer.Name);
-
-    // Build the connection string
-    var builder = new SqlConnectionStringBuilder();
-    builder.DataSource = sqlServer.FullyQualifiedDomainName;
-    builder.InitialCatalog = sqlDbName;
-    builder.UserID = adminUser + "@" + sqlServer.Name; // Format user ID as "user@server"
-    builder.Password = dbPassword;
-    builder.Encrypt = true;
-    builder.TrustServerCertificate = true;
-
-    // connect to the database, create a table and insert an entry into it
-    using (var conn = new SqlConnection(builder.ConnectionString))
-    {
-        conn.Open();
-
-        Console.WriteLine("Populating database...");
-        var createCommand = new SqlCommand("CREATE TABLE CLOUD (name varchar(255), code int);", conn);
-        createCommand.ExecuteNonQuery();
-
-        var insertCommand = new SqlCommand("INSERT INTO CLOUD (name, code ) VALUES ('Azure', 1);", conn);
-        insertCommand.ExecuteNonQuery();
-
-        Console.WriteLine("Reading from database...");
-        var selectCommand = new SqlCommand("SELECT * FROM CLOUD", conn);
-        var results = selectCommand.ExecuteReader();
-        while(results.Read())
-        {
-            Console.WriteLine("Name: {0} Code: {1}", results[0], results[1]);
-        }
-    }
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-Запустите код, нажав клавишу **F5**.  Выходные данные в консоли должны подтверждать, что сервер создан и работает правильно. Вы можете подключиться к серверу непосредственно с помощью такого средства, как SQL Server Management Studio.
-
-## <a name="write-a-blob-into-a-new-storage-account"></a>Запись большого двоичного объекта в новую учетную запись хранения
-
-Этот пример создает учетную запись хранения и передает большой двоичный объект.  
-
-Замените метод `Main` следующим кодом.
-
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string storageAccountName = SdkContext.RandomResourceName("st", 10);
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the storage account
-    Console.WriteLine("Creating storage account...");
-    var storage = azure.StorageAccounts.Define(storageAccountName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .Create();
-
-    var storageKeys = storage.GetKeys();
-    string storageConnectionString = "DefaultEndpointsProtocol=https;"
-        + "AccountName=" + storage.Name
-        + ";AccountKey=" + storageKeys[0].Value
-        + ";EndpointSuffix=core.windows.net";
-
-    var account = CloudStorageAccount.Parse(storageConnectionString);
-    var serviceClient = account.CreateCloudBlobClient();
-
-    // Create container. Name must be lower case.
-    Console.WriteLine("Creating container...");
-    var container = serviceClient.GetContainerReference("helloazure");
-    container.CreateIfNotExistsAsync().Wait();
-
-    // Make the container public
-    var containerPermissions = new BlobContainerPermissions()
-        { PublicAccess = BlobContainerPublicAccessType.Container };
-    container.SetPermissionsAsync(containerPermissions).Wait();
-
-    // write a blob to the container
-    Console.WriteLine("Uploading blob...");
-    var blob = container.GetBlockBlobReference("helloazure.txt");
-    blob.UploadTextAsync("Hello, Azure!").Wait();
-    Console.WriteLine("Your blob is located at {0}", blob.StorageUri.PrimaryUri);
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-Нажмите клавишу **F5**, чтобы запустить пример.
-
-Программа будет выполняться несколько минут. Убедитесь, что большой двоичный объект передан. Для этого перейдите по URL-адресу, который отображается в консоли.  В браузере должен отображаться текст Hello, Azure!
-
-## <a name="clean-up"></a>Очистка
-
-> [!IMPORTANT]
-> Если вы не очистите ресурсы, которые использовали для этого руководства, с вас будет взиматься плата за их использование.  Не забывайте об этом.
-
-Чтобы удалить все созданные ресурсы, введите следующую команду в Cloud Shell:
-
-```azurecli-interactive
-az group delete --name sampleResourceGroup
-```
-
-## <a name="explore-more-samples"></a>Другие примеры
-
-Чтобы узнать, как использовать библиотеки Azure для .NET для управления ресурсами и автоматизации задач, см. примеры кода для [виртуальных машин](dotnet-sdk-azure-virtual-machine-samples.md), [веб-приложений](dotnet-sdk-azure-web-apps-samples.md) и [базы данных SQL](dotnet-sdk-azure-sql-database-samples.md).
-
-## <a name="reference"></a>Справочные материалы
-
-[Справочник](http://docs.microsoft.com/dotnet/api) по всем пакетам.
-
-[!include[Contribute and community](includes/contribute.md)]
+## <a name="choosing-a-data-storage-service"></a>Выбор службы хранения данных
+
+В Azure представлено несколько служб хранения данных, учитывающих различные требования. Разработчики .NET чаще всего используют следующие службы хранения данных:
+
+* [База данных SQL Azure](https://docs.microsoft.com/azure/sql-database/). Если вы планируете перенести в облако приложение, которое использует SQL Server, вполне естественно будет начать с Базы данных SQL Azure. Сведения о начале работы см. в [руководстве по созданию приложения ASP.NET в Azure с подключением к Базе данных SQL](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase).
+
+* [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/). Azure Cosmos DB — это современная база данных, предназначенная специально для облака. Разрабатывая новое приложение, которое еще не зависит от базы данных определенного типа, обязательно изучите возможности Azure Cosmos DB. Azure Cosmos DB подходит для новых мобильных, игровых и веб-приложений, а также приложений для Интернета вещей, для которых важны автоматическое масштабирование, прогнозируемая производительность, малое время отклика и возможность выполнения запросов к данным без определения схем. Сведения о начале работы см. в [кратком руководстве по созданию веб-приложения .NET при помощи Azure Cosmos DB с использованием API SQL и портала Azure](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet).
+
+* [Хранилище BLOB-объектов](https://docs.microsoft.com/azure/storage/). Хранилище BLOB-объектов Azure оптимизировано для хранения и извлечения больших двоичных объектов, таких как изображения, файлы и потоки. Хранилища объектов позволяют управлять чрезвычайно большими объемами неструктурированных данных. Сведения о начале работы см. в [кратком руководстве по передаче, скачиванию и составлению списка больших двоичных объектов с помощью .NET](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet).
+
+> [!TIP]
+> Дополнительные сведения см. в статье [Выбор правильного хранилища данных](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).
+
+## <a name="diagnosing-problems-in-the-cloud"></a>Диагностика проблем в облаке
+
+После развертывания в Azure может оказаться, что приложение не работает, хотя оно было работоспособным в среде разработки. Два следующих варианта послужат хорошей отправной точкой для диагностики проблемы.
+
+* **Удаленная отладка в Visual Studio**. Большинство вычислительных служб Azure (в том числе и описанные в этой статье) поддерживают удаленную отладку с помощью Visual Studio и получение журналов. Чтобы изучить возможности Visual Studio по работе с приложениями, откройте окно инструментов Cloud Explorer, введя "Cloud Explorer" в панели быстрого запуска Visual Studio (расположена в правом верхнем углу), и найдите приложение в дереве. Дополнительные сведения см. в разделе [Удаленная отладка веб-приложений](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug).
+
+* **Application Insights**. [Application Insights](https://docs.microsoft.com/azure/application-insights/) — это полноценное решение для мониторинга производительности приложений (APM), которое автоматически собирает данные диагностики, телеметрии и производительности приложений. Сведения о том, как начать сбор диагностических данных приложений, см. в статье [Запуск мониторинга веб-приложения ASP.NET](https://docs.microsoft.com/azure/application-insights/quick-monitor-portal).
+
+## <a name="next-steps"></a>Дополнительная информация
+
+* [Создание веб-приложения ASP.NET Core в Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet)
+* [Аутентификация с использованием библиотек Azure для .NET](dotnet-sdk-azure-authenticate.md)
+* [Diagnosing Errors on your Cloud Apps](https://blogs.msdn.microsoft.com/webdev/2018/02/07/diagnosing-errors-on-your-cloud-apps) (Диагностика ошибок в облачных приложениях)
+* Скачайте бесплатно электронную книгу [Azure Quick Start Guide for .NET Developers](https://www.microsoft.com/net/download/thank-you/azure-quick-start-ebook) (Краткое руководство по началу работы с Azure для разработчиков .NET)
