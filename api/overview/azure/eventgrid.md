@@ -1,48 +1,43 @@
 ---
 title: Библиотеки службы "Сетка событий Azure" для .NET
 description: Справочник по библиотекам службы "Сетка событий Azure" для .NET
-author: rloutlaw
-ms.author: routlaw
-manager: angerobe
 ms.date: 04/16/2018
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: event-grid
-ms.custom: devcenter
-ms.openlocfilehash: 894b8a5beaf0507ab50e8eed6a5ab20d10a71ba6
-ms.sourcegitcommit: 61638b504b6c4d96b357894835c80c2680a99fe6
+ms.openlocfilehash: 5b19f8aa8b28b3e4aef528da051b6e7d177f1a2f
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45750602"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190397"
 ---
-# <a name="azure-event-grid-libraries-for-net"></a><span data-ttu-id="ef757-103">Библиотеки службы "Сетка событий Azure" для .NET</span><span class="sxs-lookup"><span data-stu-id="ef757-103">Azure Event Grid libraries for .NET</span></span>
+# <a name="azure-event-grid-libraries-for-net"></a><span data-ttu-id="e111d-103">Библиотеки службы "Сетка событий Azure" для .NET</span><span class="sxs-lookup"><span data-stu-id="e111d-103">Azure Event Grid libraries for .NET</span></span>
 
-<span data-ttu-id="ef757-104">Создавайте управляемые событиями приложения, которые прослушивают события от служб Azure и пользовательских источников и реагируют на них, с помощью службы "Сетка событий Azure" и простых средств обработки событий на основе HTTP.</span><span class="sxs-lookup"><span data-stu-id="ef757-104">Build event-driven applications that listen and react to events from Azure services and custom sources using simple HTTP-based event handling with Azure Event Grid.</span></span>
+<span data-ttu-id="e111d-104">Создавайте управляемые событиями приложения, которые прослушивают события от служб Azure и пользовательских источников и реагируют на них, с помощью службы "Сетка событий Azure" и простых средств обработки событий на основе HTTP.</span><span class="sxs-lookup"><span data-stu-id="e111d-104">Build event-driven applications that listen and react to events from Azure services and custom sources using simple HTTP-based event handling with Azure Event Grid.</span></span>
 
-<span data-ttu-id="ef757-105">См. дополнительные сведения о [службе "Сетка событий Azure"](/azure/event-grid/overview) и начните работу с помощью [краткого руководства по событиям хранилища BLOB-объектов Azure](/azure/storage/blobs/storage-blob-event-quickstart-powershell).</span><span class="sxs-lookup"><span data-stu-id="ef757-105">[Learn more](/azure/event-grid/overview) about Azure Event Grid and get started with the [Azure Blob storage event tutorial](/azure/storage/blobs/storage-blob-event-quickstart-powershell).</span></span> 
+<span data-ttu-id="e111d-105">См. дополнительные сведения о [службе "Сетка событий Azure"](/azure/event-grid/overview) и начните работу с помощью [краткого руководства по событиям хранилища BLOB-объектов Azure](/azure/storage/blobs/storage-blob-event-quickstart-powershell).</span><span class="sxs-lookup"><span data-stu-id="e111d-105">[Learn more](/azure/event-grid/overview) about Azure Event Grid and get started with the [Azure Blob storage event tutorial](/azure/storage/blobs/storage-blob-event-quickstart-powershell).</span></span> 
 
-## <a name="client-sdk"></a><span data-ttu-id="ef757-106">Клиентский пакет SDK</span><span class="sxs-lookup"><span data-stu-id="ef757-106">Client SDK</span></span>
+## <a name="client-sdk"></a><span data-ttu-id="e111d-106">Клиентский пакет SDK</span><span class="sxs-lookup"><span data-stu-id="e111d-106">Client SDK</span></span>
 
-<span data-ttu-id="ef757-107">Создавайте события, выполняйте аутентификацию и публикацию в разделы с помощью клиентского пакета SDK для службы "Сетка событий Azure".</span><span class="sxs-lookup"><span data-stu-id="ef757-107">Create events, authenticate, and post to topics using the Azure Event Grid Client SDK.</span></span>
+<span data-ttu-id="e111d-107">Создавайте события, выполняйте аутентификацию и публикацию в разделы с помощью клиентского пакета SDK для службы "Сетка событий Azure".</span><span class="sxs-lookup"><span data-stu-id="e111d-107">Create events, authenticate, and post to topics using the Azure Event Grid Client SDK.</span></span>
 
-<span data-ttu-id="ef757-108">Установите [пакет NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) непосредственно из [консоли диспетчера пакетов][PackageManager] Visual Studio или с помощью [.NET Core CLI][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="ef757-108">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+<span data-ttu-id="e111d-108">Установите [пакет NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) непосредственно из [консоли диспетчера пакетов][PackageManager] Visual Studio или с помощью [.NET Core CLI][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="e111d-108">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="ef757-109">Диспетчер пакетов Visual Studio</span><span class="sxs-lookup"><span data-stu-id="ef757-109">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="e111d-109">Диспетчер пакетов Visual Studio</span><span class="sxs-lookup"><span data-stu-id="e111d-109">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.EventGrid
 ```
 
-#### <a name="net-core-cli"></a><span data-ttu-id="ef757-110">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="ef757-110">.NET Core CLI</span></span>
+#### <a name="net-core-cli"></a><span data-ttu-id="e111d-110">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="e111d-110">.NET Core CLI</span></span>
 
 ```bash
 dotnet add package Microsoft.Azure.EventGrid 
 ```
 
-### <a name="publish-events"></a><span data-ttu-id="ef757-111">Публикация событий</span><span class="sxs-lookup"><span data-stu-id="ef757-111">Publish events</span></span>
+### <a name="publish-events"></a><span data-ttu-id="e111d-111">Публикация событий</span><span class="sxs-lookup"><span data-stu-id="e111d-111">Publish events</span></span>
 
-<span data-ttu-id="ef757-112">Следующий код выполняет аутентификацию с помощью Azure и публикует `List` из событий `EventGridEvent` пользовательского типа (в этом примере — `Contoso.Items.ItemsReceivedEvent`) в раздел.</span><span class="sxs-lookup"><span data-stu-id="ef757-112">The following code authenticates with Azure and publishes a `List` of  `EventGridEvent` events of a custom type (in this example, `Contoso.Items.ItemsReceivedEvent` ) to a topic.</span></span> <span data-ttu-id="ef757-113">Раздел ключа и адрес конечной точки, используемые в примере, можно получить с помощью Azure PowerShell:</span><span class="sxs-lookup"><span data-stu-id="ef757-113">The topic key and endpoint address used in the sample can be retrieved from Azure PowerShell:</span></span>
+<span data-ttu-id="e111d-112">Следующий код выполняет аутентификацию с помощью Azure и публикует `List` из событий `EventGridEvent` пользовательского типа (в этом примере — `Contoso.Items.ItemsReceivedEvent`) в раздел.</span><span class="sxs-lookup"><span data-stu-id="e111d-112">The following code authenticates with Azure and publishes a `List` of  `EventGridEvent` events of a custom type (in this example, `Contoso.Items.ItemsReceivedEvent` ) to a topic.</span></span> <span data-ttu-id="e111d-113">Раздел ключа и адрес конечной точки, используемые в примере, можно получить с помощью Azure PowerShell:</span><span class="sxs-lookup"><span data-stu-id="e111d-113">The topic key and endpoint address used in the sample can be retrieved from Azure PowerShell:</span></span>
 
 ```powershell
 $endpoint = (Get-AzureRmEventGridTopic -ResourceGroupName gridResourceGroup -Name <topic-name>).Endpoint
@@ -83,9 +78,9 @@ static IList<EventGridEvent> GetEventsList()
 }
 ```
 
-### <a name="consume-events"></a><span data-ttu-id="ef757-114">Получение событий</span><span class="sxs-lookup"><span data-stu-id="ef757-114">Consume events</span></span>
+### <a name="consume-events"></a><span data-ttu-id="e111d-114">Получение событий</span><span class="sxs-lookup"><span data-stu-id="e111d-114">Consume events</span></span>
 
-<span data-ttu-id="ef757-115">Этот фрагмент получает события, включая пользовательское событие `Contoso.Items.ItemsReceived`, а также события, вызываемые из других служб Azure, таких как хранилище BLOB-объектов.</span><span class="sxs-lookup"><span data-stu-id="ef757-115">This snippet consumes events, including a custom event `Contoso.Items.ItemsReceived` as well as events triggered from other Azure services, such as Blob Storage.</span></span>
+<span data-ttu-id="e111d-115">Этот фрагмент получает события, включая пользовательское событие `Contoso.Items.ItemsReceived`, а также события, вызываемые из других служб Azure, таких как хранилище BLOB-объектов.</span><span class="sxs-lookup"><span data-stu-id="e111d-115">This snippet consumes events, including a custom event `Contoso.Items.ItemsReceived` as well as events triggered from other Azure services, such as Blob Storage.</span></span>
 
 ```csharp
 string response = string.Empty;
@@ -120,33 +115,33 @@ foreach (EventGridEvent receivedEvent in events)
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="ef757-116">Обзор клиентских API-интерфейсов</span><span class="sxs-lookup"><span data-stu-id="ef757-116">Explore the client APIs</span></span>](/dotnet/api/overview/azure/eventgrid/client)
+> [<span data-ttu-id="e111d-116">Подробнее об осуществляющих публикацию API</span><span class="sxs-lookup"><span data-stu-id="e111d-116">Explore the publishing APIs</span></span>](/dotnet/api/overview/azure/eventgrid/publish)
 
-## <a name="management-sdk"></a><span data-ttu-id="ef757-117">Пакет SDK для управления</span><span class="sxs-lookup"><span data-stu-id="ef757-117">Management SDK</span></span>
+## <a name="management-sdk"></a><span data-ttu-id="e111d-117">Пакет SDK для управления</span><span class="sxs-lookup"><span data-stu-id="e111d-117">Management SDK</span></span>
 
-<span data-ttu-id="ef757-118">Создавайте, обновляйте и удаляйте экземпляры, разделы и подписки службы "Сетка событий" с помощью пакета SDK для управления.</span><span class="sxs-lookup"><span data-stu-id="ef757-118">Create, update, or delete Event Grid instances, topics, and subscriptions with the management SDK.</span></span>
+<span data-ttu-id="e111d-118">Создавайте, обновляйте и удаляйте экземпляры, разделы и подписки службы "Сетка событий" с помощью пакета SDK для управления.</span><span class="sxs-lookup"><span data-stu-id="e111d-118">Create, update, or delete Event Grid instances, topics, and subscriptions with the management SDK.</span></span>
 
-<span data-ttu-id="ef757-119">Установите [пакет NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) непосредственно из [консоли диспетчера пакетов][PackageManager] Visual Studio или с помощью [.NET Core CLI][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="ef757-119">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+<span data-ttu-id="e111d-119">Установите [пакет NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) непосредственно из [консоли диспетчера пакетов][PackageManager] Visual Studio или с помощью [.NET Core CLI][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="e111d-119">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
 
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="ef757-120">Диспетчер пакетов Visual Studio</span><span class="sxs-lookup"><span data-stu-id="ef757-120">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="e111d-120">Диспетчер пакетов Visual Studio</span><span class="sxs-lookup"><span data-stu-id="e111d-120">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.Management.EventGrid
 ```
 
-#### <a name="net-core-cli"></a><span data-ttu-id="ef757-121">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="ef757-121">.NET Core CLI</span></span>
+#### <a name="net-core-cli"></a><span data-ttu-id="e111d-121">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="e111d-121">.NET Core CLI</span></span>
 
 ```bash
 dotnet add package Microsoft.Azure.Management.EventGrid
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="ef757-122">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="ef757-122">Explore the management APIs</span></span>](/dotnet/api/overview/azure/eventgrid/management)
+> [<span data-ttu-id="e111d-122">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="e111d-122">Explore the management APIs</span></span>](/dotnet/api/overview/azure/eventgrid/management)
 
-## <a name="learn-more"></a><span data-ttu-id="ef757-123">Подробнее</span><span class="sxs-lookup"><span data-stu-id="ef757-123">Learn more</span></span>
+## <a name="learn-more"></a><span data-ttu-id="e111d-123">Подробнее</span><span class="sxs-lookup"><span data-stu-id="e111d-123">Learn more</span></span>
 
-- [<span data-ttu-id="ef757-124">Получение событий с помощью пакета SDK службы "Сетка событий"</span><span class="sxs-lookup"><span data-stu-id="ef757-124">Receive events using the Event Grid SDK</span></span>](/azure/event-grid/receive-events)
+- [<span data-ttu-id="e111d-124">Получение событий с помощью пакета SDK службы "Сетка событий"</span><span class="sxs-lookup"><span data-stu-id="e111d-124">Receive events using the Event Grid SDK</span></span>](/azure/event-grid/receive-events)
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
