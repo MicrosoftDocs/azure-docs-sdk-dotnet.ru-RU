@@ -2,12 +2,12 @@
 title: Начало работы с Azure и .NET
 description: Необходимые основные сведения об Azure и .NET.
 ms.date: 09/19/2018
-ms.openlocfilehash: 89fdae6afa5c040127975de43c79d837550a9fbc
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.openlocfilehash: 89586af18b816e24a7df5ce9d96f651995f02f01
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190597"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348146"
 ---
 # <a name="get-started-with-azure-and-net"></a>Начало работы с Azure и .NET
 
@@ -63,7 +63,6 @@ ms.locfileid: "47190597"
 > Дополнительные сведения см. в статье [Выбор правильного хранилища данных](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).
 
 ## <a name="diagnosing-problems-in-the-cloud"></a>Диагностика проблем в облаке
-
 После развертывания в Azure может оказаться, что приложение не работает, хотя оно было работоспособным в среде разработки. Два следующих варианта послужат хорошей отправной точкой для диагностики проблемы.
 
 * **Удаленная отладка в Visual Studio**. Большинство вычислительных служб Azure (в том числе и описанные в этой статье) поддерживают удаленную отладку с помощью Visual Studio и получение журналов. Чтобы изучить возможности Visual Studio по работе с приложениями, откройте окно инструментов Cloud Explorer, введя "Cloud Explorer" в панели быстрого запуска Visual Studio (расположена в правом верхнем углу), и найдите приложение в дереве. Дополнительные сведения см. в разделе [Удаленная отладка веб-приложений](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug).

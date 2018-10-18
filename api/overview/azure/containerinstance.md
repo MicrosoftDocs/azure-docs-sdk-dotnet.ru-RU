@@ -3,13 +3,13 @@ title: Библиотеки службы "Экземпляры контейне�
 description: Справочник по библиотекам службы "Экземпляры контейнеров Azure" для .NET
 ms.date: 06/11/2018
 ms.topic: reference
-ms.service: dcontainer-instances
-ms.openlocfilehash: 93f537058e0ed11f51cc6cb6cece01da80559822
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.service: container-instances
+ms.openlocfilehash: 8642fc654546edde81aeaa520f52b2aff9720e55
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190727"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348106"
 ---
 # <a name="azure-container-instances-libraries-for-net"></a>Библиотеки службы "Экземпляры контейнеров Azure" для .NET
 
