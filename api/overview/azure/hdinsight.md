@@ -3,13 +3,13 @@ title: Пакет SDK .NET для Azure HDInsight
 description: Справочник по пакету SDK .NET для HDInsight
 ms.date: 9/19/2018
 ms.topic: reference
-ms.service: hd-insight
-ms.openlocfilehash: d25bdb1c9086cd93190b97f519654f2c193b9dc3
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.service: hdinsight
+ms.openlocfilehash: 35e2c8c07fb2b86b2d0ae9be4f855e369c1aa86d
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190687"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348206"
 ---
 # <a name="azure-hdinsight-net-sdk"></a>Пакет SDK .NET для Azure HDInsight
 
@@ -122,7 +122,7 @@ managementClient.Clusters.Create("<ExistingResourceGroupName>", "<NewClusterName
 
 ## <a name="overview"></a>Обзор
 
-Пакет SDK .NET для HDInsight предоставляет классы и методы для управления кластерами HDInsight. Пакет также поддерживает операции создания, удаления, обновления, получения списков, масштабирования, выполнения скриптов, мониторинга, получения свойства кластеров HDInsight и др.
+Пакет SDK .NET для HDInsight предоставляет классы и методы для управления кластерами HDInsight. Пакет также поддерживает операции создания, удаления, обновления, получения списков, масштабирования, выполнения скриптов, мониторинга, получения свойства кластеров HDInsight и т. д.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -463,9 +463,9 @@ client.Clusters.Update("<Resource Group Name>", "<Cluster Name>", new ClusterPat
 client.Clusters.Update("<Resource Group Name>", "<Cluster Name>", new ClusterPatchParameters(new Dictionary<string, string> { { "tag1Name", "tag1Value" }, { "tag2Name", "tag2Value" } }));
 ```
 
-### <a name="scale-cluster"></a>Масштабирование кластера
+### <a name="resize-cluster"></a>Изменение размера кластера
 
-Вы можете масштабировать кластер, изменяя количество его рабочих узлов так:
+Вы можете изменить размер кластера, изменяя количество его рабочих узлов. Укажите новый размер, как показано ниже:
 
 ```csharp
 client.Clusters.Resize("<Resource Group Name>", "<Cluster Name>", <Num of Worker Nodes (int)>)
