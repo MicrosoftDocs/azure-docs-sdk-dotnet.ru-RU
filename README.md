@@ -1,4 +1,10 @@
-## Microsoft Open Source Code of Conduct
+## <a name="documentation-for-azure-net-sdk-apis"></a><span data-ttu-id="23e52-101">Документация по API пакета SDK Azure для .NET</span><span class="sxs-lookup"><span data-stu-id="23e52-101">Documentation for Azure .NET SDK APIs</span></span>
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+### <a name="overview"></a><span data-ttu-id="23e52-102">Обзор</span><span class="sxs-lookup"><span data-stu-id="23e52-102">Overview</span></span>
+
+<span data-ttu-id="23e52-103">В этом репозитории хранится необработанное содержимое документации по API пакета SDK Azure для .NET, которая [размещена на сайте docs.microsoft.com](https://docs.microsoft.com/dotnet/api/overview/azure/?view=azure-dotnet).</span><span class="sxs-lookup"><span data-stu-id="23e52-103">This repository houses raw content for the Azure .NET SDK API documentation, [hosted on docs.microsoft.com](https://docs.microsoft.com/dotnet/api/overview/azure/?view=azure-dotnet).</span></span> <span data-ttu-id="23e52-104">Это содержимое создается на основе различных пакетов NuGet, предоставляющих инструментарий для взаимодействия со службами Azure и управления ими.</span><span class="sxs-lookup"><span data-stu-id="23e52-104">Content provided here is generated from various NuGet packages that provide tooling to interact and manage Azure services.</span></span>
+
+### <a name="code-of-conduct"></a><span data-ttu-id="23e52-105">Правила поведения</span><span class="sxs-lookup"><span data-stu-id="23e52-105">Code of Conduct</span></span>
+
+<span data-ttu-id="23e52-106">Microsoft Open Source Code of Conduct [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).</span><span class="sxs-lookup"><span data-stu-id="23e52-106">This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).</span></span>
+<span data-ttu-id="23e52-107">Дополнительные сведения см. на странице [Вопросы и ответы о правилах поведения](https://opensource.microsoft.com/codeofconduct/faq/) или отправьте вопросы и комментарии по адресу [opencode@microsoft.com](mailto:opencode@microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="23e52-107">For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.</span></span>
