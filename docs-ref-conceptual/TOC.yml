@@ -1,94 +1,101 @@
+items:
 - name: Azure для разработчиков .NET
   href: index.yml
   items:
-    - name: Краткие руководства по .NET
-      expanded: true
+  - name: Краткие руководства по .NET
+    items:
+    - name: Веб-приложения
+      href: https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet
+      maintainContext: true
+    - name: Бессерверные функции
+      href: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
+      maintainContext: true
+    - name: База данных SQL
+      href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet
+      maintainContext: true
+    - name: База данных Cosmos
+      href: https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet
+      maintainContext: true
+    - name: Service Fabric
+      href: https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet
+      maintainContext: true
+    - name: Хранилище BLOB-объектов
+      href: https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet
+      maintainContext: true
+    expanded: true
+  - name: Приступая к работе с Azure
+    href: dotnet-sdk-azure-get-started.md
+  - name: Средства
+    href: dotnet-tools.md
+  - name: Руководства по .NET
+    href: dotnet-tutorials.md
+    items:
+    - name: Создание веб-приложения ASP.NET в Azure с подключением к базе данных SQL
+      href: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
+      maintainContext: true
+    - name: Создание веб-приложения ASP.NET с использованием Cosmos DB
+      href: /azure/documentdb/documentdb-dotnet-application
+      maintainContext: true
+    - name: Создание и развертывание веб-API
+      href: /azure/app-service-api/app-service-api-dotnet-get-started
+      maintainContext: true
+    - name: Начало работы с контейнерами Windows и Kubernetes
+      href: /azure/container-service/container-service-kubernetes-windows-walkthrough
+      maintainContext: true
+    - name: Подключение и отправка запросов к базе данных SQL
+      href: /azure/sql-database/sql-database-connect-query-dotnet
+      maintainContext: true
+    - name: Подключение и отправка запросов к PostgreSQL
+      href: /azure/postgresql/connect-csharp
+      maintainContext: true
+    - name: Начало работы с API SQL Cosmos DB
+      href: /azure/cosmos-db/sql-api-get-started
+      maintainContext: true
+  - name: Практическое руководство
+    items:
+    - name: Миграция
       items:
-        - name: Веб-приложения
-          href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet'
-          maintainContext: true
-        - name: Бессерверные функции
-          href: 'https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio'
-          maintainContext: true
-        - name: База данных SQL
-          href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
-          maintainContext: true
-        - name: База данных Cosmos
-          href: 'https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet'
-          maintainContext: true
-        - name: Service Fabric
-          href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
-          maintainContext: true
-        - name: Хранилище BLOB-объектов
-          href: 'https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet'
-          maintainContext: true
-    - name: Начало работы с .NET
-      href: dotnet-sdk-azure-get-started.md
-    - name: Средства
-      href: dotnet-tools.md
-    - name: Руководства по .NET
-      href: dotnet-tutorials.md
+      - name: Выбор правильного размещения в Azure
+        href: dotnet-howto-choose-migration.md
+      - name: Перенос веб-приложения или службы .NET в Службу приложений Azure
+        href: dotnet-howto-migrate-app-service.md
+      - name: Перенос приложения ASP.NET на виртуальную машину Azure
+        href: dotnet-howto-migrate-to-vm.md
+      - name: Перенос базы данных SQL Server в Azure
+        href: dotnet-howto-migrate-sql.md
+    - name: Authentication
+      href: dotnet-sdk-azure-authenticate.md
+    - name: Использование текучих API-интерфейсов
+      href: dotnet-sdk-azure-concepts.md
+    - name: Развертывание
       items:
-        - name: Создание веб-приложения ASP.NET в Azure с подключением к базе данных SQL
-          href: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
-          maintainContext: true
-        - name: Создание веб-приложения ASP.NET с использованием Cosmos DB
-          href: /azure/documentdb/documentdb-dotnet-application
-          maintainContext: true
-        - name: Создание и развертывание веб-API
-          href: /azure/app-service-api/app-service-api-dotnet-get-started
-          maintainContext: true
-        - name: Начало работы с контейнерами Windows и Kubernetes
-          href: /azure/container-service/container-service-kubernetes-windows-walkthrough
-          maintainContext: true
-        - name: Подключение и отправка запросов к базе данных SQL
-          href: /azure/sql-database/sql-database-connect-query-dotnet
-          maintainContext: true
-        - name: Подключение и отправка запросов к PostgreSQL
-          href: /azure/postgresql/connect-csharp
-          maintainContext: true
-        - name: Начало работы с API SQL Cosmos DB
-          href: /azure/cosmos-db/sql-api-get-started
-          maintainContext: true
-    - name: Практическое руководство
-      items:
-        - name: Миграция
-          items:
-            - name: Выбор правильного размещения в Azure
-              href: dotnet-howto-choose-migration.md
-            - name: Перенос веб-приложения или службы .NET в Службу приложений Azure
-              href: dotnet-howto-migrate-app-service.md
-            - name: Перенос приложения ASP.NET на виртуальную машину Azure
-              href: dotnet-howto-migrate-to-vm.md
-            - name: Перенос базы данных SQL Server в Azure
-              href: dotnet-howto-migrate-sql.md
-        - name: Authentication
-          href: dotnet-sdk-azure-authenticate.md
-        - name: Использование текучих API-интерфейсов
-          href: dotnet-sdk-azure-concepts.md
-        - name: Развертывание
-          items:
-            - name: Развертывание с помощью Visual Studio
-              href: dotnet-quickstart-vs.md
-            - name: Развертывание с помощью средств командной строки
-              href: dotnet-quickstart-xplat.md
-        - name: Базы данных
-          href: dotnet-tutorials-services-databases.md
-        - name: Служба хранилища
-          href: dotnet-tutorials-services-storage.md
-        - name: Контейнеры
-          href: dotnet-tutorials-services-containers.md
-        - name: Обмен сообщениями и Интернет вещей
-          href: dotnet-tutorials-services-messaging-iot.md
-        - name: AI и Cognitive Services
-          href: dotnet-tutorials-services-ai-cognitive.md
-        - name: Данные и аналитика
-          href: dotnet-tutorials-services-analytics.md
-        - name: Интернет и мобильные устройства
-          href: dotnet-tutorials-services-web-mobile.md
-        - name: Безопасность и идентификация
-          href: dotnet-tutorials-services-security.md
-        - name: Мониторинг и управление
-          href: dotnet-tutorials-services-monitoring.md
-    - name: Примеры кода для .NET
-      href: dotnet-samples.md
+      - name: Развертывание с помощью Visual Studio
+        href: dotnet-quickstart-vs.md
+      - name: Развертывание с помощью средств командной строки
+        href: dotnet-quickstart-xplat.md
+    - name: Базы данных
+      href: dotnet-tutorials-services-databases.md
+    - name: Хранилище
+      href: dotnet-tutorials-services-storage.md
+    - name: Контейнеры
+      href: dotnet-tutorials-services-containers.md
+    - name: Обмен сообщениями и Интернет вещей
+      href: dotnet-tutorials-services-messaging-iot.md
+    - name: AI и Cognitive Services
+      href: dotnet-tutorials-services-ai-cognitive.md
+    - name: Данные и аналитика
+      href: dotnet-tutorials-services-analytics.md
+    - name: Интернет и мобильные устройства
+      href: dotnet-tutorials-services-web-mobile.md
+    - name: Безопасность и идентификация
+      href: dotnet-tutorials-services-security.md
+    - name: Мониторинг и управление
+      href: dotnet-tutorials-services-monitoring.md
+  - name: Примеры кода для .NET
+    href: dotnet-samples.md
+ms.openlocfilehash: b2a0a7da4354b1699aaed766a5377cfaea64dcdf
+ms.sourcegitcommit: 0de939648fa01698016fed633200f8eb07c96eb7
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276564"
