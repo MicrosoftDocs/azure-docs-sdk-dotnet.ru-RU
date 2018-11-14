@@ -2,12 +2,12 @@
 title: Начало работы с Azure и .NET
 description: Необходимые основные сведения об Azure и .NET.
 ms.date: 09/19/2018
-ms.openlocfilehash: 89586af18b816e24a7df5ce9d96f651995f02f01
-ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
+ms.openlocfilehash: 63587d7d5ccb79eee47185ff1f3ccb9cbd09c0ea
+ms.sourcegitcommit: 0de939648fa01698016fed633200f8eb07c96eb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49348146"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276584"
 ---
 # <a name="get-started-with-azure-and-net"></a>Начало работы с Azure и .NET
 
@@ -61,6 +61,10 @@ ms.locfileid: "49348146"
 
 > [!TIP]
 > Дополнительные сведения см. в статье [Выбор правильного хранилища данных](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).
+
+## <a name="connecting-to-azure-services"></a>Подключение к службам Azure
+
+При использовании Visual Studio можно добавить в проекты поддержку определенных служб Azure.  Диалог **Подключенные службы** в Visual Studio предоставляет простой способ добавления необходимых ссылок, кода для подключения и параметров конфигурации в проекты.  Изначально поддерживаются некоторые часто используемые службы Azure, среди которых [служба хранилища](/azure/vs-azure-tools-connected-services-storage), аутентификация [Azure Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service), [Azure Key Vault](/azure/key-vault/vs-key-vault-add-connected-service) и [Cognitive Services](/azure/cognitive-services/), например [Компьютерное зрение](/azure/cognitive-services/computer-vision/vs-computer-vision-connected-service).  Дополнительные службы, в том числе предоставляемые другими компаниями, доступны в виде расширений в [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=connected%20service&target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Relevance).
 
 ## <a name="diagnosing-problems-in-the-cloud"></a>Диагностика проблем в облаке
 После развертывания в Azure может оказаться, что приложение не работает, хотя оно было работоспособным в среде разработки. Два следующих варианта послужат хорошей отправной точкой для диагностики проблемы.
