@@ -1,4 +1,4 @@
-## <a name="documentation-for-azure-net-sdk-apis"></a>Документация по API пакета SDK Azure для .NET
+﻿## <a name="documentation-for-azure-net-sdk-apis"></a>Документация по API пакета SDK Azure для .NET
 
 ### <a name="overview"></a>Обзор
 
