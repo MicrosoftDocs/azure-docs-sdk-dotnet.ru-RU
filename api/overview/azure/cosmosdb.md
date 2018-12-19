@@ -4,12 +4,12 @@ description: Справочник по библиотекам Azure Cosmos DB д
 ms.date: 08/31/2018
 ms.topic: reference
 ms.service: cosmos-db
-ms.openlocfilehash: 21a2f2168259528a0d27103783e34aa532d7e17a
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.openlocfilehash: 8ff565f1cd72eec2f574b45d04ceac526b8c5eb0
+ms.sourcegitcommit: 01ec3adba39a6f946015552c28da0a9a6bb57180
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190804"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112022"
 ---
 # <a name="azure-cosmos-db-libraries-for-net"></a>Библиотеки Azure Cosmos DB для .NET
 
@@ -25,6 +25,8 @@ ms.locfileid: "47190804"
 
 Установите [пакет NuGet](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core) непосредственно из [консоли диспетчера пакетов][PackageManager] Visual Studio или с помощью [.NET Core CLI][DotNetCLI].
 
+Для установки версии 2.x требуется следующее:
+
 #### <a name="visual-studio-package-manager"></a>Диспетчер пакетов Visual Studio
 
 ```powershell
@@ -37,9 +39,24 @@ Install-Package Microsoft.Azure.DocumentDB.Core
 dotnet add package Microsoft.Azure.DocumentDB.Core
 ```
 
+Для установки предварительной версии 3.0 для использования с .NET Standard: 
+
+#### <a name="visual-studio-package-manager"></a>Диспетчер пакетов Visual Studio
+
+```powershell
+Install-Package Microsoft.Azure.Cosmos -prerelease
+```
+
+#### <a name="net-core-cli"></a>.NET Core CLI
+
+```bash
+dotnet add package Microsoft.Azure.Cosmos
+```
+
+
 ### <a name="code-example"></a>Пример кода
 
-В этом примере устанавливается подключение к существующей базе данных API SQL в Azure Cosmos DB, считывается документ из коллекции, который затем десериализируется как объект `Item`.   
+В этом примере устанавливается подключение к существующей базе данных API SQL в Azure Cosmos DB, считывается документ из коллекции, который затем десериализируется как объект `Item`. В этом примере используется версия 2.x пакета SDK для .NET.   
 
 ```csharp
 /* Include this "using" directive...
@@ -51,12 +68,24 @@ Uri documentUri = UriFactory.CreateDocumentUri("MyDatabaseName", "MyCollectionNa
 SomeClass myObject = client.ReadDocumentAsync<SomeClass>(documentUri).ToString();
 ```
 
+В этом примере устанавливается подключение к существующей базе данных API SQL в Azure Cosmos DB, создается база данных и контейнер, считывается элемент из контейнера, который затем десериализируется как объект `TodoItem`. В этом примере используется версия 3.x пакета SDK для .NET.   
+
+```csharp
+using (CosmosClient cosmosClient = new CosmosClient("endpoint", "primaryKey"))
+{
+    // Read item from container
+    CosmosItemResponse<TodoItem> todoItemResponse = await cosmosClient.Databases["DatabaseId"].Containers["ContainerId"].Items.ReadItemAsync<TodoItem>("partitionKeyValue", "ItemId");
+}
+```
+
 > [!div class="nextstepaction"]
 > [Обзор клиентских API-интерфейсов](/dotnet/api/overview/azure/cosmosdb/client)
 
 ## <a name="samples"></a>Примеры
 
-* [Developing a .NET app using Azure Cosmos DB's MongoDB API](https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-dotnet-getting-started/) (Разработка приложения .NET с помощью API MongoDB Cosmos DB)
+* [Разработка приложения .NET с помощью API SQL Azure Cosmos DB (версия 2.x)](https://github.com/Azure-Samples/documentdb-dotnet-todo-app/)
+* [Разработка приложения .NET с помощью API SQL Azure Cosmos DB (предварительная версия 3.x)](https://github.com/Azure-Samples/cosmos-dotnet-todo-app/)
+* [Разработка приложения .NET Core с помощью API SQL Azure Cosmos DB (предварительная версия 3.x)](https://github.com/Azure-Samples/cosmos-dotnet-core-getting-started)
 
 Просмотрите [полный список](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=cosmosdb) примеров для Azure Cosmos DB.
 
