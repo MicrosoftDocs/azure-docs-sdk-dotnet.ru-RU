@@ -4,12 +4,12 @@ description: Справочник по библиотекам Azure IoT для .
 ms.date: 10/19/2017
 ms.topic: reference
 ms.service: iot-hub
-ms.openlocfilehash: 54182d8fabec0d3aee3ca3b58c7315bdf43cc24e
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.openlocfilehash: 667663c5f5e3452fcc5ec0c4f3ded997370c5852
+ms.sourcegitcommit: 7f1a1bf275d8489f8df266b746baa33d66fcb2c8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190187"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737079"
 ---
 # <a name="azure-iot-libraries-for-net"></a>Библиотеки Azure IoT для .NET
 
@@ -49,7 +49,7 @@ dotnet add package Microsoft.Azure.Devices.Client
 string deviceKey = "<deviceKey>";
 string deviceId = "<deviceId>";
 string iotHubHostName = "<IoTHubHostname>";
-DeviceAuthenticationWithRegistrySymmetricKeyvar deviceAuthentication = new DeviceAuthenticationWithRegistrySymmetricKey(deviceId, deviceKey);
+var deviceAuthentication = new DeviceAuthenticationWithRegistrySymmetricKey(deviceId, deviceKey);
 
 DeviceClient deviceClient = DeviceClient.Create(iotHubHostName, deviceAuthentication, TransportType.Mqtt);
 

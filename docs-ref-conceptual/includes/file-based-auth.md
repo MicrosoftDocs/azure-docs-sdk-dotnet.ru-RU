@@ -3,11 +3,11 @@ ms.service: multiple
 ms.date: 9/20/2018
 ms.topic: include
 ms.openlocfilehash: 7f7c24957d2bc0574fc0b1bf2a8ae8fe8b4dfc64
-ms.sourcegitcommit: 70982e900bd4adfbc121eba55d94544f17c6b495
+ms.sourcegitcommit: e25b6ac74033f3b0a7610bf66feb654acb43054c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51196050"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53430540"
 ---
 Создайте текстовый файл с именем `azureauth.json`. При создании субъекта-службы вставьте выходные данные JSON.
 
