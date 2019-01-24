@@ -4,12 +4,12 @@ description: Справочник по библиотекам Azure Cosmos DB д
 ms.date: 08/31/2018
 ms.topic: reference
 ms.service: cosmos-db
-ms.openlocfilehash: 8ff565f1cd72eec2f574b45d04ceac526b8c5eb0
-ms.sourcegitcommit: 01ec3adba39a6f946015552c28da0a9a6bb57180
+ms.openlocfilehash: 95fcd8468c3d472cfcadeaae3b56ae789c3b1e7a
+ms.sourcegitcommit: 55ee51501678d1575e5159f0ac0e475b5bf9daf3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112022"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54453998"
 ---
 # <a name="azure-cosmos-db-libraries-for-net"></a>Библиотеки Azure Cosmos DB для .NET
 
@@ -56,7 +56,7 @@ dotnet add package Microsoft.Azure.Cosmos
 
 ### <a name="code-example"></a>Пример кода
 
-В этом примере устанавливается подключение к существующей базе данных API SQL в Azure Cosmos DB, считывается документ из коллекции, который затем десериализируется как объект `Item`. В этом примере используется версия 2.x пакета SDK для .NET.   
+В этом примере устанавливается подключение к существующей базе данных API SQL в Azure Cosmos DB, считывается документ из коллекции, который затем десериализируется как объект `TodoItem`. В этом примере используется версия 2.x пакета SDK для .NET.   
 
 ```csharp
 /* Include this "using" directive...
@@ -65,7 +65,7 @@ using Microsoft.Azure.Documents.Client;
 
 DocumentClient client = new DocumentClient(endpointUri, authKeyString);
 Uri documentUri = UriFactory.CreateDocumentUri("MyDatabaseName", "MyCollectionName", "DocumentId");
-SomeClass myObject = client.ReadDocumentAsync<SomeClass>(documentUri).ToString();
+var todoItem = client.ReadDocumentAsync<TodoItem>(documentUri);
 ```
 
 В этом примере устанавливается подключение к существующей базе данных API SQL в Azure Cosmos DB, создается база данных и контейнер, считывается элемент из контейнера, который затем десериализируется как объект `TodoItem`. В этом примере используется версия 3.x пакета SDK для .NET.   
