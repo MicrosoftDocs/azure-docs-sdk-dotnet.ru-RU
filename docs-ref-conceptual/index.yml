@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: bc73e901d5be6a4ae90a2f716ebf3ee7bc2be4fa
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.openlocfilehash: 6921ddd79f7cefcb2a64724ab79e8b81a5cd5d7d
+ms.sourcegitcommit: c221d4a1166e37820c28cdec447216e88e4b07b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190819"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55807828"
 documentType: LandingData
 title: Azure для разработчиков .NET и .NET Core
 metadata:
@@ -78,9 +78,9 @@ sections:
       title: Хранение и извлечение объектов с использованием Службы хранилища Azure
       href: https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet
     - image:
-        src: https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg
-      title: Подключение приложения .NET к базе данных Azure SQL
-      href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet
+        src: https://docs.microsoft.com/media/logos/logo_docker.svg
+      title: Сборка веб-приложения ASP.NET Core в контейнере Docker с использованием Visual Studio
+      href: https://docs.microsoft.com/visualstudio/containers/docker-tools
 - title: Начало работы с .NET в Azure
   items:
   - type: markdown
@@ -95,11 +95,11 @@ sections:
     - href: https://www.pluralsight.com/courses/developing-dotnet-microsoft-azure-getting-started?twoid=d6abac77-7dcc-4d33-9e03-f85e78989f02
       image:
         src: https://docs.microsoft.com/en-us/media/logos/logo_pluralsight.svg
-      title: 'Pluralsight: разработка с помощью .NET и C# в Azure'
+      title: Pluralsight. Разработка с помощью .NET и C# в Azure
     - href: https://docs.microsoft.com/dotnet/standard/serverless-architecture
       image:
         src: https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg
-      title: 'Бессерверные приложения: архитектура, шаблоны и электронная книга о реализации таких приложений в Azure'
+      title: Бессерверные приложения. Архитектура, шаблоны и электронная книга о реализации таких приложений в Azure
     - href: https://www.microsoft.com/net/learn/architecture
       image:
         src: https://docs.microsoft.com/en-us/media/logos/logo_NET.svg
