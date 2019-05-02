@@ -74,7 +74,7 @@ using (SqlConnection conn = new SqlConnection(connectionString))
 
 ## <a name="management-library"></a>Библиотека управления
 
-Используйте библиотеку управления базами данных SQL Azure, чтобы создавать и масштабировать экземпляры сервера базы данных SQL Azure, а также управлять ими.
+Используйте библиотеку управления базами данных SQL Azure, чтобы создавать и масштабировать экземпляры сервера Базы данных SQL Azure, а также управлять ими.
 
 Установите [пакет NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql.Fluent/) непосредственно из [консоли диспетчера пакетов](https://docs.microsoft.com/nuget/tools/package-manager-console) Visual Studio или с помощью [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).
 
@@ -92,7 +92,7 @@ dotnet add package Microsoft.Azure.Management.Sql.Fluent
 
 ### <a name="code-example"></a>Пример кода
 
-В этом примере создается экземпляр сервера базы данных SQL, а также новая база данных на основе этого экземпляра.
+В этом примере создается экземпляр сервера Базы данных SQL, а также новая база данных на основе этого экземпляра.
 
 ```csharp
 /* Include these 'using' directives...
