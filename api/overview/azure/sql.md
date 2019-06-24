@@ -1,6 +1,6 @@
 ---
-title: API-интерфейсы базы данных Azure SQL для .NET
-description: Справочник по библиотекам базы данных SQL Azure для .NET
+title: API-интерфейсы Базы данных Azure SQL для .NET
+description: Справочник по библиотекам Базы данных SQL Azure для .NET
 ms.date: 10/19/2017
 ms.topic: reference
 ms.service: sql-database
@@ -11,7 +11,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 09/26/2018
 ms.locfileid: "47190637"
 ---
-# <a name="azure-sql-database-apis-for-net"></a>API-интерфейсы базы данных Azure SQL для .NET
+# <a name="azure-sql-database-apis-for-net"></a>API-интерфейсы Базы данных Azure SQL для .NET
 
 ## <a name="overview"></a>Обзор
 
@@ -124,5 +124,5 @@ ISqlDatabase sqlDb = sqlServer.Databases.Define("DatabaseName").Create();
 - [ADO.NET code examples](/dotnet/framework/data/adonet/ado-net-code-examples) (Примеры кода ADO.NET)
 - [Sample code for using Azure databases with .NET](/dotnet/azure/dotnet-sdk-azure-sql-database-samples) (Пример кода для использования баз данных Azure с .NET)
 
-Просмотрите [полный список](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=sql+database) примеров кода для базы данных SQL Azure.
+Просмотрите [полный список](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=sql+database) примеров кода для Базы данных SQL Azure.
 
